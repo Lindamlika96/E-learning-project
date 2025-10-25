@@ -1,0 +1,24 @@
+# --- Python ---
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# --- FastAPI ---
+*.log
+
+# --- Node / React ---
+node_modules/
+build/
+dist/
+
+# --- Environment files ---
+.env
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+.DS_Store

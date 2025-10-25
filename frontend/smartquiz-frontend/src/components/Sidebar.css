@@ -1,0 +1,65 @@
+/* Styles pour la barre latérale */
+.sidebar {
+  width: 250px;
+  background-color: #f4f4f9;
+  height: 100vh;
+  padding: 20px;
+  border-right: 2px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.nav-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.course-list {
+  margin-top: 15px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.course-item {
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.course-item:hover {
+  background-color: #d1e3ff;
+}
+.go-quiz-btn {
+  margin-top: 6px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.go-quiz-btn:hover {
+  background-color: #0056b3;
+}
+
