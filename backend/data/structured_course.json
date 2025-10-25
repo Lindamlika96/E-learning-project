@@ -1,0 +1,1444 @@
+{
+  "course_title": "cours",
+  "chapters": [
+    {
+      "chapter": "Chapitre 2",
+      "page_start": 1,
+      "definitions": [],
+      "sections": [
+        {
+          "title": "Prompt Engineering : Intéragir efficacement",
+          "content": []
+        },
+        {
+          "title": "avec l’IA",
+          "content": []
+        },
+        {
+          "title": "IA for Software Engineering",
+          "content": []
+        },
+        {
+          "title": "A.U 2025-2026",
+          "content": [
+            "2"
+          ]
+        },
+        {
+          "title": "Pourquoi est-il essentiel de maîtriser l'ingénierie des \"prompts\" ?",
+          "content": [
+            "C'est important pour la recherche, les découvertes et les avancées.",
+            "Cela aide à tester et à évaluer les limites des LLM (Large Language Models, ou grands modèles de",
+            "langage).",
+            "Cela permet toutes sortes d'applications innovantes basées sur les LLM."
+          ]
+        },
+        {
+          "title": "Pourquoi ce cours",
+          "content": []
+        },
+        {
+          "title": "Objectifs du chapitre",
+          "content": [
+            "3"
+          ]
+        },
+        {
+          "title": "• Comprendre le rôle des \"prompts\" (ou \"invites\").",
+          "content": []
+        },
+        {
+          "title": "• Connaître les principes de base de la conception de \"prompts\".",
+          "content": []
+        },
+        {
+          "title": "• Vous familiariser avec diverses techniques de \"prompting\".",
+          "content": []
+        },
+        {
+          "title": "• Utiliser les \"prompts\" pour aborder de manière stratégique les pièges de l'IA",
+          "content": []
+        },
+        {
+          "title": "générative.",
+          "content": []
+        },
+        {
+          "title": "• Aligner vos compétences en \"prompting\" avec les meilleures pratiques en",
+          "content": []
+        },
+        {
+          "title": "matière d'intégrité académique.",
+          "content": []
+        },
+        {
+          "title": "Définition",
+          "content": []
+        },
+        {
+          "title": "Qu'est-ce qu'un \"prompt\" ?",
+          "content": []
+        },
+        {
+          "title": "• Une entrée pour un modèle d'IA en langage naturel",
+          "content": []
+        },
+        {
+          "title": "• Via une interface texte, une API, ...ou un microphone*",
+          "content": []
+        },
+        {
+          "title": "• Le modèle d'IA comprend la requête de manière sémantique",
+          "content": []
+        },
+        {
+          "title": "• Puis exécute la tâche souhaitée",
+          "content": []
+        },
+        {
+          "title": "• Une séquence d'invites : les chaînes de \"prompts\" !",
+          "content": []
+        },
+        {
+          "title": "Définition",
+          "content": []
+        },
+        {
+          "title": "Prompts : Avantages et limites",
+          "content": []
+        },
+        {
+          "title": "Limites",
+          "content": [
+            "Nombre de mots limité par prompt",
+            "Nombre de prompts limité par chaîne",
+            "Manque de transparence",
+            "Manque de reproductibilité"
+          ]
+        },
+        {
+          "title": "Avantages",
+          "content": [
+            "Décrire les tâches avec précision et créativité",
+            "Aucune compétence d'expert requise (Booléen, code)",
+            "Entrées multilingues",
+            "...et bien d'autres"
+          ]
+        },
+        {
+          "title": "Types de prompts",
+          "content": []
+        },
+        {
+          "title": "Prompt explicite",
+          "content": []
+        },
+        {
+          "title": "Instructions claires et directes",
+          "content": []
+        },
+        {
+          "title": "Prompt implicite",
+          "content": []
+        },
+        {
+          "title": "Instructions moins directes, basées sur le",
+          "content": []
+        },
+        {
+          "title": "contexte",
+          "content": []
+        },
+        {
+          "title": "Prompt créatif",
+          "content": []
+        },
+        {
+          "title": "Conçu pour encourager des résultats",
+          "content": []
+        },
+        {
+          "title": "originaux et imaginatifs",
+          "content": []
+        },
+        {
+          "title": "Il y a trois types de prompts:",
+          "content": []
+        },
+        {
+          "title": "• Définition : Fournit des instructions claires et directes au",
+          "content": []
+        },
+        {
+          "title": "modèle d'IA.",
+          "content": []
+        },
+        {
+          "title": "• Objectif : Obtenir un résultat précis et exact.",
+          "content": []
+        },
+        {
+          "title": "• Avantage : Fiable et prévisible.",
+          "content": []
+        },
+        {
+          "title": "• Inconvénient : Limite la créativité du modèle.",
+          "content": []
+        },
+        {
+          "title": "• Exemple : \"Traduis le texte suivant en français : 'The weather",
+          "content": []
+        },
+        {
+          "title": "is nice today.'\"",
+          "content": []
+        },
+        {
+          "title": "Types de prompts",
+          "content": []
+        },
+        {
+          "title": "Prompt explicite:",
+          "content": []
+        },
+        {
+          "title": "• Définition : S'appuie sur le contexte pour interpréter l'intention",
+          "content": []
+        },
+        {
+          "title": "de l'utilisateur.",
+          "content": []
+        },
+        {
+          "title": "• Objectif : Donner plus de liberté au modèle pour interpréter.",
+          "content": []
+        },
+        {
+          "title": "• Avantage : Peut produire des réponses plus variées et",
+          "content": []
+        },
+        {
+          "title": "créatives.",
+          "content": []
+        },
+        {
+          "title": "• Inconvénient : Augmente le risque d'ambiguïté ou de réponse",
+          "content": []
+        },
+        {
+          "title": "hors sujet.",
+          "content": []
+        },
+        {
+          "title": "• Exemple : \"Comment dirais-tu 'The weather is nice today' en",
+          "content": []
+        },
+        {
+          "title": "français ?\"",
+          "content": []
+        },
+        {
+          "title": "Types de prompts",
+          "content": []
+        },
+        {
+          "title": "Prompt implicite:",
+          "content": []
+        },
+        {
+          "title": "• Définition : Encourage le modèle à produire des résultats",
+          "content": []
+        },
+        {
+          "title": "originaux et inattendus.",
+          "content": []
+        },
+        {
+          "title": "• Objectif : Pousser le modèle à explorer de nouvelles idées.",
+          "content": []
+        },
+        {
+          "title": "• Avantage : Permet de créer du contenu unique et engageant.",
+          "content": []
+        },
+        {
+          "title": "• Inconvénient : Nécessite souvent plus d'itérations pour affiner",
+          "content": []
+        },
+        {
+          "title": "le résultat.",
+          "content": []
+        },
+        {
+          "title": "• Exemple : \"Écris une courte histoire sur un monde où la météo",
+          "content": []
+        },
+        {
+          "title": "change en fonction des émotions des gens.\"",
+          "content": []
+        },
+        {
+          "title": "Types de prompts",
+          "content": []
+        },
+        {
+          "title": "Prompt créatif:",
+          "content": []
+        },
+        {
+          "title": "Pourquoi les 'prompts' comptent : au-",
+          "content": []
+        },
+        {
+          "title": "delà des mots",
+          "content": [
+            "11"
+          ]
+        },
+        {
+          "title": "Qu'est-ce que l'ingénierie des \"prompts\" ?",
+          "content": [
+            "•",
+            "L'"
+          ]
+        },
+        {
+          "title": "ingénierie des \"prompts\"",
+          "content": [
+            "est la pratique consistant à développer et à optimiser ces invites",
+            "pour utiliser de manière efficace les modèles de langage (ML) dans diverses applications.",
+            "•",
+            "L'ingénierie des \"prompts\" est un processus de création d'un ensemble d'invites, ou de",
+            "questions, qui sont utilisées pour guider l'utilisateur vers le résultat désiré.",
+            "•",
+            "C'est un outil efficace pour les concepteurs afin de créer des expériences utilisateur faciles à",
+            "utiliser et intuitives.",
+            "•",
+            "Cette méthode est souvent employée dans la conception interactive et le développement de",
+            "logiciels, car elle permet aux utilisateurs de comprendre facilement comment interagir avec un",
+            "système ou un produit."
+          ]
+        },
+        {
+          "title": "Prompt Engineering",
+          "content": []
+        },
+        {
+          "title": "Les composants d'un bon prompt",
+          "content": []
+        },
+        {
+          "title": "Instruction",
+          "content": []
+        },
+        {
+          "title": "Rôle",
+          "content": []
+        },
+        {
+          "title": "Contexte",
+          "content": []
+        },
+        {
+          "title": "Exemples",
+          "content": []
+        },
+        {
+          "title": "Entrée",
+          "content": []
+        },
+        {
+          "title": "Sortie",
+          "content": []
+        },
+        {
+          "title": "Les composants d'un bon prompt",
+          "content": []
+        },
+        {
+          "title": "Instruction:",
+          "content": []
+        },
+        {
+          "title": "Input",
+          "content": []
+        },
+        {
+          "title": "Output",
+          "content": [
+            "Explique le Prompt Engineering",
+            "L'ingénierie des \"prompts\" (ou \"invites\") fait",
+            "référence au processus de conception et",
+            "d'optimisation des \"prompts\" afin d'obtenir les",
+            "réponses souhaitées d'un modèle de langage",
+            "comme ChatGPT. Elle implique de rédiger",
+            "soigneusement des instructions ou des questions",
+            "données au modèle pour guider son comportement",
+            "et générer des résultats plus précis ou plus",
+            "pertinents. [...]"
+          ]
+        },
+        {
+          "title": "Les composants d'un bon prompt",
+          "content": []
+        },
+        {
+          "title": "Rôle:",
+          "content": []
+        },
+        {
+          "title": "Input",
+          "content": []
+        },
+        {
+          "title": "Output",
+          "content": [
+            "Tu es un enfant de maternelle,",
+            "Explique le Prompt",
+            "Engineering.",
+            "Imagine que tu joues à un jeu avec tes amis, et",
+            "que tu veux qu'ils fassent quelque chose de",
+            "spécifique. L'ingénierie des \"prompts\" est comme",
+            "donner à tes amis de très bonnes instructions ou",
+            "des indices pour les aider à savoir quoi faire dans",
+            "le jeu. [...]"
+          ]
+        },
+        {
+          "title": "Les composants d'un bon prompt",
+          "content": []
+        },
+        {
+          "title": "Contexte:",
+          "content": []
+        },
+        {
+          "title": "Input",
+          "content": []
+        },
+        {
+          "title": "Output",
+          "content": [
+            "Explique le Prompt Engineering avec l'aide",
+            "du contexte : L'ingénierie des \"prompts\"...",
+            "est une technique utilisée pour influencer le",
+            "comportement des grands modèles de",
+            "langage (LLM) sans altérer leurs poids ou",
+            "paramètres sous-jacents.",
+            "L'ingénierie des \"prompts\", ou \"prompting\" en",
+            "contexte, est une technique utilisée pour influencer",
+            "le comportement des grands modèles de langage",
+            "(LLM) sans altérer leurs poids ou paramètres sous-",
+            "jacents."
+          ]
+        },
+        {
+          "title": "Les composants d'un bon prompt",
+          "content": []
+        },
+        {
+          "title": "Exemples:",
+          "content": []
+        },
+        {
+          "title": "Input",
+          "content": []
+        },
+        {
+          "title": "Output",
+          "content": [
+            "Trouve le terme générique approprié pour",
+            "l'ingénierie des \"prompts\", en ne",
+            "considérant que \"Gestion et analyse des",
+            "données\", \"Développement d'applications\"",
+            "et \"Ingénierie informatique\" comme",
+            "réponses possibles.",
+            "Le terme générique approprié pour l'ingénierie des",
+            "\"prompts\" serait \"Ingénierie informatique"
+          ]
+        },
+        {
+          "title": "Les composants d'un bon prompt",
+          "content": []
+        },
+        {
+          "title": "Entrée:",
+          "content": []
+        },
+        {
+          "title": "Input",
+          "content": []
+        },
+        {
+          "title": "Output",
+          "content": [
+            "Trouve le terme générique approprié pour l'ingénierie des",
+            "\"prompts\", en ne considérant que \"Gestion et analyse des",
+            "données\", \"Développement d'applications\" et \"Ingénierie",
+            "informatique\" comme réponses possibles."
+          ]
+        },
+        {
+          "title": "Humain :",
+          "content": [
+            "Terme générique pour Frontend"
+          ]
+        },
+        {
+          "title": "IA :",
+          "content": [
+            "Développement d'applications"
+          ]
+        },
+        {
+          "title": "Humain :",
+          "content": [
+            "Terme générique pour l'IA générative"
+          ]
+        },
+        {
+          "title": "IA :",
+          "content": [
+            "Gestion et analyse des données"
+          ]
+        },
+        {
+          "title": "Humain :",
+          "content": [
+            "Terme générique pour le Cloud"
+          ]
+        },
+        {
+          "title": "IA :",
+          "content": [
+            "Ingénierie informatique"
+          ]
+        },
+        {
+          "title": "Humain :",
+          "content": [
+            "Terme générique pour le Traitement du langage",
+            "naturel"
+          ]
+        },
+        {
+          "title": "IA :",
+          "content": [
+            "Gestion et analyse des données"
+          ]
+        },
+        {
+          "title": "Humain :",
+          "content": [
+            "Terme générique pour les applications mobiles"
+          ]
+        },
+        {
+          "title": "IA :",
+          "content": [
+            "Développement d'applications"
+          ]
+        },
+        {
+          "title": "Humain :",
+          "content": [
+            "Terme générique pour l'ingénierie des \"prompts\"",
+            "Développement d'applications"
+          ]
+        },
+        {
+          "title": "Les composants d'un bon prompt",
+          "content": []
+        },
+        {
+          "title": "Sortie:",
+          "content": []
+        },
+        {
+          "title": "Input",
+          "content": []
+        },
+        {
+          "title": "Output",
+          "content": [
+            "Explique le Prompt Engineering et définis le",
+            "terme subordonné. Formate la sortie en",
+            "JSON, par exemple."
+          ]
+        },
+        {
+          "title": "Les bonnes pratiques pour écrire un prompt",
+          "content": [
+            "•"
+          ]
+        },
+        {
+          "title": "Soyez concis",
+          "content": [
+            "• Visez la brièveté et la clarté",
+            "• Utilisez le langage le plus simple possible",
+            "•Exemple :",
+            "• Prompt confus et format de question :",
+            "• \"Pouvez-vous me fournir une explication détaillée du processus de",
+            "photosynthèse et de l'importance de cette réaction biochimique ?«",
+            "• Prompt plus concis et format d'instruction :",
+            "• \"Expliquez en détail le processus de photosynthèse et son importance.\""
+          ]
+        },
+        {
+          "title": "Les bonnes pratiques pour écrire un prompt",
+          "content": [
+            "•"
+          ]
+        },
+        {
+          "title": "Soyez clair",
+          "content": [
+            "• Évitez le langage vague et ambigu.",
+            "• Soyez aussi spécifique que nécessaire.",
+            "• Exemple :",
+            "Prompt ambigu :",
+            "➔",
+            "\"Comment est-ce que je produis un rapport ?",
+            "Prompt plus clair et non ambigu :",
+            "➔",
+            "\"Explique les étapes communes pour écrire un article de recherche",
+            "pour un journal académique évalué par des pairs.\""
+          ]
+        },
+        {
+          "title": "Les bonnes pratiques pour écrire un prompt",
+          "content": [
+            "•"
+          ]
+        },
+        {
+          "title": "Inclure le contexte et une structure logique",
+          "content": [
+            "Fournissez du contexte pour améliorer le raisonnement.",
+            "Construisez des \"prompts\" structurés et cohérents.",
+            "•"
+          ]
+        },
+        {
+          "title": "Exemple :",
+          "content": [
+            "\"Prompt\" non structuré sans contexte :",
+            "➔",
+            "\"Mentionne les tâches impliquées dans la rédaction d'un article de",
+            "recherche.«",
+            "\"Prompt\" structuré, incluant du contexte :",
+            "➔",
+            "\"Liste les étapes impliquées dans la rédaction d'un article de recherche",
+            "pour un travail d'étudiant. Commence par la sélection d'un sujet, et termine par la",
+            "relecture du brouillon final.\""
+          ]
+        },
+        {
+          "title": "Les bonnes pratiques pour écrire un prompt",
+          "content": [
+            "•"
+          ]
+        },
+        {
+          "title": "Décomposer les tâches complexes.",
+          "content": [
+            "Évitez de combiner plusieurs tâches en un seul prompt.",
+            "Évitez de demander plusieurs résultats/formats dans un seul prompt.",
+            "Divisez les tâches qui impliquent plusieurs étapes ou sujets... ...en prompts",
+            "séparés.",
+            "•",
+            "Exemple :",
+            "\"Concevoir une campagne de marketing complète pour un nouveau produit éco-",
+            "responsable, en détaillant le public cible, les messages clés et les stratégies",
+            "promotionnelles. Inclure des exemples spécifiques de supports publicitaires tels que",
+            "les médias sociaux, la presse écrite et la télévision, et créer une maquette visuelle",
+            "d'une publicité dans un style minimaliste moderne. Rédiger un texte alternatif",
+            "significatif pour la publicité, résumant son contenu pour une meilleure accessibilité.",
+            "Enfin, rédiger un script de présentation de 2 minutes pour présenter cette campagne",
+            "de marketing à des investisseurs potentiels.\""
+          ]
+        },
+        {
+          "title": "Les bonnes pratiques pour écrire un prompt",
+          "content": [
+            "•"
+          ]
+        },
+        {
+          "title": "Spécifiez la sortie souhaitée",
+          "content": [
+            "Style & ton",
+            "Format, langage, ou type de contenu",
+            "Profondeur et longueur",
+            "Température = paramètre contrôlant la précision et la créativité",
+            "•",
+            "Exemples :",
+            "Style & Ton : \"Rédige un paragraphe sur XYZ dans le style simpliste d'un",
+            "journal à sensation. Utilise un ton sensationnel.\"",
+            "Profondeur & longueur : \"Fournis une argumentation juridique de haut niveau",
+            "sur le sujet de XYZ qui ne dépasse pas 500 mots.\"",
+            "Format, langue, type de contenu : \"Par exemple : Un tableau à trois colonnes ;",
+            "un poème en swahili ; un script en Python\"",
+            "Température : \"Équilibre créativité et précision, selon la tâche.\""
+          ]
+        },
+        {
+          "title": "Les bonnes pratiques pour écrire un prompt",
+          "content": [
+            "•",
+            "Utiliser l'IA pour générer ou améliorer des \"prompts\"",
+            "Demander à l'IA de rédiger un \"prompt\" pour vous !",
+            "➔",
+            "\"Meta-prompting\" : Décrivez le résultat, l'application, l'objectif souhaités,",
+            "Améliorer vos propres \"prompts\" en utilisant l'IA.",
+            "➔",
+            "Soumettez votre propre \"prompt\" à l'IA et demandez-lui des",
+            "commentaires et des améliorations.",
+            "Demander à l'outil d'IA générative s'il comprend votre \"prompt\" et comment il",
+            "le fait.",
+            "➔",
+            "Demandez un exemple de sortie annoté.",
+            "➔",
+            "Ou demandez à l'outil d'expliquer les étapes qu'il effectuerait sur la",
+            "base de votre \"prompt\"."
+          ]
+        },
+        {
+          "title": "Rq",
+          "content": [
+            ": Certains outils améliorent automatiquement les \"prompts\" humains, comme",
+            "DALL-E 3.",
+            "25"
+          ]
+        },
+        {
+          "title": "Paramètres des LLM qui influent sur les résultats du",
+          "content": []
+        },
+        {
+          "title": "prompt engineering",
+          "content": []
+        },
+        {
+          "title": "La température de génération:",
+          "content": [
+            "est un paramètre utilisé dans les modèles de langage pour contrôler le",
+            "degré de diversité des réponses générées.",
+            "Elle est spécifique aux modèles utilisant des techniques de génération probabiliste telles que le softmax."
+          ]
+        },
+        {
+          "title": "Taille du modèle :",
+          "content": [
+            "La taille du modèle, peut influencer sa capacité à comprendre",
+            "et à générer des réponses précises en fonction du prompt donné.",
+            "➔",
+            "Des modèles plus grands peuvent avoir une capacité plus importante à",
+            "capturer la complexité du langage et à produire des réponses de meilleure",
+            "qualité.",
+            "26"
+          ]
+        },
+        {
+          "title": "Prompt :",
+          "content": [
+            "\"Décrivez un coucher de soleil sur une plage.\""
+          ]
+        },
+        {
+          "title": "Résumé généré avec une température de génération élevée (par exemple, 1,5) :",
+          "content": [
+            "\"Le coucher de soleil sur la plage était un spectacle éblouissant de couleurs vives. Le",
+            "ciel était teinté de nuances d'orange, de rose et de violet, créant une toile magnifique",
+            "au-dessus de l'océan scintillant. Les vagues douces caressaient doucement le rivage,",
+            "ajoutant une dimension paisible à cette scène époustouflante.«"
+          ]
+        },
+        {
+          "title": "Résumé généré avec une température de génération basse (par exemple, 0,5) :",
+          "content": [
+            "\"Le",
+            "coucher de soleil sur la plage était un moment de tranquillité absolue. Le soleil se",
+            "couchait lentement à l'horizon, illuminant le ciel d'une lueur dorée. Les vagues",
+            "murmuraient doucement tandis que le sable tiède sous mes pieds me procurait un",
+            "sentiment de paix intérieure.\"",
+            "➔",
+            "en modifiant la température de génération, nous obtenons deux résumés avec des styles",
+            "et des détails différents."
+          ]
+        },
+        {
+          "title": "Paramètres des LLM qui influent sur les résultats du",
+          "content": []
+        },
+        {
+          "title": "prompt engineering",
+          "content": [
+            "27",
+            "Le Top-k sampling est une technique utilisée dans les modèles de langage pour générer",
+            "du texte de manière probabiliste en limitant le choix des tokens générés aux k tokens les",
+            "plus probables à chaque étape de génération."
+          ]
+        },
+        {
+          "title": "Prompt",
+          "content": [
+            ": \"Décrivez votre journée idéale.«"
+          ]
+        },
+        {
+          "title": "Résumé généré avec un Top-k sampling élevé (par exemple, k = 50) :",
+          "content": [
+            "\"Ma journée",
+            "idéale commencerait par un lever de soleil paisible, suivi d'un petit-déjeuner copieux.",
+            "Ensuite, je passerais la matinée à explorer la nature, en me promenant dans les bois ou",
+            "en faisant du vélo. L'après-midi serait consacré à des activités créatives, comme la",
+            "peinture ou l'écriture. Enfin, je terminerais la journée en regardant le coucher de soleil",
+            "avec mes proches, en savourant un délicieux dîner et en partageant des moments de",
+            "bonheur et de gratitude.\""
+          ]
+        },
+        {
+          "title": "Paramètres des LLM qui influent sur les résultats du",
+          "content": []
+        },
+        {
+          "title": "prompt engineering",
+          "content": [
+            "28"
+          ]
+        },
+        {
+          "title": "Résumé généré avec un Top-k sampling bas (par exemple, k = 10) :",
+          "content": [
+            "\"Ma journée idéale",
+            "commencerait par un bon petit-déjeuner suivi d'une promenade matinale dans le parc. Je",
+            "passerais ensuite l'après-midi à lire un bon livre ou à regarder un film. Enfin, je terminerais la",
+            "journée en dînant avec ma famille et en profitant d'une soirée détente à la maison.\""
+          ]
+        },
+        {
+          "title": "Paramètres des LLM qui influent sur les résultats du",
+          "content": []
+        },
+        {
+          "title": "prompt engineering",
+          "content": [
+            "29"
+          ]
+        },
+        {
+          "title": "Les techniques du prompt Engineering",
+          "content": [
+            "De nombreuses techniques de \"prompting\" avancées ont été conçues pour améliorer les",
+            "performances sur des tâches complexes.",
+            "•",
+            "\"L’amorce ou priming \"",
+            "•",
+            "\"Least to most\" (Le facile au difficile)",
+            "•",
+            "\"Chain-of thought (CoT)\" (prompting par chaîne de pensée)",
+            "•",
+            "\"Self-Consistency\" (Cohérence-de-soi)",
+            "•",
+            "\"Knowledge Generation Prompting\" (prompting de génération de connaissances)",
+            "30"
+          ]
+        },
+        {
+          "title": "Les techniques du prompt Engineering",
+          "content": [
+            "•",
+            "L’amorce (ou Priming), dans le cadre du prompt engineering, est une méthode qui",
+            "structure une requête ou une instruction initiale pour un modèle de langage tel que",
+            "GPT-3 ou GPT-4, dans le but de diriger sa réponse.",
+            "•",
+            "Cette technique influence la pertinence, la précision, et le style des réponses",
+            "produites, en apportant des informations contextuelles ou en établissant des",
+            "attentes spécifiques.",
+            "•",
+            "Elle aide à obtenir des résultats plus spécifiques et adaptés, utiles dans diverses",
+            "applications de traitement automatique du langage naturel."
+          ]
+        },
+        {
+          "title": "L’amorce - Priming",
+          "content": [
+            "31"
+          ]
+        },
+        {
+          "title": "Les techniques du prompt Engineering",
+          "content": []
+        },
+        {
+          "title": "L’amorce - Priming",
+          "content": [
+            "32"
+          ]
+        },
+        {
+          "title": "Les techniques du prompt Engineering",
+          "content": []
+        },
+        {
+          "title": "Le facile au difficile - Least to most",
+          "content": [
+            "•",
+            "La méthode du facile au difficile (ou Least-to Most) aborde les limitations des",
+            "techniques initiales de chaîne de pensées en fragmentant les problèmes",
+            "complexes en questions plus simples, tout en conservant une logique",
+            "cohérente.",
+            "•",
+            "Le modèle examine chaque segment individuellement et fusionne ensuite ses",
+            "analyses pour former une réponse unifiée.",
+            "•",
+            "Cette approche, qui s'inscrit dans le cadre du few-shots prompting, s'appuie sur",
+            "des exemples pour orienter le modèle",
+            "33"
+          ]
+        },
+        {
+          "title": "Les techniques du prompt Engineering",
+          "content": []
+        },
+        {
+          "title": "Le facile au difficile - Least to most",
+          "content": [
+            "34"
+          ]
+        },
+        {
+          "title": "Les techniques du prompt Engineering",
+          "content": []
+        },
+        {
+          "title": "Chain-of-thought",
+          "content": [
+            "•",
+            "La technique initiale des chaînes de pensées, la chaîne de pensées",
+            "traditionnelle (ou Chain of Thought), s'applique lorsque le lien entre l'entrée et",
+            "la sortie n'est pas immédiat.",
+            "•",
+            "Cette méthode dirige le modèle dans un raisonnement structuré et séquencé",
+            "pour traiter des problèmes complexes, en utilisant des exemples comme",
+            "guides.",
+            "•",
+            "Les réponses sont donc à la fois séquencées, logiques et justifiées",
+            "35"
+          ]
+        },
+        {
+          "title": "Les techniques du prompt Engineering",
+          "content": []
+        },
+        {
+          "title": "Chain-of-thought",
+          "content": [
+            "36"
+          ]
+        },
+        {
+          "title": "Les techniques du prompt Engineering",
+          "content": []
+        },
+        {
+          "title": "Self Consistency",
+          "content": [
+            "•",
+            "L’auto-cohérence (ou self-consistency) représente une innovation",
+            "significative dans le domaine du prompting.",
+            "•",
+            "Comme la méthode \"Least-to-Most\" (LTM), il utilise de multiples chaînes de",
+            "pensées.",
+            "•",
+            "Cette technique encourage le modèle à produire et à comparer divers",
+            "raisonnements, menant à une sorte de débat interne pour juger de leur",
+            "validité.",
+            "•",
+            "Ce processus d'auto-évaluation permet au modèle de sélectionner les",
+            "arguments les plus solides et d'écarter les moins convaincants, conduisant",
+            "ainsi à une réponse plus aboutie et affinée",
+            "37"
+          ]
+        },
+        {
+          "title": "Les techniques du prompt Engineering",
+          "content": []
+        },
+        {
+          "title": "Self Consistency",
+          "content": [
+            "38"
+          ]
+        },
+        {
+          "title": "Les techniques du prompt Engineering",
+          "content": []
+        },
+        {
+          "title": "Knowledge generation Prompting",
+          "content": [
+            "•",
+            "La génération de connaissances (ou Generated Knowledge) consiste à",
+            "intégrer des connaissances externes apportées au cours d'une",
+            "conversation avec les connaissances internes du modèle.",
+            "•",
+            "Cette méthode vise à enrichir la substance et la pertinence des réponses",
+            "sur un sujet ou problème spécifique, sans nécessiter un ajustement fin ou",
+            "fine tuning du modèle",
+            "39"
+          ]
+        },
+        {
+          "title": "Les techniques du prompt Engineering",
+          "content": []
+        },
+        {
+          "title": "Knowledge generation Prompting",
+          "content": [
+            "40"
+          ]
+        },
+        {
+          "title": "Les Risques",
+          "content": [
+            "•",
+            "Maintenant que nous savons comment créer des \"prompts\" efficaces, il est crucial",
+            "de comprendre que même un \"prompt\" bien rédigé peut être exploité. C'est pourquoi",
+            "nous allons maintenant aborder les risques liés à la manipulation des modèles d’IA.",
+            "•",
+            "Nous abordons les risques suivants :",
+            "•",
+            "Prompt Injection",
+            "•",
+            "Prompt Leaking",
+            "•",
+            "Jail Breaking",
+            "41"
+          ]
+        },
+        {
+          "title": "Les Risques",
+          "content": []
+        },
+        {
+          "title": "Prompt Injection",
+          "content": [
+            "•",
+            "L'injection de \"prompt\" est utilisée pour détourner la sortie d'un modèle de langage en injectant",
+            "une commande non fiable qui annule l'instruction d'un \"prompt\".",
+            "•",
+            "Cela peut facilement se produire si vous concaténez simplement votre \"prompt\" avec un autre",
+            "\"prompt\" généré par un utilisateur.",
+            "42"
+          ]
+        },
+        {
+          "title": "Les Risques",
+          "content": []
+        },
+        {
+          "title": "Prompt leaking",
+          "content": [
+            "•",
+            "Le \"prompt leaking\" vise à forcer le modèle à cracher des informations sur son propre",
+            "\"prompt\".",
+            "•",
+            "Cela peut conduire à la fuite d'informations sensibles, privées ou confidentielles.",
+            "43"
+          ]
+        },
+        {
+          "title": "Les Risques",
+          "content": []
+        },
+        {
+          "title": "Jail Breaking",
+          "content": [
+            "•",
+            "Le \"jailbreaking\" est une autre forme d'injection de \"prompt\" dont le but est de contourner les",
+            "fonctions de sécurité et de modération.",
+            "•",
+            "Les grands modèles de langage (LLM) fournis via des API peuvent être couplés à des",
+            "fonctions de sécurité ou à une modération de contenu qui peut être contournée par des",
+            "\"prompts\"/attaques malveillants.",
+            "•",
+            "Cela peut sembler être une tâche difficile, mais ce n'est pas le cas, car le modèle est",
+            "généralement servi de manière statique et peut présenter ces vulnérabilités en raison de",
+            "nombreux facteurs, tels que les données sur lesquelles il a été entraîné, etc.",
+            "44"
+          ]
+        },
+        {
+          "title": "Les Risques",
+          "content": [
+            "45"
+          ]
+        },
+        {
+          "title": "Conclusion",
+          "content": [
+            "•",
+            "Le prompt engineering se base sur la fourniture de contexte, de directives",
+            "et d'exemples pour diriger le modèle vers un objectif défini.",
+            "•",
+            "Ces éléments facilitent la tâche du modèle, garantissant des réponses",
+            "adéquates et bien pensées.",
+            "•",
+            "Il s'agit d'un processus itératif : les prompts sont des points de départ pour",
+            "un cheminement progressif vers un but, et non des fins en soi.",
+            "•",
+            "Ils servent de guides pour explorer des domaines nouveaux et inattendus"
+          ]
+        },
+        {
+          "title": "Merci de votre attention",
+          "content": [
+            "46"
+          ]
+        }
+      ],
+      "raw": [
+        "2",
+        "C'est important pour la recherche, les découvertes et les avancées.",
+        "Cela aide à tester et à évaluer les limites des LLM (Large Language Models, ou grands modèles de",
+        "langage).",
+        "Cela permet toutes sortes d'applications innovantes basées sur les LLM.",
+        "3",
+        "Nombre de mots limité par prompt",
+        "Nombre de prompts limité par chaîne",
+        "Manque de transparence",
+        "Manque de reproductibilité",
+        "Décrire les tâches avec précision et créativité",
+        "Aucune compétence d'expert requise (Booléen, code)",
+        "Entrées multilingues",
+        "...et bien d'autres",
+        "11",
+        "•",
+        "L'",
+        "est la pratique consistant à développer et à optimiser ces invites",
+        "pour utiliser de manière efficace les modèles de langage (ML) dans diverses applications.",
+        "•",
+        "L'ingénierie des \"prompts\" est un processus de création d'un ensemble d'invites, ou de",
+        "questions, qui sont utilisées pour guider l'utilisateur vers le résultat désiré.",
+        "•",
+        "C'est un outil efficace pour les concepteurs afin de créer des expériences utilisateur faciles à",
+        "utiliser et intuitives.",
+        "•",
+        "Cette méthode est souvent employée dans la conception interactive et le développement de",
+        "logiciels, car elle permet aux utilisateurs de comprendre facilement comment interagir avec un",
+        "système ou un produit.",
+        "Explique le Prompt Engineering",
+        "L'ingénierie des \"prompts\" (ou \"invites\") fait",
+        "référence au processus de conception et",
+        "d'optimisation des \"prompts\" afin d'obtenir les",
+        "réponses souhaitées d'un modèle de langage",
+        "comme ChatGPT. Elle implique de rédiger",
+        "soigneusement des instructions ou des questions",
+        "données au modèle pour guider son comportement",
+        "et générer des résultats plus précis ou plus",
+        "pertinents. [...]",
+        "Tu es un enfant de maternelle,",
+        "Explique le Prompt",
+        "Engineering.",
+        "Imagine que tu joues à un jeu avec tes amis, et",
+        "que tu veux qu'ils fassent quelque chose de",
+        "spécifique. L'ingénierie des \"prompts\" est comme",
+        "donner à tes amis de très bonnes instructions ou",
+        "des indices pour les aider à savoir quoi faire dans",
+        "le jeu. [...]",
+        "Explique le Prompt Engineering avec l'aide",
+        "du contexte : L'ingénierie des \"prompts\"...",
+        "est une technique utilisée pour influencer le",
+        "comportement des grands modèles de",
+        "langage (LLM) sans altérer leurs poids ou",
+        "paramètres sous-jacents.",
+        "L'ingénierie des \"prompts\", ou \"prompting\" en",
+        "contexte, est une technique utilisée pour influencer",
+        "le comportement des grands modèles de langage",
+        "(LLM) sans altérer leurs poids ou paramètres sous-",
+        "jacents.",
+        "Trouve le terme générique approprié pour",
+        "l'ingénierie des \"prompts\", en ne",
+        "considérant que \"Gestion et analyse des",
+        "données\", \"Développement d'applications\"",
+        "et \"Ingénierie informatique\" comme",
+        "réponses possibles.",
+        "Le terme générique approprié pour l'ingénierie des",
+        "\"prompts\" serait \"Ingénierie informatique",
+        "Trouve le terme générique approprié pour l'ingénierie des",
+        "\"prompts\", en ne considérant que \"Gestion et analyse des",
+        "données\", \"Développement d'applications\" et \"Ingénierie",
+        "informatique\" comme réponses possibles.",
+        "Terme générique pour Frontend",
+        "Développement d'applications",
+        "Terme générique pour l'IA générative",
+        "Gestion et analyse des données",
+        "Terme générique pour le Cloud",
+        "Ingénierie informatique",
+        "Terme générique pour le Traitement du langage",
+        "naturel",
+        "Gestion et analyse des données",
+        "Terme générique pour les applications mobiles",
+        "Développement d'applications",
+        "Terme générique pour l'ingénierie des \"prompts\"",
+        "Développement d'applications",
+        "Explique le Prompt Engineering et définis le",
+        "terme subordonné. Formate la sortie en",
+        "JSON, par exemple.",
+        "•",
+        "• Visez la brièveté et la clarté",
+        "• Utilisez le langage le plus simple possible",
+        "•Exemple :",
+        "• Prompt confus et format de question :",
+        "• \"Pouvez-vous me fournir une explication détaillée du processus de",
+        "photosynthèse et de l'importance de cette réaction biochimique ?«",
+        "• Prompt plus concis et format d'instruction :",
+        "• \"Expliquez en détail le processus de photosynthèse et son importance.\"",
+        "•",
+        "• Évitez le langage vague et ambigu.",
+        "• Soyez aussi spécifique que nécessaire.",
+        "• Exemple :",
+        "Prompt ambigu :",
+        "➔",
+        "\"Comment est-ce que je produis un rapport ?",
+        "Prompt plus clair et non ambigu :",
+        "➔",
+        "\"Explique les étapes communes pour écrire un article de recherche",
+        "pour un journal académique évalué par des pairs.\"",
+        "•",
+        "Fournissez du contexte pour améliorer le raisonnement.",
+        "Construisez des \"prompts\" structurés et cohérents.",
+        "•",
+        "\"Prompt\" non structuré sans contexte :",
+        "➔",
+        "\"Mentionne les tâches impliquées dans la rédaction d'un article de",
+        "recherche.«",
+        "\"Prompt\" structuré, incluant du contexte :",
+        "➔",
+        "\"Liste les étapes impliquées dans la rédaction d'un article de recherche",
+        "pour un travail d'étudiant. Commence par la sélection d'un sujet, et termine par la",
+        "relecture du brouillon final.\"",
+        "•",
+        "Évitez de combiner plusieurs tâches en un seul prompt.",
+        "Évitez de demander plusieurs résultats/formats dans un seul prompt.",
+        "Divisez les tâches qui impliquent plusieurs étapes ou sujets... ...en prompts",
+        "séparés.",
+        "•",
+        "Exemple :",
+        "\"Concevoir une campagne de marketing complète pour un nouveau produit éco-",
+        "responsable, en détaillant le public cible, les messages clés et les stratégies",
+        "promotionnelles. Inclure des exemples spécifiques de supports publicitaires tels que",
+        "les médias sociaux, la presse écrite et la télévision, et créer une maquette visuelle",
+        "d'une publicité dans un style minimaliste moderne. Rédiger un texte alternatif",
+        "significatif pour la publicité, résumant son contenu pour une meilleure accessibilité.",
+        "Enfin, rédiger un script de présentation de 2 minutes pour présenter cette campagne",
+        "de marketing à des investisseurs potentiels.\"",
+        "•",
+        "Style & ton",
+        "Format, langage, ou type de contenu",
+        "Profondeur et longueur",
+        "Température = paramètre contrôlant la précision et la créativité",
+        "•",
+        "Exemples :",
+        "Style & Ton : \"Rédige un paragraphe sur XYZ dans le style simpliste d'un",
+        "journal à sensation. Utilise un ton sensationnel.\"",
+        "Profondeur & longueur : \"Fournis une argumentation juridique de haut niveau",
+        "sur le sujet de XYZ qui ne dépasse pas 500 mots.\"",
+        "Format, langue, type de contenu : \"Par exemple : Un tableau à trois colonnes ;",
+        "un poème en swahili ; un script en Python\"",
+        "Température : \"Équilibre créativité et précision, selon la tâche.\"",
+        "•",
+        "Utiliser l'IA pour générer ou améliorer des \"prompts\"",
+        "Demander à l'IA de rédiger un \"prompt\" pour vous !",
+        "➔",
+        "\"Meta-prompting\" : Décrivez le résultat, l'application, l'objectif souhaités,",
+        "Améliorer vos propres \"prompts\" en utilisant l'IA.",
+        "➔",
+        "Soumettez votre propre \"prompt\" à l'IA et demandez-lui des",
+        "commentaires et des améliorations.",
+        "Demander à l'outil d'IA générative s'il comprend votre \"prompt\" et comment il",
+        "le fait.",
+        "➔",
+        "Demandez un exemple de sortie annoté.",
+        "➔",
+        "Ou demandez à l'outil d'expliquer les étapes qu'il effectuerait sur la",
+        "base de votre \"prompt\".",
+        ": Certains outils améliorent automatiquement les \"prompts\" humains, comme",
+        "DALL-E 3.",
+        "25",
+        "est un paramètre utilisé dans les modèles de langage pour contrôler le",
+        "degré de diversité des réponses générées.",
+        "Elle est spécifique aux modèles utilisant des techniques de génération probabiliste telles que le softmax.",
+        "La taille du modèle, peut influencer sa capacité à comprendre",
+        "et à générer des réponses précises en fonction du prompt donné.",
+        "➔",
+        "Des modèles plus grands peuvent avoir une capacité plus importante à",
+        "capturer la complexité du langage et à produire des réponses de meilleure",
+        "qualité.",
+        "26",
+        "\"Décrivez un coucher de soleil sur une plage.\"",
+        "\"Le coucher de soleil sur la plage était un spectacle éblouissant de couleurs vives. Le",
+        "ciel était teinté de nuances d'orange, de rose et de violet, créant une toile magnifique",
+        "au-dessus de l'océan scintillant. Les vagues douces caressaient doucement le rivage,",
+        "ajoutant une dimension paisible à cette scène époustouflante.«",
+        "\"Le",
+        "coucher de soleil sur la plage était un moment de tranquillité absolue. Le soleil se",
+        "couchait lentement à l'horizon, illuminant le ciel d'une lueur dorée. Les vagues",
+        "murmuraient doucement tandis que le sable tiède sous mes pieds me procurait un",
+        "sentiment de paix intérieure.\"",
+        "➔",
+        "en modifiant la température de génération, nous obtenons deux résumés avec des styles",
+        "et des détails différents.",
+        "27",
+        "Le Top-k sampling est une technique utilisée dans les modèles de langage pour générer",
+        "du texte de manière probabiliste en limitant le choix des tokens générés aux k tokens les",
+        "plus probables à chaque étape de génération.",
+        ": \"Décrivez votre journée idéale.«",
+        "\"Ma journée",
+        "idéale commencerait par un lever de soleil paisible, suivi d'un petit-déjeuner copieux.",
+        "Ensuite, je passerais la matinée à explorer la nature, en me promenant dans les bois ou",
+        "en faisant du vélo. L'après-midi serait consacré à des activités créatives, comme la",
+        "peinture ou l'écriture. Enfin, je terminerais la journée en regardant le coucher de soleil",
+        "avec mes proches, en savourant un délicieux dîner et en partageant des moments de",
+        "bonheur et de gratitude.\"",
+        "28",
+        "\"Ma journée idéale",
+        "commencerait par un bon petit-déjeuner suivi d'une promenade matinale dans le parc. Je",
+        "passerais ensuite l'après-midi à lire un bon livre ou à regarder un film. Enfin, je terminerais la",
+        "journée en dînant avec ma famille et en profitant d'une soirée détente à la maison.\"",
+        "29",
+        "De nombreuses techniques de \"prompting\" avancées ont été conçues pour améliorer les",
+        "performances sur des tâches complexes.",
+        "•",
+        "\"L’amorce ou priming \"",
+        "•",
+        "\"Least to most\" (Le facile au difficile)",
+        "•",
+        "\"Chain-of thought (CoT)\" (prompting par chaîne de pensée)",
+        "•",
+        "\"Self-Consistency\" (Cohérence-de-soi)",
+        "•",
+        "\"Knowledge Generation Prompting\" (prompting de génération de connaissances)",
+        "30",
+        "•",
+        "L’amorce (ou Priming), dans le cadre du prompt engineering, est une méthode qui",
+        "structure une requête ou une instruction initiale pour un modèle de langage tel que",
+        "GPT-3 ou GPT-4, dans le but de diriger sa réponse.",
+        "•",
+        "Cette technique influence la pertinence, la précision, et le style des réponses",
+        "produites, en apportant des informations contextuelles ou en établissant des",
+        "attentes spécifiques.",
+        "•",
+        "Elle aide à obtenir des résultats plus spécifiques et adaptés, utiles dans diverses",
+        "applications de traitement automatique du langage naturel.",
+        "31",
+        "32",
+        "•",
+        "La méthode du facile au difficile (ou Least-to Most) aborde les limitations des",
+        "techniques initiales de chaîne de pensées en fragmentant les problèmes",
+        "complexes en questions plus simples, tout en conservant une logique",
+        "cohérente.",
+        "•",
+        "Le modèle examine chaque segment individuellement et fusionne ensuite ses",
+        "analyses pour former une réponse unifiée.",
+        "•",
+        "Cette approche, qui s'inscrit dans le cadre du few-shots prompting, s'appuie sur",
+        "des exemples pour orienter le modèle",
+        "33",
+        "34",
+        "•",
+        "La technique initiale des chaînes de pensées, la chaîne de pensées",
+        "traditionnelle (ou Chain of Thought), s'applique lorsque le lien entre l'entrée et",
+        "la sortie n'est pas immédiat.",
+        "•",
+        "Cette méthode dirige le modèle dans un raisonnement structuré et séquencé",
+        "pour traiter des problèmes complexes, en utilisant des exemples comme",
+        "guides.",
+        "•",
+        "Les réponses sont donc à la fois séquencées, logiques et justifiées",
+        "35",
+        "36",
+        "•",
+        "L’auto-cohérence (ou self-consistency) représente une innovation",
+        "significative dans le domaine du prompting.",
+        "•",
+        "Comme la méthode \"Least-to-Most\" (LTM), il utilise de multiples chaînes de",
+        "pensées.",
+        "•",
+        "Cette technique encourage le modèle à produire et à comparer divers",
+        "raisonnements, menant à une sorte de débat interne pour juger de leur",
+        "validité.",
+        "•",
+        "Ce processus d'auto-évaluation permet au modèle de sélectionner les",
+        "arguments les plus solides et d'écarter les moins convaincants, conduisant",
+        "ainsi à une réponse plus aboutie et affinée",
+        "37",
+        "38",
+        "•",
+        "La génération de connaissances (ou Generated Knowledge) consiste à",
+        "intégrer des connaissances externes apportées au cours d'une",
+        "conversation avec les connaissances internes du modèle.",
+        "•",
+        "Cette méthode vise à enrichir la substance et la pertinence des réponses",
+        "sur un sujet ou problème spécifique, sans nécessiter un ajustement fin ou",
+        "fine tuning du modèle",
+        "39",
+        "40",
+        "•",
+        "Maintenant que nous savons comment créer des \"prompts\" efficaces, il est crucial",
+        "de comprendre que même un \"prompt\" bien rédigé peut être exploité. C'est pourquoi",
+        "nous allons maintenant aborder les risques liés à la manipulation des modèles d’IA.",
+        "•",
+        "Nous abordons les risques suivants :",
+        "•",
+        "Prompt Injection",
+        "•",
+        "Prompt Leaking",
+        "•",
+        "Jail Breaking",
+        "41",
+        "•",
+        "L'injection de \"prompt\" est utilisée pour détourner la sortie d'un modèle de langage en injectant",
+        "une commande non fiable qui annule l'instruction d'un \"prompt\".",
+        "•",
+        "Cela peut facilement se produire si vous concaténez simplement votre \"prompt\" avec un autre",
+        "\"prompt\" généré par un utilisateur.",
+        "42",
+        "•",
+        "Le \"prompt leaking\" vise à forcer le modèle à cracher des informations sur son propre",
+        "\"prompt\".",
+        "•",
+        "Cela peut conduire à la fuite d'informations sensibles, privées ou confidentielles.",
+        "43",
+        "•",
+        "Le \"jailbreaking\" est une autre forme d'injection de \"prompt\" dont le but est de contourner les",
+        "fonctions de sécurité et de modération.",
+        "•",
+        "Les grands modèles de langage (LLM) fournis via des API peuvent être couplés à des",
+        "fonctions de sécurité ou à une modération de contenu qui peut être contournée par des",
+        "\"prompts\"/attaques malveillants.",
+        "•",
+        "Cela peut sembler être une tâche difficile, mais ce n'est pas le cas, car le modèle est",
+        "généralement servi de manière statique et peut présenter ces vulnérabilités en raison de",
+        "nombreux facteurs, tels que les données sur lesquelles il a été entraîné, etc.",
+        "44",
+        "45",
+        "•",
+        "Le prompt engineering se base sur la fourniture de contexte, de directives",
+        "et d'exemples pour diriger le modèle vers un objectif défini.",
+        "•",
+        "Ces éléments facilitent la tâche du modèle, garantissant des réponses",
+        "adéquates et bien pensées.",
+        "•",
+        "Il s'agit d'un processus itératif : les prompts sont des points de départ pour",
+        "un cheminement progressif vers un but, et non des fins en soi.",
+        "•",
+        "Ils servent de guides pour explorer des domaines nouveaux et inattendus",
+        "46"
+      ]
+    }
+  ]
+}

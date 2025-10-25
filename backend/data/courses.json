@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Introduction à l’IA",
+    "slug": "intro-ia",
+    "level": "Beginner",
+    "tags": ["ia", "bases"],
+    "summary": "Cours sur les bases de l’intelligence artificielle.",
+    "content": {"type": "pdf", "file_path": "data/IA-Intro.pdf", "total_pages": 40},
+    "visible": true
+  },
+  {
+    "id": 2,
+    "title": "IA et Machine Learning",
+    "slug": "ia-ml",
+    "level": "Intermediate",
+    "tags": ["ml", "ia"],
+    "summary": "Introduction au machine learning.",
+    "content": {"type": "pdf", "file_path": "data/ML-Intro.pdf", "total_pages": 55},
+    "visible": true
+  }
+]

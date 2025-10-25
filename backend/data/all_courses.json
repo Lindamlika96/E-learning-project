@@ -1,0 +1,5227 @@
+[
+  {
+    "course_title": "Chap5_Gestion des tests (1)",
+    "chapters": [
+      {
+        "chapter": "www.esprit.ens.tn",
+        "page_start": 1,
+        "definitions": [],
+        "sections": [
+          {
+            "title": "Se former autrement",
+            "content": []
+          },
+          {
+            "title": "pour une nouvelle génération d’ingénieurs",
+            "content": [
+              "2"
+            ]
+          },
+          {
+            "title": "Test & validation",
+            "content": []
+          },
+          {
+            "title": "Conformément à la certification ISTQB (International  Software Testing Qualification Board",
+            "content": []
+          },
+          {
+            "title": ")",
+            "content": [
+              "3",
+              "",
+              "Introduction",
+              ""
+            ]
+          }
+        ],
+        "raw": [
+          "2",
+          "3",
+          "",
+          "Introduction",
+          ""
+        ]
+      },
+      {
+        "chapter": "Chapitre 1 : Fondamentaux de Test",
+        "page_start": 3,
+        "definitions": [],
+        "sections": [],
+        "raw": [
+          ""
+        ]
+      },
+      {
+        "chapter": "Chapitre 2 : Test pendant le cycle de vie",
+        "page_start": 3,
+        "definitions": [],
+        "sections": [],
+        "raw": [
+          ""
+        ]
+      },
+      {
+        "chapter": "Chapitre 3 : Techniques statiques",
+        "page_start": 3,
+        "definitions": [],
+        "sections": [],
+        "raw": [
+          ""
+        ]
+      },
+      {
+        "chapter": "Chapitre 4 : Technique de conception des tests",
+        "page_start": 3,
+        "definitions": [],
+        "sections": [],
+        "raw": [
+          ""
+        ]
+      },
+      {
+        "chapter": "Chapitre 5 : Gestion des tests",
+        "page_start": 3,
+        "definitions": [],
+        "sections": [],
+        "raw": [
+          ""
+        ]
+      },
+      {
+        "chapter": "Chapitre 6 : Outils de support aux tests",
+        "page_start": 3,
+        "definitions": [
+          {
+            "text": "Définir la stratégie de test, y compris la définition des niveaux de test ainsi"
+          },
+          {
+            "text": "Définition d’un critère d’entrée exigeant que des corrections"
+          },
+          {
+            "text": "B. Estimation des risques et définition de la stratégie"
+          }
+        ],
+        "sections": [
+          {
+            "title": "Tests et validation",
+            "content": [
+              "4"
+            ]
+          },
+          {
+            "title": "Plan",
+            "content": [
+              "",
+              "Introduction",
+              "",
+              "Organisation des tests",
+              "",
+              "Estimation et planification des tests",
+              "",
+              "Suivi et contrôle du déroulement des tests",
+              "",
+              "Gestion de configuration",
+              "",
+              "Test et risques",
+              "",
+              "Gestion des incidents",
+              "",
+              "Conclusion",
+              "",
+              "Exercices",
+              "5"
+            ]
+          },
+          {
+            "title": "Introduction",
+            "content": [
+              "",
+              "Plusieurs acteurs :",
+              "",
+              "Testeurs",
+              "",
+              "Développeurs",
+              "",
+              "Chef de projet",
+              "",
+              "Responsable du test",
+              "",
+              "….",
+              "",
+              "Quel est le rôle des différents acteurs et",
+              "du responsable du test?",
+              "",
+              "Comment sont gérés les tests?",
+              "",
+              "Existe-t-il différents techniques de gestion",
+              "de tests?",
+              "6",
+              "",
+              "La découverte d’anomalies par le test et les revues peut être",
+              "améliorée par l’emploi de testeurs indépendants.",
+              "",
+              "Les options d’indépendance :",
+              "",
+              "Développeurs testant leur propre code",
+              "",
+              "Testeurs indépendants incorporés à l’équipe de développement.",
+              "",
+              "Équipe ou groupe de test indépendant au sein de l’organisation",
+              "",
+              "Testeurs indépendants de l’organisation, de la communauté des",
+              "utilisateurs et de l’Informatique.",
+              "",
+              "Spécialistes de test indépendants pour des objectifs spécifiques de test",
+              "(sécurité, utilisabilité ou normalisé selon une certification)",
+              "",
+              "Testeurs indépendants externes à l’organisation",
+              "",
+              "Une équipe de test indépendante est nécessaire pour des projets",
+              "critiques, complexes et de grande taille"
+            ]
+          },
+          {
+            "title": "Organisation des tests",
+            "content": [
+              "7",
+              "",
+              "Avantages de l’indépendance :",
+              "",
+              "Des testeurs qui reportent au senior manager donne plus de crédibilité",
+              "dans l’organisation",
+              "",
+              "Un chemin de carrière plus évident",
+              "",
+              "Détection des défauts différents et d’une autre nature , ils sont",
+              "impartiaux.",
+              "",
+              "Pouvoir vérifier les hypothèses faites pendant la spécification et",
+              "l’implémentation du système.",
+              "",
+              "Inconvénients des testeurs indépendants :",
+              "",
+              "Déconnexion vis-à-vis de l’équipe de développement",
+              "",
+              "Perte du sens de la responsabilité par les développeurs pour la qualité.",
+              "",
+              "Les testeurs indépendants peuvent constituer un goulet d’étranglement",
+              "aux développeurs comme dernier point de vérification et être accusés",
+              "des retards."
+            ]
+          },
+          {
+            "title": "Organisation des tests",
+            "content": [
+              "8"
+            ]
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "Tâches habituelles du responsable de test:",
+            "content": [
+              "",
+              "Planifier les tests",
+              "",
+              "Démarrer la spécification, la préparation, l’implémentation et",
+              "l’exécution des tests ainsi que surveiller et contrôler l’exécution.",
+              "",
+              "Adapter le planning en fonction des résultats et de l’avancement du",
+              "test et entreprendre les actions nécessaires pour résoudre les problèmes",
+              "",
+              "Mettre en place une gestion de configuration adéquate du logiciel de",
+              "test à des fins de traçabilité.",
+              "",
+              "Introduire des mesures appropriées pour mesurer l’avancement du test",
+              "et évaluer la qualité du test et du produit",
+              "",
+              "Sélectionner les outils pour aider le test et organiser la formation des",
+              "testeurs à l’usage des outils.",
+              "",
+              "Décider de la mise en œuvre de l’environnement de test.",
+              "",
+              "Établir des rapports de synthèse de test à partir des informations",
+              "recueillies pendant le test."
+            ]
+          },
+          {
+            "title": "Organisation des tests",
+            "content": [
+              "9"
+            ]
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "Tâches habituelles des testeurs :",
+            "content": [
+              "",
+              "Passer en revue les plans du test et y contribuer.",
+              "",
+              "Analyser, passer en revue et évaluer, quant à leur testabilité, les",
+              "exigences utilisateurs, les spécifications et les modèles.",
+              "",
+              "Créer des spécifications de test.",
+              "",
+              "Mettre en place l’environnement de test",
+              "",
+              "Préparer et obtenir les données de test.",
+              "",
+              "Implémenter, exécuter, évaluer les résultats et documenter les écarts",
+              "vis-à-vis des résultats attendus.",
+              "",
+              "Utiliser les outils d’administration ou de gestion des tests et les outils",
+              "de surveillance des tests en fonction du besoin.",
+              "",
+              "Mesurer les performances des composants et systèmes (si pertinent).",
+              "",
+              "Passer en revue les tests développés par d’autres."
+            ]
+          },
+          {
+            "title": "Organisation des tests",
+            "content": [
+              "10"
+            ]
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "Compétences nécessaires:",
+            "content": [
+              "",
+              "Aptitudes à communiquer efficacement et préparer des",
+              "rapports de bonne qualité et de forme",
+              "",
+              "Compétences métier",
+              "",
+              "Compétences techniques",
+              "",
+              "Compétences en test logiciel"
+            ]
+          },
+          {
+            "title": "Organisation des tests",
+            "content": [
+              "11"
+            ]
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "La planification du test est une activité continue et est",
+            "content": []
+          },
+          {
+            "title": "effectuée tout au long des processus et activités du",
+            "content": []
+          },
+          {
+            "title": "cycle de développement.",
+            "content": []
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "Le retour issu des activités de test est employé pour",
+            "content": []
+          },
+          {
+            "title": "constater l’évolution des risques et modifier alors la",
+            "content": []
+          },
+          {
+            "title": "planification.",
+            "content": []
+          },
+          {
+            "title": "Estimation et planification des tests",
+            "content": [
+              "12"
+            ]
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "Les activités de la planification des tests pour un",
+            "content": []
+          },
+          {
+            "title": "système ou pour une partie de celui-ci peuvent être:",
+            "content": [
+              "",
+              "Définir le périmètre du test, les risques et identifier les objectifs du test",
+              "",
+              "Définir la stratégie de test, y compris la définition des niveaux de test ainsi",
+              "que celle des critères d’entrée et de sortie.",
+              "",
+              "Intégrer et coordonner des activités de test dans les activités du cycle de",
+              "développement.",
+              "",
+              "Planifier les activités d’analyse, de conception, d’exécution et d’évaluation",
+              "des tests.",
+              "",
+              "Assigner les ressources aux différentes taches de tests.",
+              "",
+              "Définir le volume et la structure du modèle pour la documentation de tests.",
+              "",
+              "Déterminer le niveau de détail pour les procédures de test."
+            ]
+          },
+          {
+            "title": "Estimation et planification des tests",
+            "content": [
+              "13"
+            ]
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "Critères d’entrée",
+            "content": []
+          },
+          {
+            "title": "Définissent quand démarrent les tests et couvrent",
+            "content": []
+          },
+          {
+            "title": ":",
+            "content": []
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "La disponibilité et préparation de l’environnement",
+            "content": []
+          },
+          {
+            "title": "de test",
+            "content": []
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "La préparation des outils de tests dans",
+            "content": []
+          },
+          {
+            "title": "l’environnement de test",
+            "content": []
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "La disponibilité de code testable",
+            "content": []
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "La disponibilité des jeux de données",
+            "content": []
+          },
+          {
+            "title": "Estimation et planification des tests",
+            "content": [
+              "14"
+            ]
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "Critères de Sorties",
+            "content": []
+          },
+          {
+            "title": "Définissent quand arrêter le test, à la fin d’un niveau",
+            "content": []
+          },
+          {
+            "title": "de test ou lorsqu’une série de tests a atteint un objectif",
+            "content": []
+          },
+          {
+            "title": "donné. Ils couvrent  :",
+            "content": [
+              "",
+              "Des mesures d’exhaustivité, comme la couverture de code, de",
+              "fonctionnalités ou de risques.",
+              "",
+              "L’estimation de la densité des anomalies ou des mesures de fiabilité.",
+              "",
+              "Le coût.",
+              "",
+              "Les risques résiduels, comme les anomalies non corrigées ou le manque",
+              "de couverture du test dans certaines parties.",
+              "",
+              "Un calendrier, par exemple, basé sur la date de mise sur le marché."
+            ]
+          },
+          {
+            "title": "Estimation et planification des tests",
+            "content": [
+              "15"
+            ]
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "Estimation des tests",
+            "content": []
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "Deux approches :",
+            "content": [
+              "",
+              "Approche référentiel : Estimation de l’effort de test basée sur des",
+              "mesures d’autres projets.",
+              "",
+              "Approche expertise : estimation des tâches par le détenteur de ces",
+              "tâches ou par des experts."
+            ]
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "L’effort de tests peut dépendre des facteurs suivants :",
+            "content": [
+              "",
+              "Les caractéristiques du produit (exigences, taille, complexité ,sécurité,",
+              "etc..)",
+              "",
+              "Les caractéristiques du processus de développement (outils utilisés,",
+              "savoir faire des personnes impliquées, contrainte de temps)",
+              "",
+              "Les résultats du tests (nombre de défauts et reprise)"
+            ]
+          },
+          {
+            "title": "Estimation et planification des tests",
+            "content": [
+              "16"
+            ]
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "Stratégie de tests",
+            "content": []
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "L’approche de test est la mise en œuvre d’une",
+            "content": []
+          },
+          {
+            "title": "stratégie de test pour un projet spécifique",
+            "content": []
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "Elle est définie et affinée dans les plans et scénarii de",
+            "content": []
+          },
+          {
+            "title": "test.",
+            "content": []
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "Elle comprend typiquement les décisions basées sur le",
+            "content": []
+          },
+          {
+            "title": "projet de test, ses buts ainsi qu’une analyse des",
+            "content": []
+          },
+          {
+            "title": "risques.",
+            "content": []
+          },
+          {
+            "title": "Estimation et planification des tests",
+            "content": [
+              "17",
+              "",
+              "L’approche sélectionnée dépend de plusieurs paramètres",
+              "(contexte, risques, sécurité, les dangers, les ressources",
+              "disponibles…).",
+              "",
+              "Les approches typiques peuvent comprendre:",
+              "",
+              "Une approche analytique, comme le test basé sur les risques où le test est focalisé",
+              "sur les parties à plus haut risque.",
+              "",
+              "Les approches basées sur les modèles, comme le test stochastique qui utilise des",
+              "informations statistiques sur les taux d’erreurs ou sur l’utilisation.",
+              "",
+              "Les approches méthodiques, comme le test basé sur les erreurs, basées sur des",
+              "listes de vérification et sur des caractéristiques de la qualité."
+            ]
+          },
+          {
+            "title": "Estimation et planification des tests",
+            "content": [
+              "18"
+            ]
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "L’objectif du suivi du test est de fournir un retour et",
+            "content": []
+          },
+          {
+            "title": "une visibilité sur les activités de test.",
+            "content": [
+              "",
+              "Fournir un feedback afin d’agir au bon moment.",
+              "",
+              "Collecter les données pour l’estimation de projet à venir."
+            ]
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "Les informations à suivre peuvent être recueillies",
+            "content": []
+          },
+          {
+            "title": "manuellement ou automatiquement et peuvent être",
+            "content": []
+          },
+          {
+            "title": "utilisées pour évaluer les critères de sortie, comme la",
+            "content": []
+          },
+          {
+            "title": "couverture.",
+            "content": []
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "Des mesures peuvent aussi être utilisées pour évaluer",
+            "content": []
+          },
+          {
+            "title": "l’avancement par rapport au calendrier et au budget",
+            "content": []
+          },
+          {
+            "title": "planifiés.",
+            "content": []
+          },
+          {
+            "title": "Suivi de l’avancement des tests",
+            "content": [
+              "19",
+              "",
+              "Les mesures de test habituelles sont:",
+              "",
+              "Le pourcentage du travail consacré à la préparation des cas de test (ou",
+              "pourcentage des cas de test planifiés et préparés).",
+              "",
+              "Pourcentage du travail consacré à la préparation de l’environnement de",
+              "test.",
+              "",
+              "L’exécution de cas de test (par exemple, nombre de cas de test exécutés",
+              "ou non et nombre de cas de test réussis ou échoués).",
+              "",
+              "Les informations sur les défauts (par exemple, densité des défauts, défauts",
+              "trouvés et corrigés, taux des défaillances et résultats du re-test).",
+              "",
+              "Couverture par le test des exigences, des risques ou du code.",
+              "",
+              "Confiance subjective des testeurs dans le produit.",
+              "",
+              "Dates des jalons du test.",
+              "",
+              "Coût du test"
+            ]
+          },
+          {
+            "title": "Suivi de l’avancement des tests",
+            "content": [
+              "20"
+            ]
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "Reporting des tests:",
+            "content": [
+              "",
+              "Ce qui s’est passé pendant une phase de test (les dates où les",
+              "critères de sortie ont été atteints).",
+              "",
+              "Les informations et mesures analysées pour étayer les",
+              "recommandations et décisions pour de futures actions (une",
+              "évaluation des défauts restants, les risques non couverts et le",
+              "niveau de confiance dans le logiciel testé, …)"
+            ]
+          },
+          {
+            "title": "Suivi de l’avancement des tests",
+            "content": [
+              "21"
+            ]
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "Contrôle des tests",
+            "content": [
+              "",
+              "Prendre des décisions sur la base des informations recueillies",
+              "lors du suivi des tests",
+              "",
+              "Une nouvelle affectation de priorités aux tests en cas de mise",
+              "en évidence d’un risque identifié",
+              "",
+              "Une modification du calendrier de test en raison de la",
+              "disponibilité d’un environnement de test.",
+              "",
+              "Définition d’un critère d’entrée exigeant que des corrections",
+              "soient testées par le développeur avant de les accepter dans",
+              "une version."
+            ]
+          },
+          {
+            "title": "Suivi de l’avancement des tests",
+            "content": [
+              "22"
+            ]
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "Elle permet d’assurer :",
+            "content": [
+              "",
+              "Tous les éléments faisant partie du testware sont identifiés,",
+              "sous contrôle de versions",
+              "",
+              "Les changements sont identifiés et retraçables, reliés les uns",
+              "aux autres et aux éléments de développement (objets de test),",
+              "de sorte que la traçabilité peut être maintenue pendant tout le",
+              "processus du test.",
+              "",
+              "Tous les documents identifiés et les éléments du logiciel sont",
+              "référencés de manière non ambiguë dans la documentation de",
+              "test."
+            ]
+          },
+          {
+            "title": "Gestion de configuration",
+            "content": [
+              "23"
+            ]
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "Risques liés au projet :",
+            "content": [
+              "",
+              "Problèmes d’acquisition , défaillance d’une tierce partie",
+              "",
+              "Problèmes organisationnels",
+              "",
+              "Problèmes de personnel, Manque de compétence, techniques",
+              "",
+              "Environnement de test indisponible"
+            ]
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "Risques liés au produit :",
+            "content": [
+              "",
+              "Fonctionnalité manquante",
+              "",
+              "Caractéristique non fonctionnelle de moindre qualité",
+              "",
+              "Possibilité qu’un logiciel ou système entraîne des dommages",
+              "à des personnes ou à des entreprises."
+            ]
+          },
+          {
+            "title": "Test et risques",
+            "content": [
+              "24"
+            ]
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "Qu’est ce qu’un incident ?",
+            "content": [
+              "",
+              "Tout événement arrivant pendant les tests qui requiert une",
+              "vérification"
+            ]
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "Causes possibles sont :",
+            "content": [
+              "",
+              "Bugs dans l’application",
+              "",
+              "Tests non exécutés correctement",
+              "",
+              "Résultats attendus incorrects"
+            ]
+          },
+          {
+            "title": "Gestion des incidents",
+            "content": [
+              "25",
+              "Approche de test adéquat ou non ?",
+              "Que s’est passé durant",
+              "Cette semaine ?",
+              "Rentabilité",
+              "Année précédente",
+              "Combien de fautes",
+              "attendus?"
+            ]
+          },
+          {
+            "title": "Gestion des incidents",
+            "content": [
+              "26"
+            ]
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "Les rapports d’incidents peuvent avoir les objectifs",
+            "content": []
+          },
+          {
+            "title": "suivants :",
+            "content": [
+              "",
+              "Fournir aux développeurs et aux autres parties un retour sur",
+              "le problème concerné pour en permettre l’identification, la",
+              "localisation et la correction nécessaire.",
+              "",
+              "Fournir aux responsables du test le moyen de suivre la qualité",
+              "d’un système sous test et l’avancement du test.",
+              "",
+              "Fournir des idées pour l’amélioration du processus de test."
+            ]
+          },
+          {
+            "title": "Gestion des incidents",
+            "content": [
+              "27"
+            ]
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "Comment peut on rédiger un bon rapport d’incident?",
+            "content": [
+              "",
+              "Approche attentive lors de l’exécution des tests",
+              "",
+              "Essayer de reproduire le bug",
+              "",
+              "Essayer d’isoler le bug",
+              "",
+              "Mentionner la priorité et la sévérité du bug",
+              "",
+              "Sélectionner les bons termes lors de la description du bug"
+            ]
+          },
+          {
+            "title": "Gestion des incidents",
+            "content": [
+              "28"
+            ]
+          },
+          {
+            "title": "Gestion des incidents",
+            "content": [
+              "29",
+              "",
+              "Les détails du rapport d’incident peuvent inclure :",
+              "",
+              "Date de l’incident, organisation faisant part de l’incident, auteur.",
+              "",
+              "Résultats attendus et effectifs.",
+              "",
+              "Identification ou élément de configuration du logiciel ou système.",
+              "",
+              "Processus du cycle de vie du logiciel ou du système au cours duquel l’incident a été observé",
+              "",
+              "Description de l’anomalie pour permettre son élimination, y compris les traces, extraits de",
+              "la base de données ou captures d’écrans",
+              "",
+              "Degré de l’impact sur les intérêts des détenteurs d’enjeux.",
+              "",
+              "Sévérité de l’impact sur le système.",
+              "",
+              "Urgence ou priorité de la correction.",
+              "",
+              "Etat de l’incident (ouvert, en attente de correction, corrigé, clôturé).",
+              "",
+              "Conclusions et recommandations.",
+              "",
+              "Problèmes globaux, comme d’autres parties pouvant être impactées par une modification",
+              "résultant de l’incident.",
+              "",
+              "Historique des modifications, telles que la séquence des actions entreprises par des",
+              "membres de l’équipe du projet afin de localiser l’incident, de corriger et d’en confirmer la",
+              "correction.",
+              "",
+              "Références, incluant l’identité du cas de test ou la spécification qui a permis d’identifier le",
+              "problème."
+            ]
+          },
+          {
+            "title": "Gestion des incidents",
+            "content": [
+              "30"
+            ]
+          },
+          {
+            "title": "",
+            "content": []
+          },
+          {
+            "title": "La gestion des tests vérifie les objectifs suivants :",
+            "content": [
+              "",
+              "Organisation des tests : l’indépendance peut être assuré par",
+              "différents structures organisationnelles.",
+              "",
+              "Les tests devront être estimés et planifiés.",
+              "",
+              "Suivre et contrôler le déroulement des tests est primordial.",
+              "",
+              "Assister les tests par la gestion de configuration.",
+              "",
+              "Tester en tenant compte des risques.",
+              "",
+              "Analyser les incidents et leurs effets direct et indirect sur les",
+              "tests et les processus dépendants",
+              "",
+              "Gérer les incidents.",
+              "",
+              "Conformité aux standards et aux normes : des tests bien gérés",
+              "peuvent garantir une bonne qualité du logiciel."
+            ]
+          },
+          {
+            "title": "Conclusion",
+            "content": [
+              "31"
+            ]
+          },
+          {
+            "title": "Exercice",
+            "content": []
+          },
+          {
+            "title": "1. Pourquoi est-il nécessaire de définir une stratégie de test?",
+            "content": [
+              "A. Comme il ya de nombreuses façons de tester le logiciel, il faut réfléchir",
+              "pour décider quel sera le moyen le plus efficace pour tester le projet en",
+              "main.",
+              "B. Démarrer les tests sans planification préalable conduit à des tests",
+              "chaotiques et inefficace",
+              "C. Les défauts logiciels peut entraîner une perte d'argent, le temps, la",
+              "réputation de l'entreprise, et dans les cas extrêmes blessures et de",
+              "décès. Il est donc essentiel d'avoir une stratégie de test appropriée en",
+              "place.",
+              "D. La stratégie est nécessaire pour informer le chef du projet comment",
+              "l'équipe de test va programmer les cycles de tests."
+            ]
+          },
+          {
+            "title": "2. Quel critère ne peut pas être classé comme critère de sortie des tests ?",
+            "content": [
+              "A. Le coût.",
+              "B. 100% de couverture du code.",
+              "C. Un calendrier basé sur la date de mise en marché.",
+              "D. La disponibilité des jeux de données.",
+              "32"
+            ]
+          },
+          {
+            "title": "Exercice",
+            "content": []
+          },
+          {
+            "title": "3. Quelle information ne figure pas dans un rapport de problème ?",
+            "content": [
+              "A. Le nombre d'erreurs.",
+              "B. L'identification des logiciels testés.",
+              "C. La description du problème.",
+              "D. L’état."
+            ]
+          },
+          {
+            "title": "4. Les tests du plus haut niveau d’indépendance sont faits par :",
+            "content": [
+              "A. Les développeurs",
+              "B. Les ingénieurs de l’équipe tests",
+              "C. Les managers",
+              "D. Une entité en dehors du sphère du projet."
+            ]
+          },
+          {
+            "title": "5. Les Tests doivent s’arrêter quand :",
+            "content": [
+              "A. Tous les tests planifiés sont exécutés",
+              "B. Ça dépend des risques du système à tester",
+              "C. Le temps alloué aux tests de composant est consommé",
+              "D. Tous les défauts sont corrigés correctement",
+              "33"
+            ]
+          },
+          {
+            "title": "Exercice",
+            "content": []
+          },
+          {
+            "title": "6. Parmi les propositions suivantes, laquelle ne fait pas partie des fonctions",
+            "content": []
+          },
+          {
+            "title": "de la gestion des tests ?",
+            "content": [
+              "A. Estimation des risques",
+              "B. Estimation des risques et définition de la stratégie",
+              "C. Mise en place du budget et de l'intervalle de temps",
+              "D. Organisation des équipes de test"
+            ]
+          },
+          {
+            "title": "7. QueIIes sont les informations généralement consignées dans un rapport",
+            "content": []
+          },
+          {
+            "title": "d’incident ?",
+            "content": [
+              "A. Les informations décrivant les modifications à attendre dans la",
+              "planification des ressources pour le test.",
+              "B. Les informations permettant une évaluation de I’avancement du test et de",
+              "la fin du test.",
+              "C. Les informations sur le nombre total d'erreurs susceptibles de survenir",
+              "pendant I’ensemble du processus de test.",
+              "D. Les informations permettant la reproduction de I'erreur potentielle.",
+              "34"
+            ]
+          },
+          {
+            "title": "Exercice",
+            "content": []
+          },
+          {
+            "title": "8. QueIIes sont les exigences relatives à la gestion de la configuration",
+            "content": []
+          },
+          {
+            "title": "devant être remplies du point de vue du test ?",
+            "content": [
+              "A. Gestion des versions, gestion de la configuration, suivi de l'état des",
+              "erreurs et des modifications, audits de configuration",
+              "B. Gestion des cas de test, planning d'intégration, suivi de l'état des erreurs",
+              "et des modifications",
+              "C. Gestion de la configuration, prise en charge des Outils de test, audits de",
+              "configuration",
+              "D. Gestion des versions, gestion de la configuration, planning d’intégration",
+              "et gestion des mises à jour"
+            ]
+          }
+        ],
+        "raw": [
+          "",
+          "Laboratoire de tests",
+          "4",
+          "",
+          "Introduction",
+          "",
+          "Organisation des tests",
+          "",
+          "Estimation et planification des tests",
+          "",
+          "Suivi et contrôle du déroulement des tests",
+          "",
+          "Gestion de configuration",
+          "",
+          "Test et risques",
+          "",
+          "Gestion des incidents",
+          "",
+          "Conclusion",
+          "",
+          "Exercices",
+          "5",
+          "",
+          "Plusieurs acteurs :",
+          "",
+          "Testeurs",
+          "",
+          "Développeurs",
+          "",
+          "Chef de projet",
+          "",
+          "Responsable du test",
+          "",
+          "….",
+          "",
+          "Quel est le rôle des différents acteurs et",
+          "du responsable du test?",
+          "",
+          "Comment sont gérés les tests?",
+          "",
+          "Existe-t-il différents techniques de gestion",
+          "de tests?",
+          "6",
+          "",
+          "La découverte d’anomalies par le test et les revues peut être",
+          "améliorée par l’emploi de testeurs indépendants.",
+          "",
+          "Les options d’indépendance :",
+          "",
+          "Développeurs testant leur propre code",
+          "",
+          "Testeurs indépendants incorporés à l’équipe de développement.",
+          "",
+          "Équipe ou groupe de test indépendant au sein de l’organisation",
+          "",
+          "Testeurs indépendants de l’organisation, de la communauté des",
+          "utilisateurs et de l’Informatique.",
+          "",
+          "Spécialistes de test indépendants pour des objectifs spécifiques de test",
+          "(sécurité, utilisabilité ou normalisé selon une certification)",
+          "",
+          "Testeurs indépendants externes à l’organisation",
+          "",
+          "Une équipe de test indépendante est nécessaire pour des projets",
+          "critiques, complexes et de grande taille",
+          "7",
+          "",
+          "Avantages de l’indépendance :",
+          "",
+          "Des testeurs qui reportent au senior manager donne plus de crédibilité",
+          "dans l’organisation",
+          "",
+          "Un chemin de carrière plus évident",
+          "",
+          "Détection des défauts différents et d’une autre nature , ils sont",
+          "impartiaux.",
+          "",
+          "Pouvoir vérifier les hypothèses faites pendant la spécification et",
+          "l’implémentation du système.",
+          "",
+          "Inconvénients des testeurs indépendants :",
+          "",
+          "Déconnexion vis-à-vis de l’équipe de développement",
+          "",
+          "Perte du sens de la responsabilité par les développeurs pour la qualité.",
+          "",
+          "Les testeurs indépendants peuvent constituer un goulet d’étranglement",
+          "aux développeurs comme dernier point de vérification et être accusés",
+          "des retards.",
+          "8",
+          "",
+          "Planifier les tests",
+          "",
+          "Démarrer la spécification, la préparation, l’implémentation et",
+          "l’exécution des tests ainsi que surveiller et contrôler l’exécution.",
+          "",
+          "Adapter le planning en fonction des résultats et de l’avancement du",
+          "test et entreprendre les actions nécessaires pour résoudre les problèmes",
+          "",
+          "Mettre en place une gestion de configuration adéquate du logiciel de",
+          "test à des fins de traçabilité.",
+          "",
+          "Introduire des mesures appropriées pour mesurer l’avancement du test",
+          "et évaluer la qualité du test et du produit",
+          "",
+          "Sélectionner les outils pour aider le test et organiser la formation des",
+          "testeurs à l’usage des outils.",
+          "",
+          "Décider de la mise en œuvre de l’environnement de test.",
+          "",
+          "Établir des rapports de synthèse de test à partir des informations",
+          "recueillies pendant le test.",
+          "9",
+          "",
+          "Passer en revue les plans du test et y contribuer.",
+          "",
+          "Analyser, passer en revue et évaluer, quant à leur testabilité, les",
+          "exigences utilisateurs, les spécifications et les modèles.",
+          "",
+          "Créer des spécifications de test.",
+          "",
+          "Mettre en place l’environnement de test",
+          "",
+          "Préparer et obtenir les données de test.",
+          "",
+          "Implémenter, exécuter, évaluer les résultats et documenter les écarts",
+          "vis-à-vis des résultats attendus.",
+          "",
+          "Utiliser les outils d’administration ou de gestion des tests et les outils",
+          "de surveillance des tests en fonction du besoin.",
+          "",
+          "Mesurer les performances des composants et systèmes (si pertinent).",
+          "",
+          "Passer en revue les tests développés par d’autres.",
+          "10",
+          "",
+          "Aptitudes à communiquer efficacement et préparer des",
+          "rapports de bonne qualité et de forme",
+          "",
+          "Compétences métier",
+          "",
+          "Compétences techniques",
+          "",
+          "Compétences en test logiciel",
+          "11",
+          "12",
+          "",
+          "Définir le périmètre du test, les risques et identifier les objectifs du test",
+          "",
+          "Définir la stratégie de test, y compris la définition des niveaux de test ainsi",
+          "que celle des critères d’entrée et de sortie.",
+          "",
+          "Intégrer et coordonner des activités de test dans les activités du cycle de",
+          "développement.",
+          "",
+          "Planifier les activités d’analyse, de conception, d’exécution et d’évaluation",
+          "des tests.",
+          "",
+          "Assigner les ressources aux différentes taches de tests.",
+          "",
+          "Définir le volume et la structure du modèle pour la documentation de tests.",
+          "",
+          "Déterminer le niveau de détail pour les procédures de test.",
+          "13",
+          "14",
+          "",
+          "Des mesures d’exhaustivité, comme la couverture de code, de",
+          "fonctionnalités ou de risques.",
+          "",
+          "L’estimation de la densité des anomalies ou des mesures de fiabilité.",
+          "",
+          "Le coût.",
+          "",
+          "Les risques résiduels, comme les anomalies non corrigées ou le manque",
+          "de couverture du test dans certaines parties.",
+          "",
+          "Un calendrier, par exemple, basé sur la date de mise sur le marché.",
+          "15",
+          "",
+          "Approche référentiel : Estimation de l’effort de test basée sur des",
+          "mesures d’autres projets.",
+          "",
+          "Approche expertise : estimation des tâches par le détenteur de ces",
+          "tâches ou par des experts.",
+          "",
+          "Les caractéristiques du produit (exigences, taille, complexité ,sécurité,",
+          "etc..)",
+          "",
+          "Les caractéristiques du processus de développement (outils utilisés,",
+          "savoir faire des personnes impliquées, contrainte de temps)",
+          "",
+          "Les résultats du tests (nombre de défauts et reprise)",
+          "16",
+          "17",
+          "",
+          "L’approche sélectionnée dépend de plusieurs paramètres",
+          "(contexte, risques, sécurité, les dangers, les ressources",
+          "disponibles…).",
+          "",
+          "Les approches typiques peuvent comprendre:",
+          "",
+          "Une approche analytique, comme le test basé sur les risques où le test est focalisé",
+          "sur les parties à plus haut risque.",
+          "",
+          "Les approches basées sur les modèles, comme le test stochastique qui utilise des",
+          "informations statistiques sur les taux d’erreurs ou sur l’utilisation.",
+          "",
+          "Les approches méthodiques, comme le test basé sur les erreurs, basées sur des",
+          "listes de vérification et sur des caractéristiques de la qualité.",
+          "18",
+          "",
+          "Fournir un feedback afin d’agir au bon moment.",
+          "",
+          "Collecter les données pour l’estimation de projet à venir.",
+          "19",
+          "",
+          "Les mesures de test habituelles sont:",
+          "",
+          "Le pourcentage du travail consacré à la préparation des cas de test (ou",
+          "pourcentage des cas de test planifiés et préparés).",
+          "",
+          "Pourcentage du travail consacré à la préparation de l’environnement de",
+          "test.",
+          "",
+          "L’exécution de cas de test (par exemple, nombre de cas de test exécutés",
+          "ou non et nombre de cas de test réussis ou échoués).",
+          "",
+          "Les informations sur les défauts (par exemple, densité des défauts, défauts",
+          "trouvés et corrigés, taux des défaillances et résultats du re-test).",
+          "",
+          "Couverture par le test des exigences, des risques ou du code.",
+          "",
+          "Confiance subjective des testeurs dans le produit.",
+          "",
+          "Dates des jalons du test.",
+          "",
+          "Coût du test",
+          "20",
+          "",
+          "Ce qui s’est passé pendant une phase de test (les dates où les",
+          "critères de sortie ont été atteints).",
+          "",
+          "Les informations et mesures analysées pour étayer les",
+          "recommandations et décisions pour de futures actions (une",
+          "évaluation des défauts restants, les risques non couverts et le",
+          "niveau de confiance dans le logiciel testé, …)",
+          "21",
+          "",
+          "Prendre des décisions sur la base des informations recueillies",
+          "lors du suivi des tests",
+          "",
+          "Une nouvelle affectation de priorités aux tests en cas de mise",
+          "en évidence d’un risque identifié",
+          "",
+          "Une modification du calendrier de test en raison de la",
+          "disponibilité d’un environnement de test.",
+          "",
+          "Définition d’un critère d’entrée exigeant que des corrections",
+          "soient testées par le développeur avant de les accepter dans",
+          "une version.",
+          "22",
+          "",
+          "Tous les éléments faisant partie du testware sont identifiés,",
+          "sous contrôle de versions",
+          "",
+          "Les changements sont identifiés et retraçables, reliés les uns",
+          "aux autres et aux éléments de développement (objets de test),",
+          "de sorte que la traçabilité peut être maintenue pendant tout le",
+          "processus du test.",
+          "",
+          "Tous les documents identifiés et les éléments du logiciel sont",
+          "référencés de manière non ambiguë dans la documentation de",
+          "test.",
+          "23",
+          "",
+          "Problèmes d’acquisition , défaillance d’une tierce partie",
+          "",
+          "Problèmes organisationnels",
+          "",
+          "Problèmes de personnel, Manque de compétence, techniques",
+          "",
+          "Environnement de test indisponible",
+          "",
+          "Fonctionnalité manquante",
+          "",
+          "Caractéristique non fonctionnelle de moindre qualité",
+          "",
+          "Possibilité qu’un logiciel ou système entraîne des dommages",
+          "à des personnes ou à des entreprises.",
+          "24",
+          "",
+          "Tout événement arrivant pendant les tests qui requiert une",
+          "vérification",
+          "",
+          "Bugs dans l’application",
+          "",
+          "Tests non exécutés correctement",
+          "",
+          "Résultats attendus incorrects",
+          "25",
+          "Approche de test adéquat ou non ?",
+          "Que s’est passé durant",
+          "Cette semaine ?",
+          "Rentabilité",
+          "Année précédente",
+          "Combien de fautes",
+          "attendus?",
+          "26",
+          "",
+          "Fournir aux développeurs et aux autres parties un retour sur",
+          "le problème concerné pour en permettre l’identification, la",
+          "localisation et la correction nécessaire.",
+          "",
+          "Fournir aux responsables du test le moyen de suivre la qualité",
+          "d’un système sous test et l’avancement du test.",
+          "",
+          "Fournir des idées pour l’amélioration du processus de test.",
+          "27",
+          "",
+          "Approche attentive lors de l’exécution des tests",
+          "",
+          "Essayer de reproduire le bug",
+          "",
+          "Essayer d’isoler le bug",
+          "",
+          "Mentionner la priorité et la sévérité du bug",
+          "",
+          "Sélectionner les bons termes lors de la description du bug",
+          "28",
+          "29",
+          "",
+          "Les détails du rapport d’incident peuvent inclure :",
+          "",
+          "Date de l’incident, organisation faisant part de l’incident, auteur.",
+          "",
+          "Résultats attendus et effectifs.",
+          "",
+          "Identification ou élément de configuration du logiciel ou système.",
+          "",
+          "Processus du cycle de vie du logiciel ou du système au cours duquel l’incident a été observé",
+          "",
+          "Description de l’anomalie pour permettre son élimination, y compris les traces, extraits de",
+          "la base de données ou captures d’écrans",
+          "",
+          "Degré de l’impact sur les intérêts des détenteurs d’enjeux.",
+          "",
+          "Sévérité de l’impact sur le système.",
+          "",
+          "Urgence ou priorité de la correction.",
+          "",
+          "Etat de l’incident (ouvert, en attente de correction, corrigé, clôturé).",
+          "",
+          "Conclusions et recommandations.",
+          "",
+          "Problèmes globaux, comme d’autres parties pouvant être impactées par une modification",
+          "résultant de l’incident.",
+          "",
+          "Historique des modifications, telles que la séquence des actions entreprises par des",
+          "membres de l’équipe du projet afin de localiser l’incident, de corriger et d’en confirmer la",
+          "correction.",
+          "",
+          "Références, incluant l’identité du cas de test ou la spécification qui a permis d’identifier le",
+          "problème.",
+          "30",
+          "",
+          "Organisation des tests : l’indépendance peut être assuré par",
+          "différents structures organisationnelles.",
+          "",
+          "Les tests devront être estimés et planifiés.",
+          "",
+          "Suivre et contrôler le déroulement des tests est primordial.",
+          "",
+          "Assister les tests par la gestion de configuration.",
+          "",
+          "Tester en tenant compte des risques.",
+          "",
+          "Analyser les incidents et leurs effets direct et indirect sur les",
+          "tests et les processus dépendants",
+          "",
+          "Gérer les incidents.",
+          "",
+          "Conformité aux standards et aux normes : des tests bien gérés",
+          "peuvent garantir une bonne qualité du logiciel.",
+          "31",
+          "A. Comme il ya de nombreuses façons de tester le logiciel, il faut réfléchir",
+          "pour décider quel sera le moyen le plus efficace pour tester le projet en",
+          "main.",
+          "B. Démarrer les tests sans planification préalable conduit à des tests",
+          "chaotiques et inefficace",
+          "C. Les défauts logiciels peut entraîner une perte d'argent, le temps, la",
+          "réputation de l'entreprise, et dans les cas extrêmes blessures et de",
+          "décès. Il est donc essentiel d'avoir une stratégie de test appropriée en",
+          "place.",
+          "D. La stratégie est nécessaire pour informer le chef du projet comment",
+          "l'équipe de test va programmer les cycles de tests.",
+          "A. Le coût.",
+          "B. 100% de couverture du code.",
+          "C. Un calendrier basé sur la date de mise en marché.",
+          "D. La disponibilité des jeux de données.",
+          "32",
+          "A. Le nombre d'erreurs.",
+          "B. L'identification des logiciels testés.",
+          "C. La description du problème.",
+          "D. L’état.",
+          "A. Les développeurs",
+          "B. Les ingénieurs de l’équipe tests",
+          "C. Les managers",
+          "D. Une entité en dehors du sphère du projet.",
+          "A. Tous les tests planifiés sont exécutés",
+          "B. Ça dépend des risques du système à tester",
+          "C. Le temps alloué aux tests de composant est consommé",
+          "D. Tous les défauts sont corrigés correctement",
+          "33",
+          "A. Estimation des risques",
+          "B. Estimation des risques et définition de la stratégie",
+          "C. Mise en place du budget et de l'intervalle de temps",
+          "D. Organisation des équipes de test",
+          "A. Les informations décrivant les modifications à attendre dans la",
+          "planification des ressources pour le test.",
+          "B. Les informations permettant une évaluation de I’avancement du test et de",
+          "la fin du test.",
+          "C. Les informations sur le nombre total d'erreurs susceptibles de survenir",
+          "pendant I’ensemble du processus de test.",
+          "D. Les informations permettant la reproduction de I'erreur potentielle.",
+          "34",
+          "A. Gestion des versions, gestion de la configuration, suivi de l'état des",
+          "erreurs et des modifications, audits de configuration",
+          "B. Gestion des cas de test, planning d'intégration, suivi de l'état des erreurs",
+          "et des modifications",
+          "C. Gestion de la configuration, prise en charge des Outils de test, audits de",
+          "configuration",
+          "D. Gestion des versions, gestion de la configuration, planning d’intégration",
+          "et gestion des mises à jour"
+        ]
+      }
+    ]
+  },
+  {
+    "course_title": "Chapitre 2 - CI-Jenkins",
+    "chapters": [
+      {
+        "chapter": "Module DevOps",
+        "page_start": 1,
+        "definitions": [],
+        "sections": [],
+        "raw": []
+      },
+      {
+        "chapter": "Chapitre 2: Intégration Continue (CI)",
+        "page_start": 1,
+        "definitions": [],
+        "sections": [
+          {
+            "title": "Jenkins",
+            "content": [
+              "ESPRIT – UP ASI (Architecture des Systèmes d’Information)",
+              "Bureau E204",
+              "© 2024-2025",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Plan du cours",
+            "content": []
+          },
+          {
+            "title": "•",
+            "content": []
+          },
+          {
+            "title": "Intégration Continue (Continuous Integration :",
+            "content": []
+          },
+          {
+            "title": "CI",
+            "content": []
+          },
+          {
+            "title": ")",
+            "content": []
+          },
+          {
+            "title": "•",
+            "content": []
+          },
+          {
+            "title": "Définition de Jenkins",
+            "content": []
+          },
+          {
+            "title": "Atelier 1 : Installation et configuration de Jenkins",
+            "content": []
+          },
+          {
+            "title": "•",
+            "content": []
+          },
+          {
+            "title": "Gestion de construction de projets (builds) avec Jenkins",
+            "content": []
+          },
+          {
+            "title": "Atelier 2 : Construction et configuartion de projets/jobs Jenkins",
+            "content": []
+          },
+          {
+            "title": "•",
+            "content": []
+          },
+          {
+            "title": "Travail à faire !",
+            "content": [
+              "2",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Qu'est-ce que l'intégration continue ?",
+            "content": [
+              "•",
+              "Les développeurs soumettent régulièrement leur"
+            ]
+          },
+          {
+            "title": "code à un référentiel partagé.",
+            "content": [
+              "•",
+              "Le système de contrôle de version est surveillé."
+            ]
+          },
+          {
+            "title": "•",
+            "content": []
+          },
+          {
+            "title": "Lorsqu'une soumission est détectée, une",
+            "content": [
+              "construction sera déclenchée automatiquement."
+            ]
+          },
+          {
+            "title": "•",
+            "content": []
+          },
+          {
+            "title": "Si la construction échoue, les développeurs",
+            "content": [
+              "seront immédiatement notifiés.",
+              "3",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Besoin de l'intégration continue ?",
+            "content": [
+              "•",
+              "Détecter les problèmes ou les bugs le plus tôt possible dans le cycle de",
+              "développement.",
+              "•",
+              "Intégrer l'ensemble de la base de code, la construire et la tester en permanence"
+            ]
+          },
+          {
+            "title": "pour attraper les erreurs potentielles plus tôt dans le cycle de vie, ce qui résulte",
+            "content": [
+              "en un logiciel de meilleure qualité."
+            ]
+          },
+          {
+            "title": "→",
+            "content": []
+          },
+          {
+            "title": "Ensemble de pratiques vérifiant de manière automatique et régulière que chaque",
+            "content": [
+              "modification de code n’engendre pas de régression."
+            ]
+          },
+          {
+            "title": "•",
+            "content": []
+          },
+          {
+            "title": "Les outils leaders :",
+            "content": []
+          },
+          {
+            "title": "Jenkins",
+            "content": []
+          },
+          {
+            "title": ", Travis-CI, Gitlab-CI, ...",
+            "content": [
+              "4",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Jenkins - Définition",
+            "content": [
+              "•",
+              "Jenkins : Un serveur open source écrit en Java qui automatise l'intégration continue.",
+              "•",
+              "Interface Web : Utilise un serveur web (comme Apache-Tomcat ou Jetty) pour fournir",
+              "une interface web conviviale."
+            ]
+          },
+          {
+            "title": "•",
+            "content": []
+          },
+          {
+            "title": "Intégration avec les Gestionnaires de Version : S'interface avec des systèmes de",
+            "content": [
+              "gestion de versions (CVS, Git, Subversion SVN) et exécute des scripts (Groovy, Yaml,",
+              "etc.).",
+              "5",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Jenkins - Définition",
+            "content": [
+              "•",
+              "Automatisation de la Construction, des Tests et du Déploiement : Automatise",
+              "les étapes de construction, de tests et de déploiement, facilitant ainsi",
+              "l'intégration continue et la livraison continue."
+            ]
+          },
+          {
+            "title": "•",
+            "content": []
+          },
+          {
+            "title": "Amélioration Continue : Permet aux développeurs d'intégrer rapidement des",
+            "content": [
+              "modifications au projet, accélérant ainsi l'amélioration continue du produit.",
+              "6",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Jenkins - Pipeline",
+            "content": []
+          },
+          {
+            "title": "•",
+            "content": []
+          },
+          {
+            "title": "Un Pipeline est une combinaison de plugins qui permettent de soutenir l'intégration",
+            "content": [
+              "et la mise en place de pipelines de livraison continue en utilisant Jenkins.",
+              "7",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Jenkins - Installation et configuration",
+            "content": []
+          },
+          {
+            "title": "•",
+            "content": []
+          },
+          {
+            "title": "Installation des outils pour le build d’un projet Maven",
+            "content": []
+          },
+          {
+            "title": "•",
+            "content": []
+          },
+          {
+            "title": "Installation et configuration de Jenkins",
+            "content": [
+              "(différents types d’installation: .war, distribution linux, conteneurs, ...)",
+              "•",
+              "Installation de Plugins + Configuration d’outils dans Jenkins",
+              "8",
+              "JENKINS",
+              "JDK, MAVEN et GIT",
+              "PLUGINS",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Jenkins - Plugins",
+            "content": [
+              "Une variété de plugins en tout genre :",
+              "•",
+              "Plugins de constructions (Maven Integration, Pipeline Integration),",
+              "•",
+              "Plugins d’analyse de code (Sonargraph Integration, SonarQube Scanner),",
+              "•",
+              "Plugins de gestion de sources (Git plugin),",
+              "•",
+              "Plugins de gestion de configurations (Prometheus metrics), de VM, de",
+              "conteneurs (Docker Pipeline),"
+            ]
+          },
+          {
+            "title": "•",
+            "content": []
+          },
+          {
+            "title": "...",
+            "content": [
+              "Base de plugins très importante (>1500 plugins)",
+              "9",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Installation et",
+            "content": []
+          },
+          {
+            "title": "configuration de",
+            "content": []
+          },
+          {
+            "title": "Jenkins",
+            "content": []
+          },
+          {
+            "title": "Atelier -1-",
+            "content": [
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Création d’un projet - Job Jenkins",
+            "content": [
+              "•",
+              "La construction (build) d’un projet est assurée par un"
+            ]
+          },
+          {
+            "title": "Job",
+            "content": [
+              "dans Jenkins.",
+              "•",
+              "Un projet dans Jenkins est symbolisé par un \"job\" qui englobe plusieurs étapes du",
+              "processus de build.",
+              "•",
+              "Tous les projets dans Jenkins suivent ces trois étapes :",
+              "1. Création du job."
+            ]
+          },
+          {
+            "title": "2. Configuration",
+            "content": []
+          },
+          {
+            "title": "du job, notamment la configuration des étapes du build.",
+            "content": [
+              "3. Lancement du build."
+            ]
+          },
+          {
+            "title": "•",
+            "content": []
+          },
+          {
+            "title": "Toutes les étapes du build dans les jobs sont gérées directement grâce à des",
+            "content": [
+              "plugins.",
+              "11",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Création d’un projet - Job Jenkins",
+            "content": [
+              "•",
+              "Il existe plusieurs types de job :",
+              "▪",
+              "Free-style"
+            ]
+          },
+          {
+            "title": "▪",
+            "content": []
+          },
+          {
+            "title": "Projet Maven",
+            "content": [
+              "▪"
+            ]
+          },
+          {
+            "title": "Pipeline et multibranche pipeline",
+            "content": []
+          },
+          {
+            "title": "(les plus utilisés pour des projets",
+            "content": []
+          },
+          {
+            "title": "Git)",
+            "content": []
+          },
+          {
+            "title": "▪",
+            "content": []
+          },
+          {
+            "title": "…",
+            "content": [
+              "12",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Configuration d’un projet - Job Jenkins",
+            "content": [
+              "•",
+              "La configuration du Job détermine comment le projet sera construit.",
+              "•",
+              "Les étapes de construction d’un projet sont les suivantes :",
+              "1.",
+              "Récupération du projet.",
+              "2.",
+              "Compilation."
+            ]
+          },
+          {
+            "title": "3.",
+            "content": []
+          },
+          {
+            "title": "Exécution des tests unitaires automatiques (JUnit).",
+            "content": [
+              "4.",
+              "Exécution des tests de qualité (Sonar).",
+              "5.",
+              "Préparation de la version à distribuer.",
+              "6.",
+              "Distribution de la version (Nexus).",
+              "13",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Configuration d’un projet - Job Jenkins",
+            "content": [
+              "•",
+              "Il y a deux façons de configurer la compilation d'un projet :"
+            ]
+          },
+          {
+            "title": "▪",
+            "content": []
+          },
+          {
+            "title": "Méthode formulaire (",
+            "content": []
+          },
+          {
+            "title": "freestyle",
+            "content": []
+          },
+          {
+            "title": "): Vous pouvez configurer le projet en utilisant un",
+            "content": [
+              "formulaire à remplir."
+            ]
+          },
+          {
+            "title": "▪",
+            "content": []
+          },
+          {
+            "title": "Méthode pipeline : L'alternative est d'utiliser un",
+            "content": []
+          },
+          {
+            "title": "pipeline",
+            "content": []
+          },
+          {
+            "title": ", qui configure le projet",
+            "content": [
+              "à l'aide de scripts (en utilisant Groovy). Cette approche permet également de",
+              "paralléliser les étapes du projet et offre une interface plus conviviale pour lire les",
+              "logs.",
+              "14",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Configuration d’un projet - Freestyle",
+            "content": []
+          },
+          {
+            "title": "•",
+            "content": []
+          },
+          {
+            "title": "La configuration du Job Jenkins comporte les éléments suivants :",
+            "content": [
+              "15",
+              "Gestion de code",
+              "source",
+              "Déclencheurs du",
+              "build",
+              "Environnement du",
+              "build",
+              "Actions pré-build",
+              "Étapes du build",
+              "Quel dépôt Git ?",
+              "•",
+              "Public",
+              "•",
+              "Privé",
+              "•",
+              "Manuellement",
+              "•",
+              "Périodiquement",
+              "•",
+              "Build distant",
+              "•",
+              "Webhooks (hook github, gitlab)",
+              "•",
+              "...",
+              "•",
+              "Variables",
+              "d’environnement",
+              "•",
+              "Configuration Sonar",
+              "•",
+              "Règles de nettoyage",
+              "du workspace",
+              "•",
+              "…",
+              "•",
+              "Scripts Maven, gradle, ant",
+              "•",
+              "Scripts shell",
+              "•",
+              "Fichier de construction",
+              "pom.xml",
+              "•",
+              "Publication des rapports",
+              "•",
+              "Envoi de notifications",
+              "(Email..)",
+              "•",
+              "Publication de la javadoc",
+              "•",
+              "…",
+              "Actions post-build",
+              "•",
+              "Étapes  de",
+              "construction Maven",
+              "(si vous choisissez",
+              "de construire un"
+            ]
+          },
+          {
+            "title": "projet maven",
+            "content": [
+              ")",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Configuration d’un projet - Freestyle",
+            "content": []
+          },
+          {
+            "title": "•",
+            "content": []
+          },
+          {
+            "title": "Gestion de code source : permet de configurer l’accès au dépôt Git contenant le",
+            "content": [
+              "code source du projet.",
+              "16",
+              "URL dépôt Git",
+              "Si le dépôt Git",
+              "est privé,",
+              "configurer des",
+              "identifiants",
+              "(Credentials)",
+              "La branche spécifique",
+              "sur laquelle Jenkins va",
+              "se pointer",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Configuration d’un projet - Freestyle",
+            "content": []
+          },
+          {
+            "title": "•",
+            "content": []
+          },
+          {
+            "title": "Déclencheurs du build : cette section permet de configurer l’élément déclencheur",
+            "content": [
+              "de construction.",
+              "17",
+              "Un build est",
+              "programmé",
+              "toutes les 5",
+              "minutes",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Configuration d’un projet - Freestyle",
+            "content": [
+              "•",
+              "Environnement du build : permet de configurer l’environnement du build."
+            ]
+          },
+          {
+            "title": "•",
+            "content": []
+          },
+          {
+            "title": "Actions pré-build : permet de configurer les étapes de construction Maven.",
+            "content": [
+              "18",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Configuration d’un projet - Freestyle",
+            "content": [
+              "•",
+              "Étapes du build : permet de gérer nombreux outils de build pour plusieurs langages,",
+              "Java (Maven, Gradle), .net (MSBuild), scripts Shell, batch Windows, ..",
+              "19",
+              "Indiquer le nom",
+              "du fichier",
+              "de construction",
+              "Exécuter un",
+              "script shell",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Configuration d’un projet - Freestyle",
+            "content": []
+          },
+          {
+            "title": "•",
+            "content": []
+          },
+          {
+            "title": "Actions post-build :  configurer les actions à la suite du build.",
+            "content": [
+              "- Nombreux mécanismes de notification (Slack, SMS, Email),",
+              "- Nombreux types de rapports générés.",
+              "20",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Configuration d’un projet - Pipeline",
+            "content": [
+              "•",
+              "Le"
+            ]
+          },
+          {
+            "title": "pipeline",
+            "content": [
+              "Jenkins est un code qui permet à plusieurs utilisateurs de modifier et",
+              "d'exécuter un processus de manière collaborative.",
+              "•",
+              "Il résout ce problème en introduisant un nouveau langage basé sur Groovy pour",
+              "configurer les tâches.",
+              "•",
+              "Vous pouvez enregistrer le pipeline dans un fichier (pour la gestion de version) et il"
+            ]
+          },
+          {
+            "title": "peut gérer divers scénarios.",
+            "content": [
+              "https://www.jenkins.io/doc/book/pipeline/getting-started/",
+              "21",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Configuration d’un projet - Pipeline",
+            "content": [
+              "•",
+              "La configuration d’un projet Pipeline comporte les éléments suivants :",
+              "22",
+              "Définir script",
+              "pipeline",
+              "•",
+              "Script interne (déclaratif, impératif)",
+              "•",
+              "Jenkinsfile",
+              "Déclencheurs du",
+              "build",
+              "Configurer un SCM",
+              "pipeline",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Configuration d’un projet - Pipeline",
+            "content": []
+          },
+          {
+            "title": "•",
+            "content": []
+          },
+          {
+            "title": "La configuration d’un projet pipeline sur Jenkins :",
+            "content": [
+              "1.",
+              "Créer un \"pipeline\" en tant que type de projet;",
+              "2.",
+              "Définir le script du pipeline;",
+              "3.",
+              "Sauvegarder la configuration, puis lancer le build.",
+              "23",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Configuration d’un projet - Pipeline",
+            "content": [
+              "•",
+              "Pour suivre les meilleures pratiques, il est recommandé d'utiliser un fichier appelé",
+              "\"Jenkinsfile\" stocké dans le référentiel de code (Git) pour définir le pipeline.",
+              "24",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Configuration d’un projet - Pipeline",
+            "content": [
+              "•",
+              "La configuration d’un projet pipeline sur Jenkins à partir du ficher"
+            ]
+          },
+          {
+            "title": "Jenkinsfile :",
+            "content": [
+              "1.",
+              "Pointer vers le fichier Jenkinsfile;",
+              "2.",
+              "Préciser l’URL, la branche, le nom du fichier et les credentials si le dépôt Git est privé;",
+              "3.",
+              "Sauvegarder la configuration, puis lancer le build.",
+              "25",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Résultat du build - Job Jenkins",
+            "content": [
+              "Job réussi",
+              "Historique",
+              "des builds",
+              "Accès",
+              "Configuration /",
+              "Modification d’un",
+              "build",
+              "26",
+              "Lancer un build",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Résultat du build - Job Jenkins",
+            "content": [
+              "27",
+              "•",
+              "En cas d'échec de build, l’icône d'avertissement        apparaît à côté du",
+              "nom du projet sur le tableau de bord.",
+              "•",
+              "Si la construction est réussie, l'icône      s'affiche.",
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Construction et",
+            "content": []
+          },
+          {
+            "title": "configuration de",
+            "content": []
+          },
+          {
+            "title": "Jobs Jenkins",
+            "content": []
+          },
+          {
+            "title": "Atelier -2-",
+            "content": [
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "Travail à faire !",
+            "content": [
+              "29"
+            ]
+          },
+          {
+            "title": "Activité 1",
+            "content": []
+          },
+          {
+            "title": ": Intégration",
+            "content": []
+          },
+          {
+            "title": "continue appliquée à un",
+            "content": []
+          },
+          {
+            "title": "projet MAVEN.",
+            "content": []
+          },
+          {
+            "title": "Activité 2",
+            "content": []
+          },
+          {
+            "title": ": Construction",
+            "content": []
+          },
+          {
+            "title": "d’un projet Pipeline à partir",
+            "content": []
+          },
+          {
+            "title": "d’un fichier Jenkinsfile.",
+            "content": [
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "La suite …",
+            "content": [
+              "30"
+            ]
+          },
+          {
+            "title": "Jobs/builds distribués !",
+            "content": [
+              "© 2024-2025"
+            ]
+          },
+          {
+            "title": "\"Apprendre par le projet, c'est découvrir",
+            "content": []
+          },
+          {
+            "title": "par l'action, créer par la compréhension, et",
+            "content": []
+          },
+          {
+            "title": "réussir par la persévérance.\"",
+            "content": [
+              "31",
+              "nous supportons les objectifs de développement durable"
+            ]
+          }
+        ],
+        "raw": [
+          "ESPRIT – UP ASI (Architecture des Systèmes d’Information)",
+          "Bureau E204",
+          "© 2024-2025",
+          "© 2024-2025",
+          "2",
+          "© 2024-2025",
+          "•",
+          "Les développeurs soumettent régulièrement leur",
+          "•",
+          "Le système de contrôle de version est surveillé.",
+          "construction sera déclenchée automatiquement.",
+          "seront immédiatement notifiés.",
+          "3",
+          "© 2024-2025",
+          "•",
+          "Détecter les problèmes ou les bugs le plus tôt possible dans le cycle de",
+          "développement.",
+          "•",
+          "Intégrer l'ensemble de la base de code, la construire et la tester en permanence",
+          "en un logiciel de meilleure qualité.",
+          "modification de code n’engendre pas de régression.",
+          "4",
+          "© 2024-2025",
+          "•",
+          "Jenkins : Un serveur open source écrit en Java qui automatise l'intégration continue.",
+          "•",
+          "Interface Web : Utilise un serveur web (comme Apache-Tomcat ou Jetty) pour fournir",
+          "une interface web conviviale.",
+          "gestion de versions (CVS, Git, Subversion SVN) et exécute des scripts (Groovy, Yaml,",
+          "etc.).",
+          "5",
+          "© 2024-2025",
+          "•",
+          "Automatisation de la Construction, des Tests et du Déploiement : Automatise",
+          "les étapes de construction, de tests et de déploiement, facilitant ainsi",
+          "l'intégration continue et la livraison continue.",
+          "modifications au projet, accélérant ainsi l'amélioration continue du produit.",
+          "6",
+          "© 2024-2025",
+          "et la mise en place de pipelines de livraison continue en utilisant Jenkins.",
+          "7",
+          "© 2024-2025",
+          "(différents types d’installation: .war, distribution linux, conteneurs, ...)",
+          "•",
+          "Installation de Plugins + Configuration d’outils dans Jenkins",
+          "8",
+          "JENKINS",
+          "JDK, MAVEN et GIT",
+          "PLUGINS",
+          "© 2024-2025",
+          "Une variété de plugins en tout genre :",
+          "•",
+          "Plugins de constructions (Maven Integration, Pipeline Integration),",
+          "•",
+          "Plugins d’analyse de code (Sonargraph Integration, SonarQube Scanner),",
+          "•",
+          "Plugins de gestion de sources (Git plugin),",
+          "•",
+          "Plugins de gestion de configurations (Prometheus metrics), de VM, de",
+          "conteneurs (Docker Pipeline),",
+          "Base de plugins très importante (>1500 plugins)",
+          "9",
+          "© 2024-2025",
+          "© 2024-2025",
+          "•",
+          "La construction (build) d’un projet est assurée par un",
+          "dans Jenkins.",
+          "•",
+          "Un projet dans Jenkins est symbolisé par un \"job\" qui englobe plusieurs étapes du",
+          "processus de build.",
+          "•",
+          "Tous les projets dans Jenkins suivent ces trois étapes :",
+          "1. Création du job.",
+          "3. Lancement du build.",
+          "plugins.",
+          "11",
+          "© 2024-2025",
+          "•",
+          "Il existe plusieurs types de job :",
+          "▪",
+          "Free-style",
+          "▪",
+          "12",
+          "© 2024-2025",
+          "•",
+          "La configuration du Job détermine comment le projet sera construit.",
+          "•",
+          "Les étapes de construction d’un projet sont les suivantes :",
+          "1.",
+          "Récupération du projet.",
+          "2.",
+          "Compilation.",
+          "4.",
+          "Exécution des tests de qualité (Sonar).",
+          "5.",
+          "Préparation de la version à distribuer.",
+          "6.",
+          "Distribution de la version (Nexus).",
+          "13",
+          "© 2024-2025",
+          "•",
+          "Il y a deux façons de configurer la compilation d'un projet :",
+          "formulaire à remplir.",
+          "à l'aide de scripts (en utilisant Groovy). Cette approche permet également de",
+          "paralléliser les étapes du projet et offre une interface plus conviviale pour lire les",
+          "logs.",
+          "14",
+          "© 2024-2025",
+          "15",
+          "Gestion de code",
+          "source",
+          "Déclencheurs du",
+          "build",
+          "Environnement du",
+          "build",
+          "Actions pré-build",
+          "Étapes du build",
+          "Quel dépôt Git ?",
+          "•",
+          "Public",
+          "•",
+          "Privé",
+          "•",
+          "Manuellement",
+          "•",
+          "Périodiquement",
+          "•",
+          "Build distant",
+          "•",
+          "Webhooks (hook github, gitlab)",
+          "•",
+          "...",
+          "•",
+          "Variables",
+          "d’environnement",
+          "•",
+          "Configuration Sonar",
+          "•",
+          "Règles de nettoyage",
+          "du workspace",
+          "•",
+          "…",
+          "•",
+          "Scripts Maven, gradle, ant",
+          "•",
+          "Scripts shell",
+          "•",
+          "Fichier de construction",
+          "pom.xml",
+          "•",
+          "Publication des rapports",
+          "•",
+          "Envoi de notifications",
+          "(Email..)",
+          "•",
+          "Publication de la javadoc",
+          "•",
+          "…",
+          "Actions post-build",
+          "•",
+          "Étapes  de",
+          "construction Maven",
+          "(si vous choisissez",
+          "de construire un",
+          ")",
+          "© 2024-2025",
+          "code source du projet.",
+          "16",
+          "URL dépôt Git",
+          "Si le dépôt Git",
+          "est privé,",
+          "configurer des",
+          "identifiants",
+          "(Credentials)",
+          "La branche spécifique",
+          "sur laquelle Jenkins va",
+          "se pointer",
+          "© 2024-2025",
+          "de construction.",
+          "17",
+          "Un build est",
+          "programmé",
+          "toutes les 5",
+          "minutes",
+          "© 2024-2025",
+          "•",
+          "Environnement du build : permet de configurer l’environnement du build.",
+          "18",
+          "© 2024-2025",
+          "•",
+          "Étapes du build : permet de gérer nombreux outils de build pour plusieurs langages,",
+          "Java (Maven, Gradle), .net (MSBuild), scripts Shell, batch Windows, ..",
+          "19",
+          "Indiquer le nom",
+          "du fichier",
+          "de construction",
+          "Exécuter un",
+          "script shell",
+          "© 2024-2025",
+          "- Nombreux mécanismes de notification (Slack, SMS, Email),",
+          "- Nombreux types de rapports générés.",
+          "20",
+          "© 2024-2025",
+          "•",
+          "Le",
+          "Jenkins est un code qui permet à plusieurs utilisateurs de modifier et",
+          "d'exécuter un processus de manière collaborative.",
+          "•",
+          "Il résout ce problème en introduisant un nouveau langage basé sur Groovy pour",
+          "configurer les tâches.",
+          "•",
+          "Vous pouvez enregistrer le pipeline dans un fichier (pour la gestion de version) et il",
+          "https://www.jenkins.io/doc/book/pipeline/getting-started/",
+          "21",
+          "© 2024-2025",
+          "•",
+          "La configuration d’un projet Pipeline comporte les éléments suivants :",
+          "22",
+          "Définir script",
+          "pipeline",
+          "•",
+          "Script interne (déclaratif, impératif)",
+          "•",
+          "Jenkinsfile",
+          "Déclencheurs du",
+          "build",
+          "Configurer un SCM",
+          "pipeline",
+          "© 2024-2025",
+          "1.",
+          "Créer un \"pipeline\" en tant que type de projet;",
+          "2.",
+          "Définir le script du pipeline;",
+          "3.",
+          "Sauvegarder la configuration, puis lancer le build.",
+          "23",
+          "© 2024-2025",
+          "•",
+          "Pour suivre les meilleures pratiques, il est recommandé d'utiliser un fichier appelé",
+          "\"Jenkinsfile\" stocké dans le référentiel de code (Git) pour définir le pipeline.",
+          "24",
+          "© 2024-2025",
+          "•",
+          "La configuration d’un projet pipeline sur Jenkins à partir du ficher",
+          "1.",
+          "Pointer vers le fichier Jenkinsfile;",
+          "2.",
+          "Préciser l’URL, la branche, le nom du fichier et les credentials si le dépôt Git est privé;",
+          "3.",
+          "Sauvegarder la configuration, puis lancer le build.",
+          "25",
+          "© 2024-2025",
+          "Job réussi",
+          "Historique",
+          "des builds",
+          "Accès",
+          "Configuration /",
+          "Modification d’un",
+          "build",
+          "26",
+          "Lancer un build",
+          "© 2024-2025",
+          "27",
+          "•",
+          "En cas d'échec de build, l’icône d'avertissement        apparaît à côté du",
+          "nom du projet sur le tableau de bord.",
+          "•",
+          "Si la construction est réussie, l'icône      s'affiche.",
+          "© 2024-2025",
+          "© 2024-2025",
+          "29",
+          "© 2024-2025",
+          "30",
+          "© 2024-2025",
+          "31",
+          "nous supportons les objectifs de développement durable"
+        ]
+      }
+    ]
+  },
+  {
+    "course_title": "cours",
+    "chapters": [
+      {
+        "chapter": "Chapitre 2",
+        "page_start": 1,
+        "definitions": [],
+        "sections": [
+          {
+            "title": "Prompt Engineering : Intéragir efficacement",
+            "content": []
+          },
+          {
+            "title": "avec l’IA",
+            "content": []
+          },
+          {
+            "title": "IA for Software Engineering",
+            "content": []
+          },
+          {
+            "title": "A.U 2025-2026",
+            "content": [
+              "2"
+            ]
+          },
+          {
+            "title": "Pourquoi est-il essentiel de maîtriser l'ingénierie des \"prompts\" ?",
+            "content": [
+              "C'est important pour la recherche, les découvertes et les avancées.",
+              "Cela aide à tester et à évaluer les limites des LLM (Large Language Models, ou grands modèles de",
+              "langage).",
+              "Cela permet toutes sortes d'applications innovantes basées sur les LLM."
+            ]
+          },
+          {
+            "title": "Pourquoi ce cours",
+            "content": []
+          },
+          {
+            "title": "Objectifs du chapitre",
+            "content": [
+              "3"
+            ]
+          },
+          {
+            "title": "• Comprendre le rôle des \"prompts\" (ou \"invites\").",
+            "content": []
+          },
+          {
+            "title": "• Connaître les principes de base de la conception de \"prompts\".",
+            "content": []
+          },
+          {
+            "title": "• Vous familiariser avec diverses techniques de \"prompting\".",
+            "content": []
+          },
+          {
+            "title": "• Utiliser les \"prompts\" pour aborder de manière stratégique les pièges de l'IA",
+            "content": []
+          },
+          {
+            "title": "générative.",
+            "content": []
+          },
+          {
+            "title": "• Aligner vos compétences en \"prompting\" avec les meilleures pratiques en",
+            "content": []
+          },
+          {
+            "title": "matière d'intégrité académique.",
+            "content": []
+          },
+          {
+            "title": "Définition",
+            "content": []
+          },
+          {
+            "title": "Qu'est-ce qu'un \"prompt\" ?",
+            "content": []
+          },
+          {
+            "title": "• Une entrée pour un modèle d'IA en langage naturel",
+            "content": []
+          },
+          {
+            "title": "• Via une interface texte, une API, ...ou un microphone*",
+            "content": []
+          },
+          {
+            "title": "• Le modèle d'IA comprend la requête de manière sémantique",
+            "content": []
+          },
+          {
+            "title": "• Puis exécute la tâche souhaitée",
+            "content": []
+          },
+          {
+            "title": "• Une séquence d'invites : les chaînes de \"prompts\" !",
+            "content": []
+          },
+          {
+            "title": "Définition",
+            "content": []
+          },
+          {
+            "title": "Prompts : Avantages et limites",
+            "content": []
+          },
+          {
+            "title": "Limites",
+            "content": [
+              "Nombre de mots limité par prompt",
+              "Nombre de prompts limité par chaîne",
+              "Manque de transparence",
+              "Manque de reproductibilité"
+            ]
+          },
+          {
+            "title": "Avantages",
+            "content": [
+              "Décrire les tâches avec précision et créativité",
+              "Aucune compétence d'expert requise (Booléen, code)",
+              "Entrées multilingues",
+              "...et bien d'autres"
+            ]
+          },
+          {
+            "title": "Types de prompts",
+            "content": []
+          },
+          {
+            "title": "Prompt explicite",
+            "content": []
+          },
+          {
+            "title": "Instructions claires et directes",
+            "content": []
+          },
+          {
+            "title": "Prompt implicite",
+            "content": []
+          },
+          {
+            "title": "Instructions moins directes, basées sur le",
+            "content": []
+          },
+          {
+            "title": "contexte",
+            "content": []
+          },
+          {
+            "title": "Prompt créatif",
+            "content": []
+          },
+          {
+            "title": "Conçu pour encourager des résultats",
+            "content": []
+          },
+          {
+            "title": "originaux et imaginatifs",
+            "content": []
+          },
+          {
+            "title": "Il y a trois types de prompts:",
+            "content": []
+          },
+          {
+            "title": "• Définition : Fournit des instructions claires et directes au",
+            "content": []
+          },
+          {
+            "title": "modèle d'IA.",
+            "content": []
+          },
+          {
+            "title": "• Objectif : Obtenir un résultat précis et exact.",
+            "content": []
+          },
+          {
+            "title": "• Avantage : Fiable et prévisible.",
+            "content": []
+          },
+          {
+            "title": "• Inconvénient : Limite la créativité du modèle.",
+            "content": []
+          },
+          {
+            "title": "• Exemple : \"Traduis le texte suivant en français : 'The weather",
+            "content": []
+          },
+          {
+            "title": "is nice today.'\"",
+            "content": []
+          },
+          {
+            "title": "Types de prompts",
+            "content": []
+          },
+          {
+            "title": "Prompt explicite:",
+            "content": []
+          },
+          {
+            "title": "• Définition : S'appuie sur le contexte pour interpréter l'intention",
+            "content": []
+          },
+          {
+            "title": "de l'utilisateur.",
+            "content": []
+          },
+          {
+            "title": "• Objectif : Donner plus de liberté au modèle pour interpréter.",
+            "content": []
+          },
+          {
+            "title": "• Avantage : Peut produire des réponses plus variées et",
+            "content": []
+          },
+          {
+            "title": "créatives.",
+            "content": []
+          },
+          {
+            "title": "• Inconvénient : Augmente le risque d'ambiguïté ou de réponse",
+            "content": []
+          },
+          {
+            "title": "hors sujet.",
+            "content": []
+          },
+          {
+            "title": "• Exemple : \"Comment dirais-tu 'The weather is nice today' en",
+            "content": []
+          },
+          {
+            "title": "français ?\"",
+            "content": []
+          },
+          {
+            "title": "Types de prompts",
+            "content": []
+          },
+          {
+            "title": "Prompt implicite:",
+            "content": []
+          },
+          {
+            "title": "• Définition : Encourage le modèle à produire des résultats",
+            "content": []
+          },
+          {
+            "title": "originaux et inattendus.",
+            "content": []
+          },
+          {
+            "title": "• Objectif : Pousser le modèle à explorer de nouvelles idées.",
+            "content": []
+          },
+          {
+            "title": "• Avantage : Permet de créer du contenu unique et engageant.",
+            "content": []
+          },
+          {
+            "title": "• Inconvénient : Nécessite souvent plus d'itérations pour affiner",
+            "content": []
+          },
+          {
+            "title": "le résultat.",
+            "content": []
+          },
+          {
+            "title": "• Exemple : \"Écris une courte histoire sur un monde où la météo",
+            "content": []
+          },
+          {
+            "title": "change en fonction des émotions des gens.\"",
+            "content": []
+          },
+          {
+            "title": "Types de prompts",
+            "content": []
+          },
+          {
+            "title": "Prompt créatif:",
+            "content": []
+          },
+          {
+            "title": "Pourquoi les 'prompts' comptent : au-",
+            "content": []
+          },
+          {
+            "title": "delà des mots",
+            "content": [
+              "11"
+            ]
+          },
+          {
+            "title": "Qu'est-ce que l'ingénierie des \"prompts\" ?",
+            "content": [
+              "•",
+              "L'"
+            ]
+          },
+          {
+            "title": "ingénierie des \"prompts\"",
+            "content": [
+              "est la pratique consistant à développer et à optimiser ces invites",
+              "pour utiliser de manière efficace les modèles de langage (ML) dans diverses applications.",
+              "•",
+              "L'ingénierie des \"prompts\" est un processus de création d'un ensemble d'invites, ou de",
+              "questions, qui sont utilisées pour guider l'utilisateur vers le résultat désiré.",
+              "•",
+              "C'est un outil efficace pour les concepteurs afin de créer des expériences utilisateur faciles à",
+              "utiliser et intuitives.",
+              "•",
+              "Cette méthode est souvent employée dans la conception interactive et le développement de",
+              "logiciels, car elle permet aux utilisateurs de comprendre facilement comment interagir avec un",
+              "système ou un produit."
+            ]
+          },
+          {
+            "title": "Prompt Engineering",
+            "content": []
+          },
+          {
+            "title": "Les composants d'un bon prompt",
+            "content": []
+          },
+          {
+            "title": "Instruction",
+            "content": []
+          },
+          {
+            "title": "Rôle",
+            "content": []
+          },
+          {
+            "title": "Contexte",
+            "content": []
+          },
+          {
+            "title": "Exemples",
+            "content": []
+          },
+          {
+            "title": "Entrée",
+            "content": []
+          },
+          {
+            "title": "Sortie",
+            "content": []
+          },
+          {
+            "title": "Les composants d'un bon prompt",
+            "content": []
+          },
+          {
+            "title": "Instruction:",
+            "content": []
+          },
+          {
+            "title": "Input",
+            "content": []
+          },
+          {
+            "title": "Output",
+            "content": [
+              "Explique le Prompt Engineering",
+              "L'ingénierie des \"prompts\" (ou \"invites\") fait",
+              "référence au processus de conception et",
+              "d'optimisation des \"prompts\" afin d'obtenir les",
+              "réponses souhaitées d'un modèle de langage",
+              "comme ChatGPT. Elle implique de rédiger",
+              "soigneusement des instructions ou des questions",
+              "données au modèle pour guider son comportement",
+              "et générer des résultats plus précis ou plus",
+              "pertinents. [...]"
+            ]
+          },
+          {
+            "title": "Les composants d'un bon prompt",
+            "content": []
+          },
+          {
+            "title": "Rôle:",
+            "content": []
+          },
+          {
+            "title": "Input",
+            "content": []
+          },
+          {
+            "title": "Output",
+            "content": [
+              "Tu es un enfant de maternelle,",
+              "Explique le Prompt",
+              "Engineering.",
+              "Imagine que tu joues à un jeu avec tes amis, et",
+              "que tu veux qu'ils fassent quelque chose de",
+              "spécifique. L'ingénierie des \"prompts\" est comme",
+              "donner à tes amis de très bonnes instructions ou",
+              "des indices pour les aider à savoir quoi faire dans",
+              "le jeu. [...]"
+            ]
+          },
+          {
+            "title": "Les composants d'un bon prompt",
+            "content": []
+          },
+          {
+            "title": "Contexte:",
+            "content": []
+          },
+          {
+            "title": "Input",
+            "content": []
+          },
+          {
+            "title": "Output",
+            "content": [
+              "Explique le Prompt Engineering avec l'aide",
+              "du contexte : L'ingénierie des \"prompts\"...",
+              "est une technique utilisée pour influencer le",
+              "comportement des grands modèles de",
+              "langage (LLM) sans altérer leurs poids ou",
+              "paramètres sous-jacents.",
+              "L'ingénierie des \"prompts\", ou \"prompting\" en",
+              "contexte, est une technique utilisée pour influencer",
+              "le comportement des grands modèles de langage",
+              "(LLM) sans altérer leurs poids ou paramètres sous-",
+              "jacents."
+            ]
+          },
+          {
+            "title": "Les composants d'un bon prompt",
+            "content": []
+          },
+          {
+            "title": "Exemples:",
+            "content": []
+          },
+          {
+            "title": "Input",
+            "content": []
+          },
+          {
+            "title": "Output",
+            "content": [
+              "Trouve le terme générique approprié pour",
+              "l'ingénierie des \"prompts\", en ne",
+              "considérant que \"Gestion et analyse des",
+              "données\", \"Développement d'applications\"",
+              "et \"Ingénierie informatique\" comme",
+              "réponses possibles.",
+              "Le terme générique approprié pour l'ingénierie des",
+              "\"prompts\" serait \"Ingénierie informatique"
+            ]
+          },
+          {
+            "title": "Les composants d'un bon prompt",
+            "content": []
+          },
+          {
+            "title": "Entrée:",
+            "content": []
+          },
+          {
+            "title": "Input",
+            "content": []
+          },
+          {
+            "title": "Output",
+            "content": [
+              "Trouve le terme générique approprié pour l'ingénierie des",
+              "\"prompts\", en ne considérant que \"Gestion et analyse des",
+              "données\", \"Développement d'applications\" et \"Ingénierie",
+              "informatique\" comme réponses possibles."
+            ]
+          },
+          {
+            "title": "Humain :",
+            "content": [
+              "Terme générique pour Frontend"
+            ]
+          },
+          {
+            "title": "IA :",
+            "content": [
+              "Développement d'applications"
+            ]
+          },
+          {
+            "title": "Humain :",
+            "content": [
+              "Terme générique pour l'IA générative"
+            ]
+          },
+          {
+            "title": "IA :",
+            "content": [
+              "Gestion et analyse des données"
+            ]
+          },
+          {
+            "title": "Humain :",
+            "content": [
+              "Terme générique pour le Cloud"
+            ]
+          },
+          {
+            "title": "IA :",
+            "content": [
+              "Ingénierie informatique"
+            ]
+          },
+          {
+            "title": "Humain :",
+            "content": [
+              "Terme générique pour le Traitement du langage",
+              "naturel"
+            ]
+          },
+          {
+            "title": "IA :",
+            "content": [
+              "Gestion et analyse des données"
+            ]
+          },
+          {
+            "title": "Humain :",
+            "content": [
+              "Terme générique pour les applications mobiles"
+            ]
+          },
+          {
+            "title": "IA :",
+            "content": [
+              "Développement d'applications"
+            ]
+          },
+          {
+            "title": "Humain :",
+            "content": [
+              "Terme générique pour l'ingénierie des \"prompts\"",
+              "Développement d'applications"
+            ]
+          },
+          {
+            "title": "Les composants d'un bon prompt",
+            "content": []
+          },
+          {
+            "title": "Sortie:",
+            "content": []
+          },
+          {
+            "title": "Input",
+            "content": []
+          },
+          {
+            "title": "Output",
+            "content": [
+              "Explique le Prompt Engineering et définis le",
+              "terme subordonné. Formate la sortie en",
+              "JSON, par exemple."
+            ]
+          },
+          {
+            "title": "Les bonnes pratiques pour écrire un prompt",
+            "content": [
+              "•"
+            ]
+          },
+          {
+            "title": "Soyez concis",
+            "content": [
+              "• Visez la brièveté et la clarté",
+              "• Utilisez le langage le plus simple possible",
+              "•Exemple :",
+              "• Prompt confus et format de question :",
+              "• \"Pouvez-vous me fournir une explication détaillée du processus de",
+              "photosynthèse et de l'importance de cette réaction biochimique ?«",
+              "• Prompt plus concis et format d'instruction :",
+              "• \"Expliquez en détail le processus de photosynthèse et son importance.\""
+            ]
+          },
+          {
+            "title": "Les bonnes pratiques pour écrire un prompt",
+            "content": [
+              "•"
+            ]
+          },
+          {
+            "title": "Soyez clair",
+            "content": [
+              "• Évitez le langage vague et ambigu.",
+              "• Soyez aussi spécifique que nécessaire.",
+              "• Exemple :",
+              "Prompt ambigu :",
+              "➔",
+              "\"Comment est-ce que je produis un rapport ?",
+              "Prompt plus clair et non ambigu :",
+              "➔",
+              "\"Explique les étapes communes pour écrire un article de recherche",
+              "pour un journal académique évalué par des pairs.\""
+            ]
+          },
+          {
+            "title": "Les bonnes pratiques pour écrire un prompt",
+            "content": [
+              "•"
+            ]
+          },
+          {
+            "title": "Inclure le contexte et une structure logique",
+            "content": [
+              "Fournissez du contexte pour améliorer le raisonnement.",
+              "Construisez des \"prompts\" structurés et cohérents.",
+              "•"
+            ]
+          },
+          {
+            "title": "Exemple :",
+            "content": [
+              "\"Prompt\" non structuré sans contexte :",
+              "➔",
+              "\"Mentionne les tâches impliquées dans la rédaction d'un article de",
+              "recherche.«",
+              "\"Prompt\" structuré, incluant du contexte :",
+              "➔",
+              "\"Liste les étapes impliquées dans la rédaction d'un article de recherche",
+              "pour un travail d'étudiant. Commence par la sélection d'un sujet, et termine par la",
+              "relecture du brouillon final.\""
+            ]
+          },
+          {
+            "title": "Les bonnes pratiques pour écrire un prompt",
+            "content": [
+              "•"
+            ]
+          },
+          {
+            "title": "Décomposer les tâches complexes.",
+            "content": [
+              "Évitez de combiner plusieurs tâches en un seul prompt.",
+              "Évitez de demander plusieurs résultats/formats dans un seul prompt.",
+              "Divisez les tâches qui impliquent plusieurs étapes ou sujets... ...en prompts",
+              "séparés.",
+              "•",
+              "Exemple :",
+              "\"Concevoir une campagne de marketing complète pour un nouveau produit éco-",
+              "responsable, en détaillant le public cible, les messages clés et les stratégies",
+              "promotionnelles. Inclure des exemples spécifiques de supports publicitaires tels que",
+              "les médias sociaux, la presse écrite et la télévision, et créer une maquette visuelle",
+              "d'une publicité dans un style minimaliste moderne. Rédiger un texte alternatif",
+              "significatif pour la publicité, résumant son contenu pour une meilleure accessibilité.",
+              "Enfin, rédiger un script de présentation de 2 minutes pour présenter cette campagne",
+              "de marketing à des investisseurs potentiels.\""
+            ]
+          },
+          {
+            "title": "Les bonnes pratiques pour écrire un prompt",
+            "content": [
+              "•"
+            ]
+          },
+          {
+            "title": "Spécifiez la sortie souhaitée",
+            "content": [
+              "Style & ton",
+              "Format, langage, ou type de contenu",
+              "Profondeur et longueur",
+              "Température = paramètre contrôlant la précision et la créativité",
+              "•",
+              "Exemples :",
+              "Style & Ton : \"Rédige un paragraphe sur XYZ dans le style simpliste d'un",
+              "journal à sensation. Utilise un ton sensationnel.\"",
+              "Profondeur & longueur : \"Fournis une argumentation juridique de haut niveau",
+              "sur le sujet de XYZ qui ne dépasse pas 500 mots.\"",
+              "Format, langue, type de contenu : \"Par exemple : Un tableau à trois colonnes ;",
+              "un poème en swahili ; un script en Python\"",
+              "Température : \"Équilibre créativité et précision, selon la tâche.\""
+            ]
+          },
+          {
+            "title": "Les bonnes pratiques pour écrire un prompt",
+            "content": [
+              "•",
+              "Utiliser l'IA pour générer ou améliorer des \"prompts\"",
+              "Demander à l'IA de rédiger un \"prompt\" pour vous !",
+              "➔",
+              "\"Meta-prompting\" : Décrivez le résultat, l'application, l'objectif souhaités,",
+              "Améliorer vos propres \"prompts\" en utilisant l'IA.",
+              "➔",
+              "Soumettez votre propre \"prompt\" à l'IA et demandez-lui des",
+              "commentaires et des améliorations.",
+              "Demander à l'outil d'IA générative s'il comprend votre \"prompt\" et comment il",
+              "le fait.",
+              "➔",
+              "Demandez un exemple de sortie annoté.",
+              "➔",
+              "Ou demandez à l'outil d'expliquer les étapes qu'il effectuerait sur la",
+              "base de votre \"prompt\"."
+            ]
+          },
+          {
+            "title": "Rq",
+            "content": [
+              ": Certains outils améliorent automatiquement les \"prompts\" humains, comme",
+              "DALL-E 3.",
+              "25"
+            ]
+          },
+          {
+            "title": "Paramètres des LLM qui influent sur les résultats du",
+            "content": []
+          },
+          {
+            "title": "prompt engineering",
+            "content": []
+          },
+          {
+            "title": "La température de génération:",
+            "content": [
+              "est un paramètre utilisé dans les modèles de langage pour contrôler le",
+              "degré de diversité des réponses générées.",
+              "Elle est spécifique aux modèles utilisant des techniques de génération probabiliste telles que le softmax."
+            ]
+          },
+          {
+            "title": "Taille du modèle :",
+            "content": [
+              "La taille du modèle, peut influencer sa capacité à comprendre",
+              "et à générer des réponses précises en fonction du prompt donné.",
+              "➔",
+              "Des modèles plus grands peuvent avoir une capacité plus importante à",
+              "capturer la complexité du langage et à produire des réponses de meilleure",
+              "qualité.",
+              "26"
+            ]
+          },
+          {
+            "title": "Prompt :",
+            "content": [
+              "\"Décrivez un coucher de soleil sur une plage.\""
+            ]
+          },
+          {
+            "title": "Résumé généré avec une température de génération élevée (par exemple, 1,5) :",
+            "content": [
+              "\"Le coucher de soleil sur la plage était un spectacle éblouissant de couleurs vives. Le",
+              "ciel était teinté de nuances d'orange, de rose et de violet, créant une toile magnifique",
+              "au-dessus de l'océan scintillant. Les vagues douces caressaient doucement le rivage,",
+              "ajoutant une dimension paisible à cette scène époustouflante.«"
+            ]
+          },
+          {
+            "title": "Résumé généré avec une température de génération basse (par exemple, 0,5) :",
+            "content": [
+              "\"Le",
+              "coucher de soleil sur la plage était un moment de tranquillité absolue. Le soleil se",
+              "couchait lentement à l'horizon, illuminant le ciel d'une lueur dorée. Les vagues",
+              "murmuraient doucement tandis que le sable tiède sous mes pieds me procurait un",
+              "sentiment de paix intérieure.\"",
+              "➔",
+              "en modifiant la température de génération, nous obtenons deux résumés avec des styles",
+              "et des détails différents."
+            ]
+          },
+          {
+            "title": "Paramètres des LLM qui influent sur les résultats du",
+            "content": []
+          },
+          {
+            "title": "prompt engineering",
+            "content": [
+              "27",
+              "Le Top-k sampling est une technique utilisée dans les modèles de langage pour générer",
+              "du texte de manière probabiliste en limitant le choix des tokens générés aux k tokens les",
+              "plus probables à chaque étape de génération."
+            ]
+          },
+          {
+            "title": "Prompt",
+            "content": [
+              ": \"Décrivez votre journée idéale.«"
+            ]
+          },
+          {
+            "title": "Résumé généré avec un Top-k sampling élevé (par exemple, k = 50) :",
+            "content": [
+              "\"Ma journée",
+              "idéale commencerait par un lever de soleil paisible, suivi d'un petit-déjeuner copieux.",
+              "Ensuite, je passerais la matinée à explorer la nature, en me promenant dans les bois ou",
+              "en faisant du vélo. L'après-midi serait consacré à des activités créatives, comme la",
+              "peinture ou l'écriture. Enfin, je terminerais la journée en regardant le coucher de soleil",
+              "avec mes proches, en savourant un délicieux dîner et en partageant des moments de",
+              "bonheur et de gratitude.\""
+            ]
+          },
+          {
+            "title": "Paramètres des LLM qui influent sur les résultats du",
+            "content": []
+          },
+          {
+            "title": "prompt engineering",
+            "content": [
+              "28"
+            ]
+          },
+          {
+            "title": "Résumé généré avec un Top-k sampling bas (par exemple, k = 10) :",
+            "content": [
+              "\"Ma journée idéale",
+              "commencerait par un bon petit-déjeuner suivi d'une promenade matinale dans le parc. Je",
+              "passerais ensuite l'après-midi à lire un bon livre ou à regarder un film. Enfin, je terminerais la",
+              "journée en dînant avec ma famille et en profitant d'une soirée détente à la maison.\""
+            ]
+          },
+          {
+            "title": "Paramètres des LLM qui influent sur les résultats du",
+            "content": []
+          },
+          {
+            "title": "prompt engineering",
+            "content": [
+              "29"
+            ]
+          },
+          {
+            "title": "Les techniques du prompt Engineering",
+            "content": [
+              "De nombreuses techniques de \"prompting\" avancées ont été conçues pour améliorer les",
+              "performances sur des tâches complexes.",
+              "•",
+              "\"L’amorce ou priming \"",
+              "•",
+              "\"Least to most\" (Le facile au difficile)",
+              "•",
+              "\"Chain-of thought (CoT)\" (prompting par chaîne de pensée)",
+              "•",
+              "\"Self-Consistency\" (Cohérence-de-soi)",
+              "•",
+              "\"Knowledge Generation Prompting\" (prompting de génération de connaissances)",
+              "30"
+            ]
+          },
+          {
+            "title": "Les techniques du prompt Engineering",
+            "content": [
+              "•",
+              "L’amorce (ou Priming), dans le cadre du prompt engineering, est une méthode qui",
+              "structure une requête ou une instruction initiale pour un modèle de langage tel que",
+              "GPT-3 ou GPT-4, dans le but de diriger sa réponse.",
+              "•",
+              "Cette technique influence la pertinence, la précision, et le style des réponses",
+              "produites, en apportant des informations contextuelles ou en établissant des",
+              "attentes spécifiques.",
+              "•",
+              "Elle aide à obtenir des résultats plus spécifiques et adaptés, utiles dans diverses",
+              "applications de traitement automatique du langage naturel."
+            ]
+          },
+          {
+            "title": "L’amorce - Priming",
+            "content": [
+              "31"
+            ]
+          },
+          {
+            "title": "Les techniques du prompt Engineering",
+            "content": []
+          },
+          {
+            "title": "L’amorce - Priming",
+            "content": [
+              "32"
+            ]
+          },
+          {
+            "title": "Les techniques du prompt Engineering",
+            "content": []
+          },
+          {
+            "title": "Le facile au difficile - Least to most",
+            "content": [
+              "•",
+              "La méthode du facile au difficile (ou Least-to Most) aborde les limitations des",
+              "techniques initiales de chaîne de pensées en fragmentant les problèmes",
+              "complexes en questions plus simples, tout en conservant une logique",
+              "cohérente.",
+              "•",
+              "Le modèle examine chaque segment individuellement et fusionne ensuite ses",
+              "analyses pour former une réponse unifiée.",
+              "•",
+              "Cette approche, qui s'inscrit dans le cadre du few-shots prompting, s'appuie sur",
+              "des exemples pour orienter le modèle",
+              "33"
+            ]
+          },
+          {
+            "title": "Les techniques du prompt Engineering",
+            "content": []
+          },
+          {
+            "title": "Le facile au difficile - Least to most",
+            "content": [
+              "34"
+            ]
+          },
+          {
+            "title": "Les techniques du prompt Engineering",
+            "content": []
+          },
+          {
+            "title": "Chain-of-thought",
+            "content": [
+              "•",
+              "La technique initiale des chaînes de pensées, la chaîne de pensées",
+              "traditionnelle (ou Chain of Thought), s'applique lorsque le lien entre l'entrée et",
+              "la sortie n'est pas immédiat.",
+              "•",
+              "Cette méthode dirige le modèle dans un raisonnement structuré et séquencé",
+              "pour traiter des problèmes complexes, en utilisant des exemples comme",
+              "guides.",
+              "•",
+              "Les réponses sont donc à la fois séquencées, logiques et justifiées",
+              "35"
+            ]
+          },
+          {
+            "title": "Les techniques du prompt Engineering",
+            "content": []
+          },
+          {
+            "title": "Chain-of-thought",
+            "content": [
+              "36"
+            ]
+          },
+          {
+            "title": "Les techniques du prompt Engineering",
+            "content": []
+          },
+          {
+            "title": "Self Consistency",
+            "content": [
+              "•",
+              "L’auto-cohérence (ou self-consistency) représente une innovation",
+              "significative dans le domaine du prompting.",
+              "•",
+              "Comme la méthode \"Least-to-Most\" (LTM), il utilise de multiples chaînes de",
+              "pensées.",
+              "•",
+              "Cette technique encourage le modèle à produire et à comparer divers",
+              "raisonnements, menant à une sorte de débat interne pour juger de leur",
+              "validité.",
+              "•",
+              "Ce processus d'auto-évaluation permet au modèle de sélectionner les",
+              "arguments les plus solides et d'écarter les moins convaincants, conduisant",
+              "ainsi à une réponse plus aboutie et affinée",
+              "37"
+            ]
+          },
+          {
+            "title": "Les techniques du prompt Engineering",
+            "content": []
+          },
+          {
+            "title": "Self Consistency",
+            "content": [
+              "38"
+            ]
+          },
+          {
+            "title": "Les techniques du prompt Engineering",
+            "content": []
+          },
+          {
+            "title": "Knowledge generation Prompting",
+            "content": [
+              "•",
+              "La génération de connaissances (ou Generated Knowledge) consiste à",
+              "intégrer des connaissances externes apportées au cours d'une",
+              "conversation avec les connaissances internes du modèle.",
+              "•",
+              "Cette méthode vise à enrichir la substance et la pertinence des réponses",
+              "sur un sujet ou problème spécifique, sans nécessiter un ajustement fin ou",
+              "fine tuning du modèle",
+              "39"
+            ]
+          },
+          {
+            "title": "Les techniques du prompt Engineering",
+            "content": []
+          },
+          {
+            "title": "Knowledge generation Prompting",
+            "content": [
+              "40"
+            ]
+          },
+          {
+            "title": "Les Risques",
+            "content": [
+              "•",
+              "Maintenant que nous savons comment créer des \"prompts\" efficaces, il est crucial",
+              "de comprendre que même un \"prompt\" bien rédigé peut être exploité. C'est pourquoi",
+              "nous allons maintenant aborder les risques liés à la manipulation des modèles d’IA.",
+              "•",
+              "Nous abordons les risques suivants :",
+              "•",
+              "Prompt Injection",
+              "•",
+              "Prompt Leaking",
+              "•",
+              "Jail Breaking",
+              "41"
+            ]
+          },
+          {
+            "title": "Les Risques",
+            "content": []
+          },
+          {
+            "title": "Prompt Injection",
+            "content": [
+              "•",
+              "L'injection de \"prompt\" est utilisée pour détourner la sortie d'un modèle de langage en injectant",
+              "une commande non fiable qui annule l'instruction d'un \"prompt\".",
+              "•",
+              "Cela peut facilement se produire si vous concaténez simplement votre \"prompt\" avec un autre",
+              "\"prompt\" généré par un utilisateur.",
+              "42"
+            ]
+          },
+          {
+            "title": "Les Risques",
+            "content": []
+          },
+          {
+            "title": "Prompt leaking",
+            "content": [
+              "•",
+              "Le \"prompt leaking\" vise à forcer le modèle à cracher des informations sur son propre",
+              "\"prompt\".",
+              "•",
+              "Cela peut conduire à la fuite d'informations sensibles, privées ou confidentielles.",
+              "43"
+            ]
+          },
+          {
+            "title": "Les Risques",
+            "content": []
+          },
+          {
+            "title": "Jail Breaking",
+            "content": [
+              "•",
+              "Le \"jailbreaking\" est une autre forme d'injection de \"prompt\" dont le but est de contourner les",
+              "fonctions de sécurité et de modération.",
+              "•",
+              "Les grands modèles de langage (LLM) fournis via des API peuvent être couplés à des",
+              "fonctions de sécurité ou à une modération de contenu qui peut être contournée par des",
+              "\"prompts\"/attaques malveillants.",
+              "•",
+              "Cela peut sembler être une tâche difficile, mais ce n'est pas le cas, car le modèle est",
+              "généralement servi de manière statique et peut présenter ces vulnérabilités en raison de",
+              "nombreux facteurs, tels que les données sur lesquelles il a été entraîné, etc.",
+              "44"
+            ]
+          },
+          {
+            "title": "Les Risques",
+            "content": [
+              "45"
+            ]
+          },
+          {
+            "title": "Conclusion",
+            "content": [
+              "•",
+              "Le prompt engineering se base sur la fourniture de contexte, de directives",
+              "et d'exemples pour diriger le modèle vers un objectif défini.",
+              "•",
+              "Ces éléments facilitent la tâche du modèle, garantissant des réponses",
+              "adéquates et bien pensées.",
+              "•",
+              "Il s'agit d'un processus itératif : les prompts sont des points de départ pour",
+              "un cheminement progressif vers un but, et non des fins en soi.",
+              "•",
+              "Ils servent de guides pour explorer des domaines nouveaux et inattendus"
+            ]
+          },
+          {
+            "title": "Merci de votre attention",
+            "content": [
+              "46"
+            ]
+          }
+        ],
+        "raw": [
+          "2",
+          "C'est important pour la recherche, les découvertes et les avancées.",
+          "Cela aide à tester et à évaluer les limites des LLM (Large Language Models, ou grands modèles de",
+          "langage).",
+          "Cela permet toutes sortes d'applications innovantes basées sur les LLM.",
+          "3",
+          "Nombre de mots limité par prompt",
+          "Nombre de prompts limité par chaîne",
+          "Manque de transparence",
+          "Manque de reproductibilité",
+          "Décrire les tâches avec précision et créativité",
+          "Aucune compétence d'expert requise (Booléen, code)",
+          "Entrées multilingues",
+          "...et bien d'autres",
+          "11",
+          "•",
+          "L'",
+          "est la pratique consistant à développer et à optimiser ces invites",
+          "pour utiliser de manière efficace les modèles de langage (ML) dans diverses applications.",
+          "•",
+          "L'ingénierie des \"prompts\" est un processus de création d'un ensemble d'invites, ou de",
+          "questions, qui sont utilisées pour guider l'utilisateur vers le résultat désiré.",
+          "•",
+          "C'est un outil efficace pour les concepteurs afin de créer des expériences utilisateur faciles à",
+          "utiliser et intuitives.",
+          "•",
+          "Cette méthode est souvent employée dans la conception interactive et le développement de",
+          "logiciels, car elle permet aux utilisateurs de comprendre facilement comment interagir avec un",
+          "système ou un produit.",
+          "Explique le Prompt Engineering",
+          "L'ingénierie des \"prompts\" (ou \"invites\") fait",
+          "référence au processus de conception et",
+          "d'optimisation des \"prompts\" afin d'obtenir les",
+          "réponses souhaitées d'un modèle de langage",
+          "comme ChatGPT. Elle implique de rédiger",
+          "soigneusement des instructions ou des questions",
+          "données au modèle pour guider son comportement",
+          "et générer des résultats plus précis ou plus",
+          "pertinents. [...]",
+          "Tu es un enfant de maternelle,",
+          "Explique le Prompt",
+          "Engineering.",
+          "Imagine que tu joues à un jeu avec tes amis, et",
+          "que tu veux qu'ils fassent quelque chose de",
+          "spécifique. L'ingénierie des \"prompts\" est comme",
+          "donner à tes amis de très bonnes instructions ou",
+          "des indices pour les aider à savoir quoi faire dans",
+          "le jeu. [...]",
+          "Explique le Prompt Engineering avec l'aide",
+          "du contexte : L'ingénierie des \"prompts\"...",
+          "est une technique utilisée pour influencer le",
+          "comportement des grands modèles de",
+          "langage (LLM) sans altérer leurs poids ou",
+          "paramètres sous-jacents.",
+          "L'ingénierie des \"prompts\", ou \"prompting\" en",
+          "contexte, est une technique utilisée pour influencer",
+          "le comportement des grands modèles de langage",
+          "(LLM) sans altérer leurs poids ou paramètres sous-",
+          "jacents.",
+          "Trouve le terme générique approprié pour",
+          "l'ingénierie des \"prompts\", en ne",
+          "considérant que \"Gestion et analyse des",
+          "données\", \"Développement d'applications\"",
+          "et \"Ingénierie informatique\" comme",
+          "réponses possibles.",
+          "Le terme générique approprié pour l'ingénierie des",
+          "\"prompts\" serait \"Ingénierie informatique",
+          "Trouve le terme générique approprié pour l'ingénierie des",
+          "\"prompts\", en ne considérant que \"Gestion et analyse des",
+          "données\", \"Développement d'applications\" et \"Ingénierie",
+          "informatique\" comme réponses possibles.",
+          "Terme générique pour Frontend",
+          "Développement d'applications",
+          "Terme générique pour l'IA générative",
+          "Gestion et analyse des données",
+          "Terme générique pour le Cloud",
+          "Ingénierie informatique",
+          "Terme générique pour le Traitement du langage",
+          "naturel",
+          "Gestion et analyse des données",
+          "Terme générique pour les applications mobiles",
+          "Développement d'applications",
+          "Terme générique pour l'ingénierie des \"prompts\"",
+          "Développement d'applications",
+          "Explique le Prompt Engineering et définis le",
+          "terme subordonné. Formate la sortie en",
+          "JSON, par exemple.",
+          "•",
+          "• Visez la brièveté et la clarté",
+          "• Utilisez le langage le plus simple possible",
+          "•Exemple :",
+          "• Prompt confus et format de question :",
+          "• \"Pouvez-vous me fournir une explication détaillée du processus de",
+          "photosynthèse et de l'importance de cette réaction biochimique ?«",
+          "• Prompt plus concis et format d'instruction :",
+          "• \"Expliquez en détail le processus de photosynthèse et son importance.\"",
+          "•",
+          "• Évitez le langage vague et ambigu.",
+          "• Soyez aussi spécifique que nécessaire.",
+          "• Exemple :",
+          "Prompt ambigu :",
+          "➔",
+          "\"Comment est-ce que je produis un rapport ?",
+          "Prompt plus clair et non ambigu :",
+          "➔",
+          "\"Explique les étapes communes pour écrire un article de recherche",
+          "pour un journal académique évalué par des pairs.\"",
+          "•",
+          "Fournissez du contexte pour améliorer le raisonnement.",
+          "Construisez des \"prompts\" structurés et cohérents.",
+          "•",
+          "\"Prompt\" non structuré sans contexte :",
+          "➔",
+          "\"Mentionne les tâches impliquées dans la rédaction d'un article de",
+          "recherche.«",
+          "\"Prompt\" structuré, incluant du contexte :",
+          "➔",
+          "\"Liste les étapes impliquées dans la rédaction d'un article de recherche",
+          "pour un travail d'étudiant. Commence par la sélection d'un sujet, et termine par la",
+          "relecture du brouillon final.\"",
+          "•",
+          "Évitez de combiner plusieurs tâches en un seul prompt.",
+          "Évitez de demander plusieurs résultats/formats dans un seul prompt.",
+          "Divisez les tâches qui impliquent plusieurs étapes ou sujets... ...en prompts",
+          "séparés.",
+          "•",
+          "Exemple :",
+          "\"Concevoir une campagne de marketing complète pour un nouveau produit éco-",
+          "responsable, en détaillant le public cible, les messages clés et les stratégies",
+          "promotionnelles. Inclure des exemples spécifiques de supports publicitaires tels que",
+          "les médias sociaux, la presse écrite et la télévision, et créer une maquette visuelle",
+          "d'une publicité dans un style minimaliste moderne. Rédiger un texte alternatif",
+          "significatif pour la publicité, résumant son contenu pour une meilleure accessibilité.",
+          "Enfin, rédiger un script de présentation de 2 minutes pour présenter cette campagne",
+          "de marketing à des investisseurs potentiels.\"",
+          "•",
+          "Style & ton",
+          "Format, langage, ou type de contenu",
+          "Profondeur et longueur",
+          "Température = paramètre contrôlant la précision et la créativité",
+          "•",
+          "Exemples :",
+          "Style & Ton : \"Rédige un paragraphe sur XYZ dans le style simpliste d'un",
+          "journal à sensation. Utilise un ton sensationnel.\"",
+          "Profondeur & longueur : \"Fournis une argumentation juridique de haut niveau",
+          "sur le sujet de XYZ qui ne dépasse pas 500 mots.\"",
+          "Format, langue, type de contenu : \"Par exemple : Un tableau à trois colonnes ;",
+          "un poème en swahili ; un script en Python\"",
+          "Température : \"Équilibre créativité et précision, selon la tâche.\"",
+          "•",
+          "Utiliser l'IA pour générer ou améliorer des \"prompts\"",
+          "Demander à l'IA de rédiger un \"prompt\" pour vous !",
+          "➔",
+          "\"Meta-prompting\" : Décrivez le résultat, l'application, l'objectif souhaités,",
+          "Améliorer vos propres \"prompts\" en utilisant l'IA.",
+          "➔",
+          "Soumettez votre propre \"prompt\" à l'IA et demandez-lui des",
+          "commentaires et des améliorations.",
+          "Demander à l'outil d'IA générative s'il comprend votre \"prompt\" et comment il",
+          "le fait.",
+          "➔",
+          "Demandez un exemple de sortie annoté.",
+          "➔",
+          "Ou demandez à l'outil d'expliquer les étapes qu'il effectuerait sur la",
+          "base de votre \"prompt\".",
+          ": Certains outils améliorent automatiquement les \"prompts\" humains, comme",
+          "DALL-E 3.",
+          "25",
+          "est un paramètre utilisé dans les modèles de langage pour contrôler le",
+          "degré de diversité des réponses générées.",
+          "Elle est spécifique aux modèles utilisant des techniques de génération probabiliste telles que le softmax.",
+          "La taille du modèle, peut influencer sa capacité à comprendre",
+          "et à générer des réponses précises en fonction du prompt donné.",
+          "➔",
+          "Des modèles plus grands peuvent avoir une capacité plus importante à",
+          "capturer la complexité du langage et à produire des réponses de meilleure",
+          "qualité.",
+          "26",
+          "\"Décrivez un coucher de soleil sur une plage.\"",
+          "\"Le coucher de soleil sur la plage était un spectacle éblouissant de couleurs vives. Le",
+          "ciel était teinté de nuances d'orange, de rose et de violet, créant une toile magnifique",
+          "au-dessus de l'océan scintillant. Les vagues douces caressaient doucement le rivage,",
+          "ajoutant une dimension paisible à cette scène époustouflante.«",
+          "\"Le",
+          "coucher de soleil sur la plage était un moment de tranquillité absolue. Le soleil se",
+          "couchait lentement à l'horizon, illuminant le ciel d'une lueur dorée. Les vagues",
+          "murmuraient doucement tandis que le sable tiède sous mes pieds me procurait un",
+          "sentiment de paix intérieure.\"",
+          "➔",
+          "en modifiant la température de génération, nous obtenons deux résumés avec des styles",
+          "et des détails différents.",
+          "27",
+          "Le Top-k sampling est une technique utilisée dans les modèles de langage pour générer",
+          "du texte de manière probabiliste en limitant le choix des tokens générés aux k tokens les",
+          "plus probables à chaque étape de génération.",
+          ": \"Décrivez votre journée idéale.«",
+          "\"Ma journée",
+          "idéale commencerait par un lever de soleil paisible, suivi d'un petit-déjeuner copieux.",
+          "Ensuite, je passerais la matinée à explorer la nature, en me promenant dans les bois ou",
+          "en faisant du vélo. L'après-midi serait consacré à des activités créatives, comme la",
+          "peinture ou l'écriture. Enfin, je terminerais la journée en regardant le coucher de soleil",
+          "avec mes proches, en savourant un délicieux dîner et en partageant des moments de",
+          "bonheur et de gratitude.\"",
+          "28",
+          "\"Ma journée idéale",
+          "commencerait par un bon petit-déjeuner suivi d'une promenade matinale dans le parc. Je",
+          "passerais ensuite l'après-midi à lire un bon livre ou à regarder un film. Enfin, je terminerais la",
+          "journée en dînant avec ma famille et en profitant d'une soirée détente à la maison.\"",
+          "29",
+          "De nombreuses techniques de \"prompting\" avancées ont été conçues pour améliorer les",
+          "performances sur des tâches complexes.",
+          "•",
+          "\"L’amorce ou priming \"",
+          "•",
+          "\"Least to most\" (Le facile au difficile)",
+          "•",
+          "\"Chain-of thought (CoT)\" (prompting par chaîne de pensée)",
+          "•",
+          "\"Self-Consistency\" (Cohérence-de-soi)",
+          "•",
+          "\"Knowledge Generation Prompting\" (prompting de génération de connaissances)",
+          "30",
+          "•",
+          "L’amorce (ou Priming), dans le cadre du prompt engineering, est une méthode qui",
+          "structure une requête ou une instruction initiale pour un modèle de langage tel que",
+          "GPT-3 ou GPT-4, dans le but de diriger sa réponse.",
+          "•",
+          "Cette technique influence la pertinence, la précision, et le style des réponses",
+          "produites, en apportant des informations contextuelles ou en établissant des",
+          "attentes spécifiques.",
+          "•",
+          "Elle aide à obtenir des résultats plus spécifiques et adaptés, utiles dans diverses",
+          "applications de traitement automatique du langage naturel.",
+          "31",
+          "32",
+          "•",
+          "La méthode du facile au difficile (ou Least-to Most) aborde les limitations des",
+          "techniques initiales de chaîne de pensées en fragmentant les problèmes",
+          "complexes en questions plus simples, tout en conservant une logique",
+          "cohérente.",
+          "•",
+          "Le modèle examine chaque segment individuellement et fusionne ensuite ses",
+          "analyses pour former une réponse unifiée.",
+          "•",
+          "Cette approche, qui s'inscrit dans le cadre du few-shots prompting, s'appuie sur",
+          "des exemples pour orienter le modèle",
+          "33",
+          "34",
+          "•",
+          "La technique initiale des chaînes de pensées, la chaîne de pensées",
+          "traditionnelle (ou Chain of Thought), s'applique lorsque le lien entre l'entrée et",
+          "la sortie n'est pas immédiat.",
+          "•",
+          "Cette méthode dirige le modèle dans un raisonnement structuré et séquencé",
+          "pour traiter des problèmes complexes, en utilisant des exemples comme",
+          "guides.",
+          "•",
+          "Les réponses sont donc à la fois séquencées, logiques et justifiées",
+          "35",
+          "36",
+          "•",
+          "L’auto-cohérence (ou self-consistency) représente une innovation",
+          "significative dans le domaine du prompting.",
+          "•",
+          "Comme la méthode \"Least-to-Most\" (LTM), il utilise de multiples chaînes de",
+          "pensées.",
+          "•",
+          "Cette technique encourage le modèle à produire et à comparer divers",
+          "raisonnements, menant à une sorte de débat interne pour juger de leur",
+          "validité.",
+          "•",
+          "Ce processus d'auto-évaluation permet au modèle de sélectionner les",
+          "arguments les plus solides et d'écarter les moins convaincants, conduisant",
+          "ainsi à une réponse plus aboutie et affinée",
+          "37",
+          "38",
+          "•",
+          "La génération de connaissances (ou Generated Knowledge) consiste à",
+          "intégrer des connaissances externes apportées au cours d'une",
+          "conversation avec les connaissances internes du modèle.",
+          "•",
+          "Cette méthode vise à enrichir la substance et la pertinence des réponses",
+          "sur un sujet ou problème spécifique, sans nécessiter un ajustement fin ou",
+          "fine tuning du modèle",
+          "39",
+          "40",
+          "•",
+          "Maintenant que nous savons comment créer des \"prompts\" efficaces, il est crucial",
+          "de comprendre que même un \"prompt\" bien rédigé peut être exploité. C'est pourquoi",
+          "nous allons maintenant aborder les risques liés à la manipulation des modèles d’IA.",
+          "•",
+          "Nous abordons les risques suivants :",
+          "•",
+          "Prompt Injection",
+          "•",
+          "Prompt Leaking",
+          "•",
+          "Jail Breaking",
+          "41",
+          "•",
+          "L'injection de \"prompt\" est utilisée pour détourner la sortie d'un modèle de langage en injectant",
+          "une commande non fiable qui annule l'instruction d'un \"prompt\".",
+          "•",
+          "Cela peut facilement se produire si vous concaténez simplement votre \"prompt\" avec un autre",
+          "\"prompt\" généré par un utilisateur.",
+          "42",
+          "•",
+          "Le \"prompt leaking\" vise à forcer le modèle à cracher des informations sur son propre",
+          "\"prompt\".",
+          "•",
+          "Cela peut conduire à la fuite d'informations sensibles, privées ou confidentielles.",
+          "43",
+          "•",
+          "Le \"jailbreaking\" est une autre forme d'injection de \"prompt\" dont le but est de contourner les",
+          "fonctions de sécurité et de modération.",
+          "•",
+          "Les grands modèles de langage (LLM) fournis via des API peuvent être couplés à des",
+          "fonctions de sécurité ou à une modération de contenu qui peut être contournée par des",
+          "\"prompts\"/attaques malveillants.",
+          "•",
+          "Cela peut sembler être une tâche difficile, mais ce n'est pas le cas, car le modèle est",
+          "généralement servi de manière statique et peut présenter ces vulnérabilités en raison de",
+          "nombreux facteurs, tels que les données sur lesquelles il a été entraîné, etc.",
+          "44",
+          "45",
+          "•",
+          "Le prompt engineering se base sur la fourniture de contexte, de directives",
+          "et d'exemples pour diriger le modèle vers un objectif défini.",
+          "•",
+          "Ces éléments facilitent la tâche du modèle, garantissant des réponses",
+          "adéquates et bien pensées.",
+          "•",
+          "Il s'agit d'un processus itératif : les prompts sont des points de départ pour",
+          "un cheminement progressif vers un but, et non des fins en soi.",
+          "•",
+          "Ils servent de guides pour explorer des domaines nouveaux et inattendus",
+          "46"
+        ]
+      }
+    ]
+  },
+  {
+    "course_title": "IA for SE-Introduction",
+    "chapters": [
+      {
+        "chapter": "Plan du module",
+        "page_start": 1,
+        "definitions": [],
+        "sections": [
+          {
+            "title": "Charge horaire:",
+            "content": [
+              "21h"
+            ]
+          },
+          {
+            "title": "Pré-requis :",
+            "content": [
+              "MLA"
+            ]
+          },
+          {
+            "title": "Contenu:",
+            "content": [
+              "1",
+              "2"
+            ]
+          }
+        ],
+        "raw": [
+          "1.",
+          "Introduire de l’IA & l’IA générative pour le génie logiciel",
+          "2.Prompt Engineering: intéragir efficacement avec l’IA",
+          "3.Génération du code assisté par l’IA",
+          "4.Intégration d’une API IA dans un projet logiciel",
+          "5.Génération automatique de tests et validation logicielle avec l’IA.",
+          "6.Détection intelligente des bugs et recommandation dans le code",
+          "21h",
+          "MLA",
+          "1",
+          "2"
+        ]
+      },
+      {
+        "chapter": "Chapitre 1",
+        "page_start": 2,
+        "definitions": [],
+        "sections": [
+          {
+            "title": "Introduction à l’IA et à l’IA Générative pour le",
+            "content": []
+          },
+          {
+            "title": "Génie Logiciel",
+            "content": []
+          },
+          {
+            "title": "IA for Software Engineering",
+            "content": []
+          },
+          {
+            "title": "A.U 2025-2026",
+            "content": []
+          },
+          {
+            "title": "Pourquoi ce cours ?",
+            "content": [
+              "3"
+            ]
+          },
+          {
+            "title": "L’IA est aujourd’hui omniprésente dans les logiciels.",
+            "content": []
+          },
+          {
+            "title": "Objectifs du chapitre",
+            "content": [
+              "4"
+            ]
+          },
+          {
+            "title": "• Introduction",
+            "content": []
+          },
+          {
+            "title": "• Comprendre les concepts fondamentaux (IA, ML, DL, NLP).",
+            "content": []
+          },
+          {
+            "title": "•",
+            "content": []
+          },
+          {
+            "title": "Introduire l’IA générative (texte, code, image).",
+            "content": []
+          },
+          {
+            "title": "• Découvrir les modèles récents (GPT, BERT, T5, Claude, Gemini).",
+            "content": []
+          },
+          {
+            "title": "• Identifier les applications en génie logiciel.",
+            "content": []
+          },
+          {
+            "title": "• Étudier un cas pratique (ChatGPT / Copilot).",
+            "content": [
+              "5"
+            ]
+          },
+          {
+            "title": "IA (Intelligence Artificielle): Historique",
+            "content": []
+          },
+          {
+            "title": "Introduction",
+            "content": [
+              "6"
+            ]
+          },
+          {
+            "title": "Emergence (Refondation) des GFAM/GAMMA:",
+            "content": []
+          },
+          {
+            "title": "Introduction",
+            "content": [
+              "7"
+            ]
+          },
+          {
+            "title": "Emergence (Refondation) des GFAM/GAMMA:",
+            "content": []
+          },
+          {
+            "title": "Introduction",
+            "content": [
+              "8"
+            ]
+          },
+          {
+            "title": "Emergence (Refondation) des GFAM/GAMMA:",
+            "content": []
+          },
+          {
+            "title": "Introduction",
+            "content": [
+              "9"
+            ]
+          },
+          {
+            "title": "IA (Intelligence Artificielle)",
+            "content": []
+          },
+          {
+            "title": "Ensemble des méthodes permettant aux machines d’imiter certaines capacités",
+            "content": []
+          },
+          {
+            "title": "humaines :",
+            "content": []
+          },
+          {
+            "title": "→ Raisonnement, prise de décision, planification, perception.",
+            "content": [
+              "Exemple"
+            ]
+          },
+          {
+            "title": ": un système expert médical, un moteur d’échecs.",
+            "content": []
+          },
+          {
+            "title": "Définitions clés",
+            "content": [
+              "10"
+            ]
+          },
+          {
+            "title": "ML (Machine Learning)",
+            "content": []
+          },
+          {
+            "title": "Sous-domaine de l’IA qui apprend à partir de données.",
+            "content": []
+          },
+          {
+            "title": "→ Pas de programmation explicite des règles, mais des",
+            "content": []
+          },
+          {
+            "title": "modèles entraînés",
+            "content": []
+          },
+          {
+            "title": ".",
+            "content": [
+              "Exemple"
+            ]
+          },
+          {
+            "title": ":",
+            "content": [
+              "un modèle de prédiction de prix immobiliers."
+            ]
+          },
+          {
+            "title": "Définitions clés",
+            "content": [
+              "11"
+            ]
+          },
+          {
+            "title": "ML (Machine Learning)",
+            "content": []
+          },
+          {
+            "title": "Définitions clés",
+            "content": [
+              "12"
+            ]
+          },
+          {
+            "title": "ML (Machine Learning)",
+            "content": []
+          },
+          {
+            "title": "Définitions clés",
+            "content": [
+              "13"
+            ]
+          },
+          {
+            "title": "ML (Machine Learning)",
+            "content": []
+          },
+          {
+            "title": "Définitions clés",
+            "content": [
+              "14"
+            ]
+          },
+          {
+            "title": "De ML vers NLP:",
+            "content": [
+              "➢",
+              "Machine Learning [1990-2015]:",
+              "✓",
+              "Peu de connaissance experte",
+              "✓",
+              "Extraction statistique",
+              "⇔",
+              "résiste aux données bruitées",
+              "≈ Système peu interprétable",
+              "− Précision faible",
+              "+ Meilleur rappel"
+            ]
+          },
+          {
+            "title": "Définitions clés",
+            "content": [
+              "15"
+            ]
+          },
+          {
+            "title": "NLP (Natural Language Processing)",
+            "content": []
+          },
+          {
+            "title": "✓",
+            "content": []
+          },
+          {
+            "title": "Branche de l’IA qui traite le",
+            "content": []
+          },
+          {
+            "title": "langage humain",
+            "content": []
+          },
+          {
+            "title": "(analyse + génération).",
+            "content": []
+          },
+          {
+            "title": "➔",
+            "content": []
+          },
+          {
+            "title": "S’appuie sur le ML et surtout sur le DL (transformers).",
+            "content": []
+          },
+          {
+            "title": "Exemple",
+            "content": []
+          },
+          {
+            "title": ": assistants vocaux (Siri, Alexa), ChatGPT.",
+            "content": []
+          },
+          {
+            "title": "➔",
+            "content": []
+          },
+          {
+            "title": "interface entre la science informatique et la linguistique.",
+            "content": []
+          },
+          {
+            "title": "✓",
+            "content": []
+          },
+          {
+            "title": "Nous pouvons distinguer deux aspects essentiels à tout problème de NLP :",
+            "content": []
+          },
+          {
+            "title": "➢",
+            "content": []
+          },
+          {
+            "title": "La partie « linguistique », qui consiste à prétraiter et transformer les informations",
+            "content": []
+          },
+          {
+            "title": "en entrée en un jeu de données exploitable.",
+            "content": []
+          },
+          {
+            "title": "➢",
+            "content": []
+          },
+          {
+            "title": "La partie « apprentissage automatique » qui porte sur l’application de modèles",
+            "content": []
+          },
+          {
+            "title": "de Machine Learning ou Deep Learning à ce jeu de données.",
+            "content": []
+          },
+          {
+            "title": "Définitions clés",
+            "content": [
+              "16"
+            ]
+          },
+          {
+            "title": "•",
+            "content": []
+          },
+          {
+            "title": "DL (Deep Learning)",
+            "content": []
+          },
+          {
+            "title": "Sous-domaine du ML basé sur des réseaux de neurones profonds (plusieurs couches).",
+            "content": []
+          },
+          {
+            "title": "→ Permet une performance élevée sur des données massives (vision, parole, etc.).",
+            "content": [
+              "Exemple"
+            ]
+          },
+          {
+            "title": ":",
+            "content": [
+              "reconnaissance faciale, traduction neuronale."
+            ]
+          },
+          {
+            "title": "Définitions clés",
+            "content": [
+              "17",
+              "•",
+              "On peut distinguer 3 principales"
+            ]
+          },
+          {
+            "title": "approches NLP",
+            "content": [
+              ":",
+              "➢",
+              "Modèles basées sur des règles",
+              "➢",
+              "Modèles classiques de Machine Learning",
+              "➢",
+              "Modèles de Deep Learning."
+            ]
+          },
+          {
+            "title": "Définitions clés",
+            "content": [
+              "18"
+            ]
+          },
+          {
+            "title": "éfinition",
+            "content": []
+          },
+          {
+            "title": "✓",
+            "content": []
+          },
+          {
+            "title": "L’IA générative un type d’IA particulier.",
+            "content": []
+          },
+          {
+            "title": "Focus sur l’IA générative",
+            "content": [
+              "19"
+            ]
+          },
+          {
+            "title": "éfinition",
+            "content": []
+          },
+          {
+            "title": "✓",
+            "content": []
+          },
+          {
+            "title": "Elle est capable de générer image, texte, vidéo ou autre suivant la demande de l’utilisate",
+            "content": []
+          },
+          {
+            "title": "✓",
+            "content": []
+          },
+          {
+            "title": "Ces systèmes sont construits via des réseaux de neurones artificiels qu’il faut entrainer e",
+            "content": []
+          },
+          {
+            "title": "leur donnant d’énorme quantité de données.",
+            "content": []
+          },
+          {
+            "title": "✓",
+            "content": []
+          },
+          {
+            "title": "Les applications sont nombreuses, la rédaction, l’information.",
+            "content": []
+          },
+          {
+            "title": "✓",
+            "content": []
+          },
+          {
+            "title": "Les plus connu sont chatGPT d’openAI et Bard de Google. Il y’a aussi MidJourney pour l",
+            "content": []
+          },
+          {
+            "title": "images ou DALL-E.",
+            "content": []
+          },
+          {
+            "title": "Focus sur l’IA générative",
+            "content": [
+              "20"
+            ]
+          },
+          {
+            "title": "omaines principaux",
+            "content": []
+          },
+          {
+            "title": "✓",
+            "content": []
+          },
+          {
+            "title": "Texte",
+            "content": []
+          },
+          {
+            "title": ":",
+            "content": []
+          },
+          {
+            "title": "génération de documentation, spécifications, scénarios de test.",
+            "content": [
+              "Exemples de modèles:"
+            ]
+          },
+          {
+            "title": "GPT (OpenAI), Claude (Anthropic).",
+            "content": []
+          },
+          {
+            "title": "Focus sur l’IA générative",
+            "content": [
+              "Anthropic updates Claude AI",
+              "to write and run Javascript",
+              "code",
+              "21"
+            ]
+          },
+          {
+            "title": "omaines principaux",
+            "content": []
+          },
+          {
+            "title": "✓",
+            "content": []
+          },
+          {
+            "title": "Code :",
+            "content": []
+          },
+          {
+            "title": "complétion de code, génération de fonctions, création de tests unitaires.",
+            "content": [
+              "Exemples de modèles:"
+            ]
+          },
+          {
+            "title": "Copilot (GitHub/OpenAI), Codex.",
+            "content": []
+          },
+          {
+            "title": "Focus sur l’IA générative",
+            "content": [
+              "22"
+            ]
+          },
+          {
+            "title": "omaines principaux",
+            "content": []
+          },
+          {
+            "title": "✓",
+            "content": []
+          },
+          {
+            "title": "Image:",
+            "content": []
+          },
+          {
+            "title": "conception de diagrammes UML, mockups d’interface, prototypes visuels.",
+            "content": []
+          },
+          {
+            "title": "Focus sur l’IA générative",
+            "content": []
+          },
+          {
+            "title": "Exemples de modèles",
+            "content": [
+              "- DALL·E (OpenAI)",
+              "- Stable Diffusion",
+              "- Midjourney (complément)",
+              "- Figma AI (complément)"
+            ]
+          },
+          {
+            "title": "Applications",
+            "content": [
+              "• Diagrammes UML",
+              "• Mockups d’interface",
+              "• Prototypes visuels",
+              "23"
+            ]
+          },
+          {
+            "title": "omaines principaux",
+            "content": []
+          },
+          {
+            "title": "✓",
+            "content": []
+          },
+          {
+            "title": "Audio/vidéo:",
+            "content": []
+          },
+          {
+            "title": "génération de voix pour assistants virtuels, tutoriels automatiques.",
+            "content": [
+              "Exemples de modèles:"
+            ]
+          },
+          {
+            "title": "Gemini (Google DeepMind).",
+            "content": []
+          },
+          {
+            "title": "Focus sur l’IA générative",
+            "content": [
+              "24"
+            ]
+          },
+          {
+            "title": "✓",
+            "content": []
+          },
+          {
+            "title": "Depuis 2018, une nouvelle génération de modèles d’IA a profondément transformé le",
+            "content": []
+          },
+          {
+            "title": "raitement du langage et l’ingénierie logicielle.",
+            "content": []
+          },
+          {
+            "title": "✓",
+            "content": []
+          },
+          {
+            "title": "Ces modèles, appelés",
+            "content": []
+          },
+          {
+            "title": "LLMs (Large Language Models)",
+            "content": []
+          },
+          {
+            "title": "ou",
+            "content": []
+          },
+          {
+            "title": "modèles multimodaux",
+            "content": []
+          },
+          {
+            "title": ", se",
+            "content": []
+          },
+          {
+            "title": "distinguent par :",
+            "content": [
+              "✓",
+              "Leur capacité à apprendre à partir d’énormes volumes de données.",
+              "✓",
+              "Leur polyvalence (texte, code, images, etc.).",
+              "✓",
+              "Leur adaptation à différents usages (compréhension, génération, dialogue)."
+            ]
+          },
+          {
+            "title": "Panorama des modèles récents",
+            "content": [
+              "25"
+            ]
+          },
+          {
+            "title": "Panorama des modèles récents",
+            "content": [
+              "26"
+            ]
+          },
+          {
+            "title": "Panorama des modèles récents",
+            "content": []
+          },
+          {
+            "title": "Feature",
+            "content": []
+          },
+          {
+            "title": "T5",
+            "content": []
+          },
+          {
+            "title": "GPT",
+            "content": []
+          },
+          {
+            "title": "BERT",
+            "content": [
+              "Architecture",
+              "Transformer-based",
+              "Autoregressive",
+              "transformer",
+              "Bidirectional",
+              "transformer",
+              "Training Data",
+              "C4 dataset",
+              "Diverse internet text",
+              "BooksCorpus +",
+              "Wikipedia",
+              "Parameter Count",
+              "11 billion (T5 base)",
+              "175 billion (GPT-3)",
+              "345 million (BERT",
+              "base)",
+              "Use Cases",
+              "Translation,",
+              "summarization",
+              "Text generation,",
+              "chatbots",
+              "Question answering,",
+              "classification",
+              "Strengths",
+              "Unified framework for",
+              "tasks",
+              "Coherent text",
+              "generation",
+              "Deep contextual",
+              "understanding",
+              "27"
+            ]
+          },
+          {
+            "title": "Panorama des modèles récents",
+            "content": [
+              "28"
+            ]
+          },
+          {
+            "title": "Panorama des modèles récents",
+            "content": []
+          },
+          {
+            "title": "Modèle",
+            "content": []
+          },
+          {
+            "title": "Organisation",
+            "content": []
+          },
+          {
+            "title": "Usage principal",
+            "content": []
+          },
+          {
+            "title": "Exemple en génie logiciel",
+            "content": [
+              "GPT",
+              "OpenAI",
+              "Génération de texte et",
+              "de code",
+              "Rédaction de documentation,",
+              "génération de tests unitaires,",
+              "suggestion de code",
+              "BERT",
+              "Google",
+              "Compréhension du",
+              "langage (analyse de",
+              "texte)",
+              "Détection d’anomalies dans des",
+              "rapports de bugs, classification",
+              "automatique des tickets Jira",
+              "T5",
+              "Google",
+              "Transformation texte",
+              "→ texte (traduction,",
+              "reformulation)",
+              "Traduction de documentation",
+              "technique, reformulation de",
+              "spécifications",
+              "Claude",
+              "Anthropic",
+              "Assistant",
+              "conversationnel",
+              "Dialogue naturel pour",
+              "brainstorming de solutions",
+              "logicielles, révision collaborative de",
+              "code",
+              "Gemini",
+              "Google",
+              "DeepMind",
+              "Multimodal (texte +",
+              "image + son)",
+              "Génération de diagrammes UML à",
+              "partir de descriptions textuelles,",
+              "analyse de code + schémas",
+              "combinés",
+              "29"
+            ]
+          },
+          {
+            "title": "Panorama des modèles récents",
+            "content": [
+              "30",
+              "Applications de l’IA en génie logiciel"
+            ]
+          },
+          {
+            "title": "Applications de l’IA en génie logiciel",
+            "content": []
+          },
+          {
+            "title": "L’intelligence artificielle transforme plusieurs aspects du développement logiciel, améliorant",
+            "content": []
+          },
+          {
+            "title": "productivité et qualité :",
+            "content": [
+              "Pipeline du cycle logiciel avec interventions de l’IA",
+              "31",
+              "Applications de l’IA en génie logiciel"
+            ]
+          },
+          {
+            "title": "Applications de l’IA en génie logiciel",
+            "content": []
+          },
+          {
+            "title": "L’intelligence artificielle transforme plusieurs aspects du développement logiciel, améliorant",
+            "content": []
+          },
+          {
+            "title": "productivité et la qualité :",
+            "content": [
+              "❑",
+              "Génération de code",
+              "✓",
+              "Outils comme"
+            ]
+          },
+          {
+            "title": "GitHub Copilot",
+            "content": [
+              "peuvent proposer des snippets de code ou compléter des fonctions entièr",
+              "✓",
+              "Réduction du temps de codage et aide à l’apprentissage de nouveaux frameworks ou langages.",
+              "32",
+              "Applications de l’IA en génie logiciel"
+            ]
+          },
+          {
+            "title": "Applications de l’IA en génie logiciel",
+            "content": [
+              "Exemple :",
+              "Vous écrivez une fonction pour calculer la factorielle en Python.",
+              "Le développeur gagne du temps et apprend la syntaxe recursive sans chercher en documentation.",
+              "Exemple:",
+              "Création d’une requête SQL à partir d’un commentaire en Python.",
+              "Copilot peut proposer automatiquement la requête complète en fonction du commentaire.",
+              "33",
+              "Applications de l’IA en génie logiciel"
+            ]
+          },
+          {
+            "title": "Applications de l’IA en génie logiciel",
+            "content": [
+              "❑",
+              "Testing",
+              "✓",
+              "détecter et corriger les erreurs avant la mise en production, afin d’améliorer la qualité, la fiabilité et la",
+              "maintenabilité du logiciel.",
+              "✓",
+              "L’IA transforme la phase de testing en automatisant la génération de cas de test, en améliorant la",
+              "couverture et en accélérant la détection d’erreurs, ce qui renforce la qualité et la fiabilité du logiciel.",
+              "✓",
+              "Impact de l’IA (GitHub Copilot & autres outils) dans le Testing:",
+              "Exemple :",
+              "Génération automatique de tests unitaires",
+              "Gain de temps pour écrire des cas de",
+              "de base.",
+              "34",
+              "Vérification automatique de la performance."
+            ]
+          },
+          {
+            "title": "Applications de l’IA en génie logiciel",
+            "content": [
+              "Exemple :",
+              "Tests de performance."
+            ]
+          },
+          {
+            "title": "Copilot peut proposer des snippets pour mesurer le temps d’exécution.",
+            "content": [
+              "35",
+              "Applications de l’IA en génie logiciel"
+            ]
+          },
+          {
+            "title": "Applications de l’IA en génie logiciel",
+            "content": [
+              "❑",
+              "Maintenance",
+              "✓",
+              "L’IA facilite la maintenance logicielle en détectant automatiquement les anomalies, en suggérant des",
+              "correctifs et en anticipant les problèmes potentiels pour prolonger la durée de vie et la stabilité du logiciel",
+              "Exemple :",
+              "Détection et correction rapide de bugs",
+              "Un développeur remarque une fonction qui plante avec certaines entrées. Copilot peut suggérer un correctif directement.",
+              "Réduit le temps de debugging et évite les erreurs en production.",
+              "36",
+              "Applications de l’IA en génie logiciel"
+            ]
+          },
+          {
+            "title": "Applications de l’IA en génie logiciel",
+            "content": [
+              "Exemple :",
+              "Migration vers de nouvelles versions / frameworks",
+              "✓",
+              "Si une API est dépréciée, Copilot peut suggérer une alternative compatible.",
+              "Facilite la compatibilité avec les nouvelles versions.",
+              "37"
+            ]
+          },
+          {
+            "title": "Prosit",
+            "content": []
+          },
+          {
+            "title": "Étudier un cas pratique (ChatGPT / Copilot).",
+            "content": []
+          },
+          {
+            "title": "Merci de votre attention",
+            "content": [
+              "38"
+            ]
+          }
+        ],
+        "raw": [
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "Exemple",
+          "10",
+          "Exemple",
+          "un modèle de prédiction de prix immobiliers.",
+          "11",
+          "12",
+          "13",
+          "14",
+          "➢",
+          "Machine Learning [1990-2015]:",
+          "✓",
+          "Peu de connaissance experte",
+          "✓",
+          "Extraction statistique",
+          "⇔",
+          "résiste aux données bruitées",
+          "≈ Système peu interprétable",
+          "− Précision faible",
+          "+ Meilleur rappel",
+          "15",
+          "16",
+          "Exemple",
+          "reconnaissance faciale, traduction neuronale.",
+          "17",
+          "•",
+          "On peut distinguer 3 principales",
+          ":",
+          "➢",
+          "Modèles basées sur des règles",
+          "➢",
+          "Modèles classiques de Machine Learning",
+          "➢",
+          "Modèles de Deep Learning.",
+          "18",
+          "19",
+          "20",
+          "Exemples de modèles:",
+          "Anthropic updates Claude AI",
+          "to write and run Javascript",
+          "code",
+          "21",
+          "Exemples de modèles:",
+          "22",
+          "- DALL·E (OpenAI)",
+          "- Stable Diffusion",
+          "- Midjourney (complément)",
+          "- Figma AI (complément)",
+          "• Diagrammes UML",
+          "• Mockups d’interface",
+          "• Prototypes visuels",
+          "23",
+          "Exemples de modèles:",
+          "24",
+          "✓",
+          "Leur capacité à apprendre à partir d’énormes volumes de données.",
+          "✓",
+          "Leur polyvalence (texte, code, images, etc.).",
+          "✓",
+          "Leur adaptation à différents usages (compréhension, génération, dialogue).",
+          "25",
+          "26",
+          "Architecture",
+          "Transformer-based",
+          "Autoregressive",
+          "transformer",
+          "Bidirectional",
+          "transformer",
+          "Training Data",
+          "C4 dataset",
+          "Diverse internet text",
+          "BooksCorpus +",
+          "Wikipedia",
+          "Parameter Count",
+          "11 billion (T5 base)",
+          "175 billion (GPT-3)",
+          "345 million (BERT",
+          "base)",
+          "Use Cases",
+          "Translation,",
+          "summarization",
+          "Text generation,",
+          "chatbots",
+          "Question answering,",
+          "classification",
+          "Strengths",
+          "Unified framework for",
+          "tasks",
+          "Coherent text",
+          "generation",
+          "Deep contextual",
+          "understanding",
+          "27",
+          "28",
+          "GPT",
+          "OpenAI",
+          "Génération de texte et",
+          "de code",
+          "Rédaction de documentation,",
+          "génération de tests unitaires,",
+          "suggestion de code",
+          "BERT",
+          "Google",
+          "Compréhension du",
+          "langage (analyse de",
+          "texte)",
+          "Détection d’anomalies dans des",
+          "rapports de bugs, classification",
+          "automatique des tickets Jira",
+          "T5",
+          "Google",
+          "Transformation texte",
+          "→ texte (traduction,",
+          "reformulation)",
+          "Traduction de documentation",
+          "technique, reformulation de",
+          "spécifications",
+          "Claude",
+          "Anthropic",
+          "Assistant",
+          "conversationnel",
+          "Dialogue naturel pour",
+          "brainstorming de solutions",
+          "logicielles, révision collaborative de",
+          "code",
+          "Gemini",
+          "Google",
+          "DeepMind",
+          "Multimodal (texte +",
+          "image + son)",
+          "Génération de diagrammes UML à",
+          "partir de descriptions textuelles,",
+          "analyse de code + schémas",
+          "combinés",
+          "29",
+          "30",
+          "Applications de l’IA en génie logiciel",
+          "Pipeline du cycle logiciel avec interventions de l’IA",
+          "31",
+          "Applications de l’IA en génie logiciel",
+          "❑",
+          "Génération de code",
+          "✓",
+          "Outils comme",
+          "peuvent proposer des snippets de code ou compléter des fonctions entièr",
+          "✓",
+          "Réduction du temps de codage et aide à l’apprentissage de nouveaux frameworks ou langages.",
+          "32",
+          "Applications de l’IA en génie logiciel",
+          "Exemple :",
+          "Vous écrivez une fonction pour calculer la factorielle en Python.",
+          "Le développeur gagne du temps et apprend la syntaxe recursive sans chercher en documentation.",
+          "Exemple:",
+          "Création d’une requête SQL à partir d’un commentaire en Python.",
+          "Copilot peut proposer automatiquement la requête complète en fonction du commentaire.",
+          "33",
+          "Applications de l’IA en génie logiciel",
+          "❑",
+          "Testing",
+          "✓",
+          "détecter et corriger les erreurs avant la mise en production, afin d’améliorer la qualité, la fiabilité et la",
+          "maintenabilité du logiciel.",
+          "✓",
+          "L’IA transforme la phase de testing en automatisant la génération de cas de test, en améliorant la",
+          "couverture et en accélérant la détection d’erreurs, ce qui renforce la qualité et la fiabilité du logiciel.",
+          "✓",
+          "Impact de l’IA (GitHub Copilot & autres outils) dans le Testing:",
+          "Exemple :",
+          "Génération automatique de tests unitaires",
+          "Gain de temps pour écrire des cas de",
+          "de base.",
+          "34",
+          "Vérification automatique de la performance.",
+          "Exemple :",
+          "Tests de performance.",
+          "35",
+          "Applications de l’IA en génie logiciel",
+          "❑",
+          "Maintenance",
+          "✓",
+          "L’IA facilite la maintenance logicielle en détectant automatiquement les anomalies, en suggérant des",
+          "correctifs et en anticipant les problèmes potentiels pour prolonger la durée de vie et la stabilité du logiciel",
+          "Exemple :",
+          "Détection et correction rapide de bugs",
+          "Un développeur remarque une fonction qui plante avec certaines entrées. Copilot peut suggérer un correctif directement.",
+          "Réduit le temps de debugging et évite les erreurs en production.",
+          "36",
+          "Applications de l’IA en génie logiciel",
+          "Exemple :",
+          "Migration vers de nouvelles versions / frameworks",
+          "✓",
+          "Si une API est dépréciée, Copilot peut suggérer une alternative compatible.",
+          "Facilite la compatibilité avec les nouvelles versions.",
+          "37",
+          "38"
+        ]
+      }
+    ]
+  }
+]

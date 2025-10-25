@@ -1,0 +1,1548 @@
+{
+  "course_title": "Chap5_Gestion des tests (1)",
+  "chapters": [
+    {
+      "chapter": "www.esprit.ens.tn",
+      "page_start": 1,
+      "definitions": [],
+      "sections": [
+        {
+          "title": "Se former autrement",
+          "content": []
+        },
+        {
+          "title": "pour une nouvelle génération d’ingénieurs",
+          "content": [
+            "2"
+          ]
+        },
+        {
+          "title": "Test & validation",
+          "content": []
+        },
+        {
+          "title": "Conformément à la certification ISTQB (International  Software Testing Qualification Board",
+          "content": []
+        },
+        {
+          "title": ")",
+          "content": [
+            "3",
+            "",
+            "Introduction",
+            ""
+          ]
+        }
+      ],
+      "raw": [
+        "2",
+        "3",
+        "",
+        "Introduction",
+        ""
+      ]
+    },
+    {
+      "chapter": "Chapitre 1 : Fondamentaux de Test",
+      "page_start": 3,
+      "definitions": [],
+      "sections": [],
+      "raw": [
+        ""
+      ]
+    },
+    {
+      "chapter": "Chapitre 2 : Test pendant le cycle de vie",
+      "page_start": 3,
+      "definitions": [],
+      "sections": [],
+      "raw": [
+        ""
+      ]
+    },
+    {
+      "chapter": "Chapitre 3 : Techniques statiques",
+      "page_start": 3,
+      "definitions": [],
+      "sections": [],
+      "raw": [
+        ""
+      ]
+    },
+    {
+      "chapter": "Chapitre 4 : Technique de conception des tests",
+      "page_start": 3,
+      "definitions": [],
+      "sections": [],
+      "raw": [
+        ""
+      ]
+    },
+    {
+      "chapter": "Chapitre 5 : Gestion des tests",
+      "page_start": 3,
+      "definitions": [],
+      "sections": [],
+      "raw": [
+        ""
+      ]
+    },
+    {
+      "chapter": "Chapitre 6 : Outils de support aux tests",
+      "page_start": 3,
+      "definitions": [
+        {
+          "text": "Définir la stratégie de test, y compris la définition des niveaux de test ainsi"
+        },
+        {
+          "text": "Définition d’un critère d’entrée exigeant que des corrections"
+        },
+        {
+          "text": "B. Estimation des risques et définition de la stratégie"
+        }
+      ],
+      "sections": [
+        {
+          "title": "Tests et validation",
+          "content": [
+            "4"
+          ]
+        },
+        {
+          "title": "Plan",
+          "content": [
+            "",
+            "Introduction",
+            "",
+            "Organisation des tests",
+            "",
+            "Estimation et planification des tests",
+            "",
+            "Suivi et contrôle du déroulement des tests",
+            "",
+            "Gestion de configuration",
+            "",
+            "Test et risques",
+            "",
+            "Gestion des incidents",
+            "",
+            "Conclusion",
+            "",
+            "Exercices",
+            "5"
+          ]
+        },
+        {
+          "title": "Introduction",
+          "content": [
+            "",
+            "Plusieurs acteurs :",
+            "",
+            "Testeurs",
+            "",
+            "Développeurs",
+            "",
+            "Chef de projet",
+            "",
+            "Responsable du test",
+            "",
+            "….",
+            "",
+            "Quel est le rôle des différents acteurs et",
+            "du responsable du test?",
+            "",
+            "Comment sont gérés les tests?",
+            "",
+            "Existe-t-il différents techniques de gestion",
+            "de tests?",
+            "6",
+            "",
+            "La découverte d’anomalies par le test et les revues peut être",
+            "améliorée par l’emploi de testeurs indépendants.",
+            "",
+            "Les options d’indépendance :",
+            "",
+            "Développeurs testant leur propre code",
+            "",
+            "Testeurs indépendants incorporés à l’équipe de développement.",
+            "",
+            "Équipe ou groupe de test indépendant au sein de l’organisation",
+            "",
+            "Testeurs indépendants de l’organisation, de la communauté des",
+            "utilisateurs et de l’Informatique.",
+            "",
+            "Spécialistes de test indépendants pour des objectifs spécifiques de test",
+            "(sécurité, utilisabilité ou normalisé selon une certification)",
+            "",
+            "Testeurs indépendants externes à l’organisation",
+            "",
+            "Une équipe de test indépendante est nécessaire pour des projets",
+            "critiques, complexes et de grande taille"
+          ]
+        },
+        {
+          "title": "Organisation des tests",
+          "content": [
+            "7",
+            "",
+            "Avantages de l’indépendance :",
+            "",
+            "Des testeurs qui reportent au senior manager donne plus de crédibilité",
+            "dans l’organisation",
+            "",
+            "Un chemin de carrière plus évident",
+            "",
+            "Détection des défauts différents et d’une autre nature , ils sont",
+            "impartiaux.",
+            "",
+            "Pouvoir vérifier les hypothèses faites pendant la spécification et",
+            "l’implémentation du système.",
+            "",
+            "Inconvénients des testeurs indépendants :",
+            "",
+            "Déconnexion vis-à-vis de l’équipe de développement",
+            "",
+            "Perte du sens de la responsabilité par les développeurs pour la qualité.",
+            "",
+            "Les testeurs indépendants peuvent constituer un goulet d’étranglement",
+            "aux développeurs comme dernier point de vérification et être accusés",
+            "des retards."
+          ]
+        },
+        {
+          "title": "Organisation des tests",
+          "content": [
+            "8"
+          ]
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "Tâches habituelles du responsable de test:",
+          "content": [
+            "",
+            "Planifier les tests",
+            "",
+            "Démarrer la spécification, la préparation, l’implémentation et",
+            "l’exécution des tests ainsi que surveiller et contrôler l’exécution.",
+            "",
+            "Adapter le planning en fonction des résultats et de l’avancement du",
+            "test et entreprendre les actions nécessaires pour résoudre les problèmes",
+            "",
+            "Mettre en place une gestion de configuration adéquate du logiciel de",
+            "test à des fins de traçabilité.",
+            "",
+            "Introduire des mesures appropriées pour mesurer l’avancement du test",
+            "et évaluer la qualité du test et du produit",
+            "",
+            "Sélectionner les outils pour aider le test et organiser la formation des",
+            "testeurs à l’usage des outils.",
+            "",
+            "Décider de la mise en œuvre de l’environnement de test.",
+            "",
+            "Établir des rapports de synthèse de test à partir des informations",
+            "recueillies pendant le test."
+          ]
+        },
+        {
+          "title": "Organisation des tests",
+          "content": [
+            "9"
+          ]
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "Tâches habituelles des testeurs :",
+          "content": [
+            "",
+            "Passer en revue les plans du test et y contribuer.",
+            "",
+            "Analyser, passer en revue et évaluer, quant à leur testabilité, les",
+            "exigences utilisateurs, les spécifications et les modèles.",
+            "",
+            "Créer des spécifications de test.",
+            "",
+            "Mettre en place l’environnement de test",
+            "",
+            "Préparer et obtenir les données de test.",
+            "",
+            "Implémenter, exécuter, évaluer les résultats et documenter les écarts",
+            "vis-à-vis des résultats attendus.",
+            "",
+            "Utiliser les outils d’administration ou de gestion des tests et les outils",
+            "de surveillance des tests en fonction du besoin.",
+            "",
+            "Mesurer les performances des composants et systèmes (si pertinent).",
+            "",
+            "Passer en revue les tests développés par d’autres."
+          ]
+        },
+        {
+          "title": "Organisation des tests",
+          "content": [
+            "10"
+          ]
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "Compétences nécessaires:",
+          "content": [
+            "",
+            "Aptitudes à communiquer efficacement et préparer des",
+            "rapports de bonne qualité et de forme",
+            "",
+            "Compétences métier",
+            "",
+            "Compétences techniques",
+            "",
+            "Compétences en test logiciel"
+          ]
+        },
+        {
+          "title": "Organisation des tests",
+          "content": [
+            "11"
+          ]
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "La planification du test est une activité continue et est",
+          "content": []
+        },
+        {
+          "title": "effectuée tout au long des processus et activités du",
+          "content": []
+        },
+        {
+          "title": "cycle de développement.",
+          "content": []
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "Le retour issu des activités de test est employé pour",
+          "content": []
+        },
+        {
+          "title": "constater l’évolution des risques et modifier alors la",
+          "content": []
+        },
+        {
+          "title": "planification.",
+          "content": []
+        },
+        {
+          "title": "Estimation et planification des tests",
+          "content": [
+            "12"
+          ]
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "Les activités de la planification des tests pour un",
+          "content": []
+        },
+        {
+          "title": "système ou pour une partie de celui-ci peuvent être:",
+          "content": [
+            "",
+            "Définir le périmètre du test, les risques et identifier les objectifs du test",
+            "",
+            "Définir la stratégie de test, y compris la définition des niveaux de test ainsi",
+            "que celle des critères d’entrée et de sortie.",
+            "",
+            "Intégrer et coordonner des activités de test dans les activités du cycle de",
+            "développement.",
+            "",
+            "Planifier les activités d’analyse, de conception, d’exécution et d’évaluation",
+            "des tests.",
+            "",
+            "Assigner les ressources aux différentes taches de tests.",
+            "",
+            "Définir le volume et la structure du modèle pour la documentation de tests.",
+            "",
+            "Déterminer le niveau de détail pour les procédures de test."
+          ]
+        },
+        {
+          "title": "Estimation et planification des tests",
+          "content": [
+            "13"
+          ]
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "Critères d’entrée",
+          "content": []
+        },
+        {
+          "title": "Définissent quand démarrent les tests et couvrent",
+          "content": []
+        },
+        {
+          "title": ":",
+          "content": []
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "La disponibilité et préparation de l’environnement",
+          "content": []
+        },
+        {
+          "title": "de test",
+          "content": []
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "La préparation des outils de tests dans",
+          "content": []
+        },
+        {
+          "title": "l’environnement de test",
+          "content": []
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "La disponibilité de code testable",
+          "content": []
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "La disponibilité des jeux de données",
+          "content": []
+        },
+        {
+          "title": "Estimation et planification des tests",
+          "content": [
+            "14"
+          ]
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "Critères de Sorties",
+          "content": []
+        },
+        {
+          "title": "Définissent quand arrêter le test, à la fin d’un niveau",
+          "content": []
+        },
+        {
+          "title": "de test ou lorsqu’une série de tests a atteint un objectif",
+          "content": []
+        },
+        {
+          "title": "donné. Ils couvrent  :",
+          "content": [
+            "",
+            "Des mesures d’exhaustivité, comme la couverture de code, de",
+            "fonctionnalités ou de risques.",
+            "",
+            "L’estimation de la densité des anomalies ou des mesures de fiabilité.",
+            "",
+            "Le coût.",
+            "",
+            "Les risques résiduels, comme les anomalies non corrigées ou le manque",
+            "de couverture du test dans certaines parties.",
+            "",
+            "Un calendrier, par exemple, basé sur la date de mise sur le marché."
+          ]
+        },
+        {
+          "title": "Estimation et planification des tests",
+          "content": [
+            "15"
+          ]
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "Estimation des tests",
+          "content": []
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "Deux approches :",
+          "content": [
+            "",
+            "Approche référentiel : Estimation de l’effort de test basée sur des",
+            "mesures d’autres projets.",
+            "",
+            "Approche expertise : estimation des tâches par le détenteur de ces",
+            "tâches ou par des experts."
+          ]
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "L’effort de tests peut dépendre des facteurs suivants :",
+          "content": [
+            "",
+            "Les caractéristiques du produit (exigences, taille, complexité ,sécurité,",
+            "etc..)",
+            "",
+            "Les caractéristiques du processus de développement (outils utilisés,",
+            "savoir faire des personnes impliquées, contrainte de temps)",
+            "",
+            "Les résultats du tests (nombre de défauts et reprise)"
+          ]
+        },
+        {
+          "title": "Estimation et planification des tests",
+          "content": [
+            "16"
+          ]
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "Stratégie de tests",
+          "content": []
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "L’approche de test est la mise en œuvre d’une",
+          "content": []
+        },
+        {
+          "title": "stratégie de test pour un projet spécifique",
+          "content": []
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "Elle est définie et affinée dans les plans et scénarii de",
+          "content": []
+        },
+        {
+          "title": "test.",
+          "content": []
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "Elle comprend typiquement les décisions basées sur le",
+          "content": []
+        },
+        {
+          "title": "projet de test, ses buts ainsi qu’une analyse des",
+          "content": []
+        },
+        {
+          "title": "risques.",
+          "content": []
+        },
+        {
+          "title": "Estimation et planification des tests",
+          "content": [
+            "17",
+            "",
+            "L’approche sélectionnée dépend de plusieurs paramètres",
+            "(contexte, risques, sécurité, les dangers, les ressources",
+            "disponibles…).",
+            "",
+            "Les approches typiques peuvent comprendre:",
+            "",
+            "Une approche analytique, comme le test basé sur les risques où le test est focalisé",
+            "sur les parties à plus haut risque.",
+            "",
+            "Les approches basées sur les modèles, comme le test stochastique qui utilise des",
+            "informations statistiques sur les taux d’erreurs ou sur l’utilisation.",
+            "",
+            "Les approches méthodiques, comme le test basé sur les erreurs, basées sur des",
+            "listes de vérification et sur des caractéristiques de la qualité."
+          ]
+        },
+        {
+          "title": "Estimation et planification des tests",
+          "content": [
+            "18"
+          ]
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "L’objectif du suivi du test est de fournir un retour et",
+          "content": []
+        },
+        {
+          "title": "une visibilité sur les activités de test.",
+          "content": [
+            "",
+            "Fournir un feedback afin d’agir au bon moment.",
+            "",
+            "Collecter les données pour l’estimation de projet à venir."
+          ]
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "Les informations à suivre peuvent être recueillies",
+          "content": []
+        },
+        {
+          "title": "manuellement ou automatiquement et peuvent être",
+          "content": []
+        },
+        {
+          "title": "utilisées pour évaluer les critères de sortie, comme la",
+          "content": []
+        },
+        {
+          "title": "couverture.",
+          "content": []
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "Des mesures peuvent aussi être utilisées pour évaluer",
+          "content": []
+        },
+        {
+          "title": "l’avancement par rapport au calendrier et au budget",
+          "content": []
+        },
+        {
+          "title": "planifiés.",
+          "content": []
+        },
+        {
+          "title": "Suivi de l’avancement des tests",
+          "content": [
+            "19",
+            "",
+            "Les mesures de test habituelles sont:",
+            "",
+            "Le pourcentage du travail consacré à la préparation des cas de test (ou",
+            "pourcentage des cas de test planifiés et préparés).",
+            "",
+            "Pourcentage du travail consacré à la préparation de l’environnement de",
+            "test.",
+            "",
+            "L’exécution de cas de test (par exemple, nombre de cas de test exécutés",
+            "ou non et nombre de cas de test réussis ou échoués).",
+            "",
+            "Les informations sur les défauts (par exemple, densité des défauts, défauts",
+            "trouvés et corrigés, taux des défaillances et résultats du re-test).",
+            "",
+            "Couverture par le test des exigences, des risques ou du code.",
+            "",
+            "Confiance subjective des testeurs dans le produit.",
+            "",
+            "Dates des jalons du test.",
+            "",
+            "Coût du test"
+          ]
+        },
+        {
+          "title": "Suivi de l’avancement des tests",
+          "content": [
+            "20"
+          ]
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "Reporting des tests:",
+          "content": [
+            "",
+            "Ce qui s’est passé pendant une phase de test (les dates où les",
+            "critères de sortie ont été atteints).",
+            "",
+            "Les informations et mesures analysées pour étayer les",
+            "recommandations et décisions pour de futures actions (une",
+            "évaluation des défauts restants, les risques non couverts et le",
+            "niveau de confiance dans le logiciel testé, …)"
+          ]
+        },
+        {
+          "title": "Suivi de l’avancement des tests",
+          "content": [
+            "21"
+          ]
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "Contrôle des tests",
+          "content": [
+            "",
+            "Prendre des décisions sur la base des informations recueillies",
+            "lors du suivi des tests",
+            "",
+            "Une nouvelle affectation de priorités aux tests en cas de mise",
+            "en évidence d’un risque identifié",
+            "",
+            "Une modification du calendrier de test en raison de la",
+            "disponibilité d’un environnement de test.",
+            "",
+            "Définition d’un critère d’entrée exigeant que des corrections",
+            "soient testées par le développeur avant de les accepter dans",
+            "une version."
+          ]
+        },
+        {
+          "title": "Suivi de l’avancement des tests",
+          "content": [
+            "22"
+          ]
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "Elle permet d’assurer :",
+          "content": [
+            "",
+            "Tous les éléments faisant partie du testware sont identifiés,",
+            "sous contrôle de versions",
+            "",
+            "Les changements sont identifiés et retraçables, reliés les uns",
+            "aux autres et aux éléments de développement (objets de test),",
+            "de sorte que la traçabilité peut être maintenue pendant tout le",
+            "processus du test.",
+            "",
+            "Tous les documents identifiés et les éléments du logiciel sont",
+            "référencés de manière non ambiguë dans la documentation de",
+            "test."
+          ]
+        },
+        {
+          "title": "Gestion de configuration",
+          "content": [
+            "23"
+          ]
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "Risques liés au projet :",
+          "content": [
+            "",
+            "Problèmes d’acquisition , défaillance d’une tierce partie",
+            "",
+            "Problèmes organisationnels",
+            "",
+            "Problèmes de personnel, Manque de compétence, techniques",
+            "",
+            "Environnement de test indisponible"
+          ]
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "Risques liés au produit :",
+          "content": [
+            "",
+            "Fonctionnalité manquante",
+            "",
+            "Caractéristique non fonctionnelle de moindre qualité",
+            "",
+            "Possibilité qu’un logiciel ou système entraîne des dommages",
+            "à des personnes ou à des entreprises."
+          ]
+        },
+        {
+          "title": "Test et risques",
+          "content": [
+            "24"
+          ]
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "Qu’est ce qu’un incident ?",
+          "content": [
+            "",
+            "Tout événement arrivant pendant les tests qui requiert une",
+            "vérification"
+          ]
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "Causes possibles sont :",
+          "content": [
+            "",
+            "Bugs dans l’application",
+            "",
+            "Tests non exécutés correctement",
+            "",
+            "Résultats attendus incorrects"
+          ]
+        },
+        {
+          "title": "Gestion des incidents",
+          "content": [
+            "25",
+            "Approche de test adéquat ou non ?",
+            "Que s’est passé durant",
+            "Cette semaine ?",
+            "Rentabilité",
+            "Année précédente",
+            "Combien de fautes",
+            "attendus?"
+          ]
+        },
+        {
+          "title": "Gestion des incidents",
+          "content": [
+            "26"
+          ]
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "Les rapports d’incidents peuvent avoir les objectifs",
+          "content": []
+        },
+        {
+          "title": "suivants :",
+          "content": [
+            "",
+            "Fournir aux développeurs et aux autres parties un retour sur",
+            "le problème concerné pour en permettre l’identification, la",
+            "localisation et la correction nécessaire.",
+            "",
+            "Fournir aux responsables du test le moyen de suivre la qualité",
+            "d’un système sous test et l’avancement du test.",
+            "",
+            "Fournir des idées pour l’amélioration du processus de test."
+          ]
+        },
+        {
+          "title": "Gestion des incidents",
+          "content": [
+            "27"
+          ]
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "Comment peut on rédiger un bon rapport d’incident?",
+          "content": [
+            "",
+            "Approche attentive lors de l’exécution des tests",
+            "",
+            "Essayer de reproduire le bug",
+            "",
+            "Essayer d’isoler le bug",
+            "",
+            "Mentionner la priorité et la sévérité du bug",
+            "",
+            "Sélectionner les bons termes lors de la description du bug"
+          ]
+        },
+        {
+          "title": "Gestion des incidents",
+          "content": [
+            "28"
+          ]
+        },
+        {
+          "title": "Gestion des incidents",
+          "content": [
+            "29",
+            "",
+            "Les détails du rapport d’incident peuvent inclure :",
+            "",
+            "Date de l’incident, organisation faisant part de l’incident, auteur.",
+            "",
+            "Résultats attendus et effectifs.",
+            "",
+            "Identification ou élément de configuration du logiciel ou système.",
+            "",
+            "Processus du cycle de vie du logiciel ou du système au cours duquel l’incident a été observé",
+            "",
+            "Description de l’anomalie pour permettre son élimination, y compris les traces, extraits de",
+            "la base de données ou captures d’écrans",
+            "",
+            "Degré de l’impact sur les intérêts des détenteurs d’enjeux.",
+            "",
+            "Sévérité de l’impact sur le système.",
+            "",
+            "Urgence ou priorité de la correction.",
+            "",
+            "Etat de l’incident (ouvert, en attente de correction, corrigé, clôturé).",
+            "",
+            "Conclusions et recommandations.",
+            "",
+            "Problèmes globaux, comme d’autres parties pouvant être impactées par une modification",
+            "résultant de l’incident.",
+            "",
+            "Historique des modifications, telles que la séquence des actions entreprises par des",
+            "membres de l’équipe du projet afin de localiser l’incident, de corriger et d’en confirmer la",
+            "correction.",
+            "",
+            "Références, incluant l’identité du cas de test ou la spécification qui a permis d’identifier le",
+            "problème."
+          ]
+        },
+        {
+          "title": "Gestion des incidents",
+          "content": [
+            "30"
+          ]
+        },
+        {
+          "title": "",
+          "content": []
+        },
+        {
+          "title": "La gestion des tests vérifie les objectifs suivants :",
+          "content": [
+            "",
+            "Organisation des tests : l’indépendance peut être assuré par",
+            "différents structures organisationnelles.",
+            "",
+            "Les tests devront être estimés et planifiés.",
+            "",
+            "Suivre et contrôler le déroulement des tests est primordial.",
+            "",
+            "Assister les tests par la gestion de configuration.",
+            "",
+            "Tester en tenant compte des risques.",
+            "",
+            "Analyser les incidents et leurs effets direct et indirect sur les",
+            "tests et les processus dépendants",
+            "",
+            "Gérer les incidents.",
+            "",
+            "Conformité aux standards et aux normes : des tests bien gérés",
+            "peuvent garantir une bonne qualité du logiciel."
+          ]
+        },
+        {
+          "title": "Conclusion",
+          "content": [
+            "31"
+          ]
+        },
+        {
+          "title": "Exercice",
+          "content": []
+        },
+        {
+          "title": "1. Pourquoi est-il nécessaire de définir une stratégie de test?",
+          "content": [
+            "A. Comme il ya de nombreuses façons de tester le logiciel, il faut réfléchir",
+            "pour décider quel sera le moyen le plus efficace pour tester le projet en",
+            "main.",
+            "B. Démarrer les tests sans planification préalable conduit à des tests",
+            "chaotiques et inefficace",
+            "C. Les défauts logiciels peut entraîner une perte d'argent, le temps, la",
+            "réputation de l'entreprise, et dans les cas extrêmes blessures et de",
+            "décès. Il est donc essentiel d'avoir une stratégie de test appropriée en",
+            "place.",
+            "D. La stratégie est nécessaire pour informer le chef du projet comment",
+            "l'équipe de test va programmer les cycles de tests."
+          ]
+        },
+        {
+          "title": "2. Quel critère ne peut pas être classé comme critère de sortie des tests ?",
+          "content": [
+            "A. Le coût.",
+            "B. 100% de couverture du code.",
+            "C. Un calendrier basé sur la date de mise en marché.",
+            "D. La disponibilité des jeux de données.",
+            "32"
+          ]
+        },
+        {
+          "title": "Exercice",
+          "content": []
+        },
+        {
+          "title": "3. Quelle information ne figure pas dans un rapport de problème ?",
+          "content": [
+            "A. Le nombre d'erreurs.",
+            "B. L'identification des logiciels testés.",
+            "C. La description du problème.",
+            "D. L’état."
+          ]
+        },
+        {
+          "title": "4. Les tests du plus haut niveau d’indépendance sont faits par :",
+          "content": [
+            "A. Les développeurs",
+            "B. Les ingénieurs de l’équipe tests",
+            "C. Les managers",
+            "D. Une entité en dehors du sphère du projet."
+          ]
+        },
+        {
+          "title": "5. Les Tests doivent s’arrêter quand :",
+          "content": [
+            "A. Tous les tests planifiés sont exécutés",
+            "B. Ça dépend des risques du système à tester",
+            "C. Le temps alloué aux tests de composant est consommé",
+            "D. Tous les défauts sont corrigés correctement",
+            "33"
+          ]
+        },
+        {
+          "title": "Exercice",
+          "content": []
+        },
+        {
+          "title": "6. Parmi les propositions suivantes, laquelle ne fait pas partie des fonctions",
+          "content": []
+        },
+        {
+          "title": "de la gestion des tests ?",
+          "content": [
+            "A. Estimation des risques",
+            "B. Estimation des risques et définition de la stratégie",
+            "C. Mise en place du budget et de l'intervalle de temps",
+            "D. Organisation des équipes de test"
+          ]
+        },
+        {
+          "title": "7. QueIIes sont les informations généralement consignées dans un rapport",
+          "content": []
+        },
+        {
+          "title": "d’incident ?",
+          "content": [
+            "A. Les informations décrivant les modifications à attendre dans la",
+            "planification des ressources pour le test.",
+            "B. Les informations permettant une évaluation de I’avancement du test et de",
+            "la fin du test.",
+            "C. Les informations sur le nombre total d'erreurs susceptibles de survenir",
+            "pendant I’ensemble du processus de test.",
+            "D. Les informations permettant la reproduction de I'erreur potentielle.",
+            "34"
+          ]
+        },
+        {
+          "title": "Exercice",
+          "content": []
+        },
+        {
+          "title": "8. QueIIes sont les exigences relatives à la gestion de la configuration",
+          "content": []
+        },
+        {
+          "title": "devant être remplies du point de vue du test ?",
+          "content": [
+            "A. Gestion des versions, gestion de la configuration, suivi de l'état des",
+            "erreurs et des modifications, audits de configuration",
+            "B. Gestion des cas de test, planning d'intégration, suivi de l'état des erreurs",
+            "et des modifications",
+            "C. Gestion de la configuration, prise en charge des Outils de test, audits de",
+            "configuration",
+            "D. Gestion des versions, gestion de la configuration, planning d’intégration",
+            "et gestion des mises à jour"
+          ]
+        }
+      ],
+      "raw": [
+        "",
+        "Laboratoire de tests",
+        "4",
+        "",
+        "Introduction",
+        "",
+        "Organisation des tests",
+        "",
+        "Estimation et planification des tests",
+        "",
+        "Suivi et contrôle du déroulement des tests",
+        "",
+        "Gestion de configuration",
+        "",
+        "Test et risques",
+        "",
+        "Gestion des incidents",
+        "",
+        "Conclusion",
+        "",
+        "Exercices",
+        "5",
+        "",
+        "Plusieurs acteurs :",
+        "",
+        "Testeurs",
+        "",
+        "Développeurs",
+        "",
+        "Chef de projet",
+        "",
+        "Responsable du test",
+        "",
+        "….",
+        "",
+        "Quel est le rôle des différents acteurs et",
+        "du responsable du test?",
+        "",
+        "Comment sont gérés les tests?",
+        "",
+        "Existe-t-il différents techniques de gestion",
+        "de tests?",
+        "6",
+        "",
+        "La découverte d’anomalies par le test et les revues peut être",
+        "améliorée par l’emploi de testeurs indépendants.",
+        "",
+        "Les options d’indépendance :",
+        "",
+        "Développeurs testant leur propre code",
+        "",
+        "Testeurs indépendants incorporés à l’équipe de développement.",
+        "",
+        "Équipe ou groupe de test indépendant au sein de l’organisation",
+        "",
+        "Testeurs indépendants de l’organisation, de la communauté des",
+        "utilisateurs et de l’Informatique.",
+        "",
+        "Spécialistes de test indépendants pour des objectifs spécifiques de test",
+        "(sécurité, utilisabilité ou normalisé selon une certification)",
+        "",
+        "Testeurs indépendants externes à l’organisation",
+        "",
+        "Une équipe de test indépendante est nécessaire pour des projets",
+        "critiques, complexes et de grande taille",
+        "7",
+        "",
+        "Avantages de l’indépendance :",
+        "",
+        "Des testeurs qui reportent au senior manager donne plus de crédibilité",
+        "dans l’organisation",
+        "",
+        "Un chemin de carrière plus évident",
+        "",
+        "Détection des défauts différents et d’une autre nature , ils sont",
+        "impartiaux.",
+        "",
+        "Pouvoir vérifier les hypothèses faites pendant la spécification et",
+        "l’implémentation du système.",
+        "",
+        "Inconvénients des testeurs indépendants :",
+        "",
+        "Déconnexion vis-à-vis de l’équipe de développement",
+        "",
+        "Perte du sens de la responsabilité par les développeurs pour la qualité.",
+        "",
+        "Les testeurs indépendants peuvent constituer un goulet d’étranglement",
+        "aux développeurs comme dernier point de vérification et être accusés",
+        "des retards.",
+        "8",
+        "",
+        "Planifier les tests",
+        "",
+        "Démarrer la spécification, la préparation, l’implémentation et",
+        "l’exécution des tests ainsi que surveiller et contrôler l’exécution.",
+        "",
+        "Adapter le planning en fonction des résultats et de l’avancement du",
+        "test et entreprendre les actions nécessaires pour résoudre les problèmes",
+        "",
+        "Mettre en place une gestion de configuration adéquate du logiciel de",
+        "test à des fins de traçabilité.",
+        "",
+        "Introduire des mesures appropriées pour mesurer l’avancement du test",
+        "et évaluer la qualité du test et du produit",
+        "",
+        "Sélectionner les outils pour aider le test et organiser la formation des",
+        "testeurs à l’usage des outils.",
+        "",
+        "Décider de la mise en œuvre de l’environnement de test.",
+        "",
+        "Établir des rapports de synthèse de test à partir des informations",
+        "recueillies pendant le test.",
+        "9",
+        "",
+        "Passer en revue les plans du test et y contribuer.",
+        "",
+        "Analyser, passer en revue et évaluer, quant à leur testabilité, les",
+        "exigences utilisateurs, les spécifications et les modèles.",
+        "",
+        "Créer des spécifications de test.",
+        "",
+        "Mettre en place l’environnement de test",
+        "",
+        "Préparer et obtenir les données de test.",
+        "",
+        "Implémenter, exécuter, évaluer les résultats et documenter les écarts",
+        "vis-à-vis des résultats attendus.",
+        "",
+        "Utiliser les outils d’administration ou de gestion des tests et les outils",
+        "de surveillance des tests en fonction du besoin.",
+        "",
+        "Mesurer les performances des composants et systèmes (si pertinent).",
+        "",
+        "Passer en revue les tests développés par d’autres.",
+        "10",
+        "",
+        "Aptitudes à communiquer efficacement et préparer des",
+        "rapports de bonne qualité et de forme",
+        "",
+        "Compétences métier",
+        "",
+        "Compétences techniques",
+        "",
+        "Compétences en test logiciel",
+        "11",
+        "12",
+        "",
+        "Définir le périmètre du test, les risques et identifier les objectifs du test",
+        "",
+        "Définir la stratégie de test, y compris la définition des niveaux de test ainsi",
+        "que celle des critères d’entrée et de sortie.",
+        "",
+        "Intégrer et coordonner des activités de test dans les activités du cycle de",
+        "développement.",
+        "",
+        "Planifier les activités d’analyse, de conception, d’exécution et d’évaluation",
+        "des tests.",
+        "",
+        "Assigner les ressources aux différentes taches de tests.",
+        "",
+        "Définir le volume et la structure du modèle pour la documentation de tests.",
+        "",
+        "Déterminer le niveau de détail pour les procédures de test.",
+        "13",
+        "14",
+        "",
+        "Des mesures d’exhaustivité, comme la couverture de code, de",
+        "fonctionnalités ou de risques.",
+        "",
+        "L’estimation de la densité des anomalies ou des mesures de fiabilité.",
+        "",
+        "Le coût.",
+        "",
+        "Les risques résiduels, comme les anomalies non corrigées ou le manque",
+        "de couverture du test dans certaines parties.",
+        "",
+        "Un calendrier, par exemple, basé sur la date de mise sur le marché.",
+        "15",
+        "",
+        "Approche référentiel : Estimation de l’effort de test basée sur des",
+        "mesures d’autres projets.",
+        "",
+        "Approche expertise : estimation des tâches par le détenteur de ces",
+        "tâches ou par des experts.",
+        "",
+        "Les caractéristiques du produit (exigences, taille, complexité ,sécurité,",
+        "etc..)",
+        "",
+        "Les caractéristiques du processus de développement (outils utilisés,",
+        "savoir faire des personnes impliquées, contrainte de temps)",
+        "",
+        "Les résultats du tests (nombre de défauts et reprise)",
+        "16",
+        "17",
+        "",
+        "L’approche sélectionnée dépend de plusieurs paramètres",
+        "(contexte, risques, sécurité, les dangers, les ressources",
+        "disponibles…).",
+        "",
+        "Les approches typiques peuvent comprendre:",
+        "",
+        "Une approche analytique, comme le test basé sur les risques où le test est focalisé",
+        "sur les parties à plus haut risque.",
+        "",
+        "Les approches basées sur les modèles, comme le test stochastique qui utilise des",
+        "informations statistiques sur les taux d’erreurs ou sur l’utilisation.",
+        "",
+        "Les approches méthodiques, comme le test basé sur les erreurs, basées sur des",
+        "listes de vérification et sur des caractéristiques de la qualité.",
+        "18",
+        "",
+        "Fournir un feedback afin d’agir au bon moment.",
+        "",
+        "Collecter les données pour l’estimation de projet à venir.",
+        "19",
+        "",
+        "Les mesures de test habituelles sont:",
+        "",
+        "Le pourcentage du travail consacré à la préparation des cas de test (ou",
+        "pourcentage des cas de test planifiés et préparés).",
+        "",
+        "Pourcentage du travail consacré à la préparation de l’environnement de",
+        "test.",
+        "",
+        "L’exécution de cas de test (par exemple, nombre de cas de test exécutés",
+        "ou non et nombre de cas de test réussis ou échoués).",
+        "",
+        "Les informations sur les défauts (par exemple, densité des défauts, défauts",
+        "trouvés et corrigés, taux des défaillances et résultats du re-test).",
+        "",
+        "Couverture par le test des exigences, des risques ou du code.",
+        "",
+        "Confiance subjective des testeurs dans le produit.",
+        "",
+        "Dates des jalons du test.",
+        "",
+        "Coût du test",
+        "20",
+        "",
+        "Ce qui s’est passé pendant une phase de test (les dates où les",
+        "critères de sortie ont été atteints).",
+        "",
+        "Les informations et mesures analysées pour étayer les",
+        "recommandations et décisions pour de futures actions (une",
+        "évaluation des défauts restants, les risques non couverts et le",
+        "niveau de confiance dans le logiciel testé, …)",
+        "21",
+        "",
+        "Prendre des décisions sur la base des informations recueillies",
+        "lors du suivi des tests",
+        "",
+        "Une nouvelle affectation de priorités aux tests en cas de mise",
+        "en évidence d’un risque identifié",
+        "",
+        "Une modification du calendrier de test en raison de la",
+        "disponibilité d’un environnement de test.",
+        "",
+        "Définition d’un critère d’entrée exigeant que des corrections",
+        "soient testées par le développeur avant de les accepter dans",
+        "une version.",
+        "22",
+        "",
+        "Tous les éléments faisant partie du testware sont identifiés,",
+        "sous contrôle de versions",
+        "",
+        "Les changements sont identifiés et retraçables, reliés les uns",
+        "aux autres et aux éléments de développement (objets de test),",
+        "de sorte que la traçabilité peut être maintenue pendant tout le",
+        "processus du test.",
+        "",
+        "Tous les documents identifiés et les éléments du logiciel sont",
+        "référencés de manière non ambiguë dans la documentation de",
+        "test.",
+        "23",
+        "",
+        "Problèmes d’acquisition , défaillance d’une tierce partie",
+        "",
+        "Problèmes organisationnels",
+        "",
+        "Problèmes de personnel, Manque de compétence, techniques",
+        "",
+        "Environnement de test indisponible",
+        "",
+        "Fonctionnalité manquante",
+        "",
+        "Caractéristique non fonctionnelle de moindre qualité",
+        "",
+        "Possibilité qu’un logiciel ou système entraîne des dommages",
+        "à des personnes ou à des entreprises.",
+        "24",
+        "",
+        "Tout événement arrivant pendant les tests qui requiert une",
+        "vérification",
+        "",
+        "Bugs dans l’application",
+        "",
+        "Tests non exécutés correctement",
+        "",
+        "Résultats attendus incorrects",
+        "25",
+        "Approche de test adéquat ou non ?",
+        "Que s’est passé durant",
+        "Cette semaine ?",
+        "Rentabilité",
+        "Année précédente",
+        "Combien de fautes",
+        "attendus?",
+        "26",
+        "",
+        "Fournir aux développeurs et aux autres parties un retour sur",
+        "le problème concerné pour en permettre l’identification, la",
+        "localisation et la correction nécessaire.",
+        "",
+        "Fournir aux responsables du test le moyen de suivre la qualité",
+        "d’un système sous test et l’avancement du test.",
+        "",
+        "Fournir des idées pour l’amélioration du processus de test.",
+        "27",
+        "",
+        "Approche attentive lors de l’exécution des tests",
+        "",
+        "Essayer de reproduire le bug",
+        "",
+        "Essayer d’isoler le bug",
+        "",
+        "Mentionner la priorité et la sévérité du bug",
+        "",
+        "Sélectionner les bons termes lors de la description du bug",
+        "28",
+        "29",
+        "",
+        "Les détails du rapport d’incident peuvent inclure :",
+        "",
+        "Date de l’incident, organisation faisant part de l’incident, auteur.",
+        "",
+        "Résultats attendus et effectifs.",
+        "",
+        "Identification ou élément de configuration du logiciel ou système.",
+        "",
+        "Processus du cycle de vie du logiciel ou du système au cours duquel l’incident a été observé",
+        "",
+        "Description de l’anomalie pour permettre son élimination, y compris les traces, extraits de",
+        "la base de données ou captures d’écrans",
+        "",
+        "Degré de l’impact sur les intérêts des détenteurs d’enjeux.",
+        "",
+        "Sévérité de l’impact sur le système.",
+        "",
+        "Urgence ou priorité de la correction.",
+        "",
+        "Etat de l’incident (ouvert, en attente de correction, corrigé, clôturé).",
+        "",
+        "Conclusions et recommandations.",
+        "",
+        "Problèmes globaux, comme d’autres parties pouvant être impactées par une modification",
+        "résultant de l’incident.",
+        "",
+        "Historique des modifications, telles que la séquence des actions entreprises par des",
+        "membres de l’équipe du projet afin de localiser l’incident, de corriger et d’en confirmer la",
+        "correction.",
+        "",
+        "Références, incluant l’identité du cas de test ou la spécification qui a permis d’identifier le",
+        "problème.",
+        "30",
+        "",
+        "Organisation des tests : l’indépendance peut être assuré par",
+        "différents structures organisationnelles.",
+        "",
+        "Les tests devront être estimés et planifiés.",
+        "",
+        "Suivre et contrôler le déroulement des tests est primordial.",
+        "",
+        "Assister les tests par la gestion de configuration.",
+        "",
+        "Tester en tenant compte des risques.",
+        "",
+        "Analyser les incidents et leurs effets direct et indirect sur les",
+        "tests et les processus dépendants",
+        "",
+        "Gérer les incidents.",
+        "",
+        "Conformité aux standards et aux normes : des tests bien gérés",
+        "peuvent garantir une bonne qualité du logiciel.",
+        "31",
+        "A. Comme il ya de nombreuses façons de tester le logiciel, il faut réfléchir",
+        "pour décider quel sera le moyen le plus efficace pour tester le projet en",
+        "main.",
+        "B. Démarrer les tests sans planification préalable conduit à des tests",
+        "chaotiques et inefficace",
+        "C. Les défauts logiciels peut entraîner une perte d'argent, le temps, la",
+        "réputation de l'entreprise, et dans les cas extrêmes blessures et de",
+        "décès. Il est donc essentiel d'avoir une stratégie de test appropriée en",
+        "place.",
+        "D. La stratégie est nécessaire pour informer le chef du projet comment",
+        "l'équipe de test va programmer les cycles de tests.",
+        "A. Le coût.",
+        "B. 100% de couverture du code.",
+        "C. Un calendrier basé sur la date de mise en marché.",
+        "D. La disponibilité des jeux de données.",
+        "32",
+        "A. Le nombre d'erreurs.",
+        "B. L'identification des logiciels testés.",
+        "C. La description du problème.",
+        "D. L’état.",
+        "A. Les développeurs",
+        "B. Les ingénieurs de l’équipe tests",
+        "C. Les managers",
+        "D. Une entité en dehors du sphère du projet.",
+        "A. Tous les tests planifiés sont exécutés",
+        "B. Ça dépend des risques du système à tester",
+        "C. Le temps alloué aux tests de composant est consommé",
+        "D. Tous les défauts sont corrigés correctement",
+        "33",
+        "A. Estimation des risques",
+        "B. Estimation des risques et définition de la stratégie",
+        "C. Mise en place du budget et de l'intervalle de temps",
+        "D. Organisation des équipes de test",
+        "A. Les informations décrivant les modifications à attendre dans la",
+        "planification des ressources pour le test.",
+        "B. Les informations permettant une évaluation de I’avancement du test et de",
+        "la fin du test.",
+        "C. Les informations sur le nombre total d'erreurs susceptibles de survenir",
+        "pendant I’ensemble du processus de test.",
+        "D. Les informations permettant la reproduction de I'erreur potentielle.",
+        "34",
+        "A. Gestion des versions, gestion de la configuration, suivi de l'état des",
+        "erreurs et des modifications, audits de configuration",
+        "B. Gestion des cas de test, planning d'intégration, suivi de l'état des erreurs",
+        "et des modifications",
+        "C. Gestion de la configuration, prise en charge des Outils de test, audits de",
+        "configuration",
+        "D. Gestion des versions, gestion de la configuration, planning d’intégration",
+        "et gestion des mises à jour"
+      ]
+    }
+  ]
+}

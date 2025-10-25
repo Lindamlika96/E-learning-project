@@ -1,0 +1,1117 @@
+{
+  "course_title": "IA for SE-Introduction",
+  "chapters": [
+    {
+      "chapter": "Plan du module",
+      "page_start": 1,
+      "definitions": [],
+      "sections": [
+        {
+          "title": "Charge horaire:",
+          "content": [
+            "21h"
+          ]
+        },
+        {
+          "title": "Pré-requis :",
+          "content": [
+            "MLA"
+          ]
+        },
+        {
+          "title": "Contenu:",
+          "content": [
+            "1",
+            "2"
+          ]
+        }
+      ],
+      "raw": [
+        "1.",
+        "Introduire de l’IA & l’IA générative pour le génie logiciel",
+        "2.Prompt Engineering: intéragir efficacement avec l’IA",
+        "3.Génération du code assisté par l’IA",
+        "4.Intégration d’une API IA dans un projet logiciel",
+        "5.Génération automatique de tests et validation logicielle avec l’IA.",
+        "6.Détection intelligente des bugs et recommandation dans le code",
+        "21h",
+        "MLA",
+        "1",
+        "2"
+      ]
+    },
+    {
+      "chapter": "Chapitre 1",
+      "page_start": 2,
+      "definitions": [],
+      "sections": [
+        {
+          "title": "Introduction à l’IA et à l’IA Générative pour le",
+          "content": []
+        },
+        {
+          "title": "Génie Logiciel",
+          "content": []
+        },
+        {
+          "title": "IA for Software Engineering",
+          "content": []
+        },
+        {
+          "title": "A.U 2025-2026",
+          "content": []
+        },
+        {
+          "title": "Pourquoi ce cours ?",
+          "content": [
+            "3"
+          ]
+        },
+        {
+          "title": "L’IA est aujourd’hui omniprésente dans les logiciels.",
+          "content": []
+        },
+        {
+          "title": "Objectifs du chapitre",
+          "content": [
+            "4"
+          ]
+        },
+        {
+          "title": "• Introduction",
+          "content": []
+        },
+        {
+          "title": "• Comprendre les concepts fondamentaux (IA, ML, DL, NLP).",
+          "content": []
+        },
+        {
+          "title": "•",
+          "content": []
+        },
+        {
+          "title": "Introduire l’IA générative (texte, code, image).",
+          "content": []
+        },
+        {
+          "title": "• Découvrir les modèles récents (GPT, BERT, T5, Claude, Gemini).",
+          "content": []
+        },
+        {
+          "title": "• Identifier les applications en génie logiciel.",
+          "content": []
+        },
+        {
+          "title": "• Étudier un cas pratique (ChatGPT / Copilot).",
+          "content": [
+            "5"
+          ]
+        },
+        {
+          "title": "IA (Intelligence Artificielle): Historique",
+          "content": []
+        },
+        {
+          "title": "Introduction",
+          "content": [
+            "6"
+          ]
+        },
+        {
+          "title": "Emergence (Refondation) des GFAM/GAMMA:",
+          "content": []
+        },
+        {
+          "title": "Introduction",
+          "content": [
+            "7"
+          ]
+        },
+        {
+          "title": "Emergence (Refondation) des GFAM/GAMMA:",
+          "content": []
+        },
+        {
+          "title": "Introduction",
+          "content": [
+            "8"
+          ]
+        },
+        {
+          "title": "Emergence (Refondation) des GFAM/GAMMA:",
+          "content": []
+        },
+        {
+          "title": "Introduction",
+          "content": [
+            "9"
+          ]
+        },
+        {
+          "title": "IA (Intelligence Artificielle)",
+          "content": []
+        },
+        {
+          "title": "Ensemble des méthodes permettant aux machines d’imiter certaines capacités",
+          "content": []
+        },
+        {
+          "title": "humaines :",
+          "content": []
+        },
+        {
+          "title": "→ Raisonnement, prise de décision, planification, perception.",
+          "content": [
+            "Exemple"
+          ]
+        },
+        {
+          "title": ": un système expert médical, un moteur d’échecs.",
+          "content": []
+        },
+        {
+          "title": "Définitions clés",
+          "content": [
+            "10"
+          ]
+        },
+        {
+          "title": "ML (Machine Learning)",
+          "content": []
+        },
+        {
+          "title": "Sous-domaine de l’IA qui apprend à partir de données.",
+          "content": []
+        },
+        {
+          "title": "→ Pas de programmation explicite des règles, mais des",
+          "content": []
+        },
+        {
+          "title": "modèles entraînés",
+          "content": []
+        },
+        {
+          "title": ".",
+          "content": [
+            "Exemple"
+          ]
+        },
+        {
+          "title": ":",
+          "content": [
+            "un modèle de prédiction de prix immobiliers."
+          ]
+        },
+        {
+          "title": "Définitions clés",
+          "content": [
+            "11"
+          ]
+        },
+        {
+          "title": "ML (Machine Learning)",
+          "content": []
+        },
+        {
+          "title": "Définitions clés",
+          "content": [
+            "12"
+          ]
+        },
+        {
+          "title": "ML (Machine Learning)",
+          "content": []
+        },
+        {
+          "title": "Définitions clés",
+          "content": [
+            "13"
+          ]
+        },
+        {
+          "title": "ML (Machine Learning)",
+          "content": []
+        },
+        {
+          "title": "Définitions clés",
+          "content": [
+            "14"
+          ]
+        },
+        {
+          "title": "De ML vers NLP:",
+          "content": [
+            "➢",
+            "Machine Learning [1990-2015]:",
+            "✓",
+            "Peu de connaissance experte",
+            "✓",
+            "Extraction statistique",
+            "⇔",
+            "résiste aux données bruitées",
+            "≈ Système peu interprétable",
+            "− Précision faible",
+            "+ Meilleur rappel"
+          ]
+        },
+        {
+          "title": "Définitions clés",
+          "content": [
+            "15"
+          ]
+        },
+        {
+          "title": "NLP (Natural Language Processing)",
+          "content": []
+        },
+        {
+          "title": "✓",
+          "content": []
+        },
+        {
+          "title": "Branche de l’IA qui traite le",
+          "content": []
+        },
+        {
+          "title": "langage humain",
+          "content": []
+        },
+        {
+          "title": "(analyse + génération).",
+          "content": []
+        },
+        {
+          "title": "➔",
+          "content": []
+        },
+        {
+          "title": "S’appuie sur le ML et surtout sur le DL (transformers).",
+          "content": []
+        },
+        {
+          "title": "Exemple",
+          "content": []
+        },
+        {
+          "title": ": assistants vocaux (Siri, Alexa), ChatGPT.",
+          "content": []
+        },
+        {
+          "title": "➔",
+          "content": []
+        },
+        {
+          "title": "interface entre la science informatique et la linguistique.",
+          "content": []
+        },
+        {
+          "title": "✓",
+          "content": []
+        },
+        {
+          "title": "Nous pouvons distinguer deux aspects essentiels à tout problème de NLP :",
+          "content": []
+        },
+        {
+          "title": "➢",
+          "content": []
+        },
+        {
+          "title": "La partie « linguistique », qui consiste à prétraiter et transformer les informations",
+          "content": []
+        },
+        {
+          "title": "en entrée en un jeu de données exploitable.",
+          "content": []
+        },
+        {
+          "title": "➢",
+          "content": []
+        },
+        {
+          "title": "La partie « apprentissage automatique » qui porte sur l’application de modèles",
+          "content": []
+        },
+        {
+          "title": "de Machine Learning ou Deep Learning à ce jeu de données.",
+          "content": []
+        },
+        {
+          "title": "Définitions clés",
+          "content": [
+            "16"
+          ]
+        },
+        {
+          "title": "•",
+          "content": []
+        },
+        {
+          "title": "DL (Deep Learning)",
+          "content": []
+        },
+        {
+          "title": "Sous-domaine du ML basé sur des réseaux de neurones profonds (plusieurs couches).",
+          "content": []
+        },
+        {
+          "title": "→ Permet une performance élevée sur des données massives (vision, parole, etc.).",
+          "content": [
+            "Exemple"
+          ]
+        },
+        {
+          "title": ":",
+          "content": [
+            "reconnaissance faciale, traduction neuronale."
+          ]
+        },
+        {
+          "title": "Définitions clés",
+          "content": [
+            "17",
+            "•",
+            "On peut distinguer 3 principales"
+          ]
+        },
+        {
+          "title": "approches NLP",
+          "content": [
+            ":",
+            "➢",
+            "Modèles basées sur des règles",
+            "➢",
+            "Modèles classiques de Machine Learning",
+            "➢",
+            "Modèles de Deep Learning."
+          ]
+        },
+        {
+          "title": "Définitions clés",
+          "content": [
+            "18"
+          ]
+        },
+        {
+          "title": "éfinition",
+          "content": []
+        },
+        {
+          "title": "✓",
+          "content": []
+        },
+        {
+          "title": "L’IA générative un type d’IA particulier.",
+          "content": []
+        },
+        {
+          "title": "Focus sur l’IA générative",
+          "content": [
+            "19"
+          ]
+        },
+        {
+          "title": "éfinition",
+          "content": []
+        },
+        {
+          "title": "✓",
+          "content": []
+        },
+        {
+          "title": "Elle est capable de générer image, texte, vidéo ou autre suivant la demande de l’utilisate",
+          "content": []
+        },
+        {
+          "title": "✓",
+          "content": []
+        },
+        {
+          "title": "Ces systèmes sont construits via des réseaux de neurones artificiels qu’il faut entrainer e",
+          "content": []
+        },
+        {
+          "title": "leur donnant d’énorme quantité de données.",
+          "content": []
+        },
+        {
+          "title": "✓",
+          "content": []
+        },
+        {
+          "title": "Les applications sont nombreuses, la rédaction, l’information.",
+          "content": []
+        },
+        {
+          "title": "✓",
+          "content": []
+        },
+        {
+          "title": "Les plus connu sont chatGPT d’openAI et Bard de Google. Il y’a aussi MidJourney pour l",
+          "content": []
+        },
+        {
+          "title": "images ou DALL-E.",
+          "content": []
+        },
+        {
+          "title": "Focus sur l’IA générative",
+          "content": [
+            "20"
+          ]
+        },
+        {
+          "title": "omaines principaux",
+          "content": []
+        },
+        {
+          "title": "✓",
+          "content": []
+        },
+        {
+          "title": "Texte",
+          "content": []
+        },
+        {
+          "title": ":",
+          "content": []
+        },
+        {
+          "title": "génération de documentation, spécifications, scénarios de test.",
+          "content": [
+            "Exemples de modèles:"
+          ]
+        },
+        {
+          "title": "GPT (OpenAI), Claude (Anthropic).",
+          "content": []
+        },
+        {
+          "title": "Focus sur l’IA générative",
+          "content": [
+            "Anthropic updates Claude AI",
+            "to write and run Javascript",
+            "code",
+            "21"
+          ]
+        },
+        {
+          "title": "omaines principaux",
+          "content": []
+        },
+        {
+          "title": "✓",
+          "content": []
+        },
+        {
+          "title": "Code :",
+          "content": []
+        },
+        {
+          "title": "complétion de code, génération de fonctions, création de tests unitaires.",
+          "content": [
+            "Exemples de modèles:"
+          ]
+        },
+        {
+          "title": "Copilot (GitHub/OpenAI), Codex.",
+          "content": []
+        },
+        {
+          "title": "Focus sur l’IA générative",
+          "content": [
+            "22"
+          ]
+        },
+        {
+          "title": "omaines principaux",
+          "content": []
+        },
+        {
+          "title": "✓",
+          "content": []
+        },
+        {
+          "title": "Image:",
+          "content": []
+        },
+        {
+          "title": "conception de diagrammes UML, mockups d’interface, prototypes visuels.",
+          "content": []
+        },
+        {
+          "title": "Focus sur l’IA générative",
+          "content": []
+        },
+        {
+          "title": "Exemples de modèles",
+          "content": [
+            "- DALL·E (OpenAI)",
+            "- Stable Diffusion",
+            "- Midjourney (complément)",
+            "- Figma AI (complément)"
+          ]
+        },
+        {
+          "title": "Applications",
+          "content": [
+            "• Diagrammes UML",
+            "• Mockups d’interface",
+            "• Prototypes visuels",
+            "23"
+          ]
+        },
+        {
+          "title": "omaines principaux",
+          "content": []
+        },
+        {
+          "title": "✓",
+          "content": []
+        },
+        {
+          "title": "Audio/vidéo:",
+          "content": []
+        },
+        {
+          "title": "génération de voix pour assistants virtuels, tutoriels automatiques.",
+          "content": [
+            "Exemples de modèles:"
+          ]
+        },
+        {
+          "title": "Gemini (Google DeepMind).",
+          "content": []
+        },
+        {
+          "title": "Focus sur l’IA générative",
+          "content": [
+            "24"
+          ]
+        },
+        {
+          "title": "✓",
+          "content": []
+        },
+        {
+          "title": "Depuis 2018, une nouvelle génération de modèles d’IA a profondément transformé le",
+          "content": []
+        },
+        {
+          "title": "raitement du langage et l’ingénierie logicielle.",
+          "content": []
+        },
+        {
+          "title": "✓",
+          "content": []
+        },
+        {
+          "title": "Ces modèles, appelés",
+          "content": []
+        },
+        {
+          "title": "LLMs (Large Language Models)",
+          "content": []
+        },
+        {
+          "title": "ou",
+          "content": []
+        },
+        {
+          "title": "modèles multimodaux",
+          "content": []
+        },
+        {
+          "title": ", se",
+          "content": []
+        },
+        {
+          "title": "distinguent par :",
+          "content": [
+            "✓",
+            "Leur capacité à apprendre à partir d’énormes volumes de données.",
+            "✓",
+            "Leur polyvalence (texte, code, images, etc.).",
+            "✓",
+            "Leur adaptation à différents usages (compréhension, génération, dialogue)."
+          ]
+        },
+        {
+          "title": "Panorama des modèles récents",
+          "content": [
+            "25"
+          ]
+        },
+        {
+          "title": "Panorama des modèles récents",
+          "content": [
+            "26"
+          ]
+        },
+        {
+          "title": "Panorama des modèles récents",
+          "content": []
+        },
+        {
+          "title": "Feature",
+          "content": []
+        },
+        {
+          "title": "T5",
+          "content": []
+        },
+        {
+          "title": "GPT",
+          "content": []
+        },
+        {
+          "title": "BERT",
+          "content": [
+            "Architecture",
+            "Transformer-based",
+            "Autoregressive",
+            "transformer",
+            "Bidirectional",
+            "transformer",
+            "Training Data",
+            "C4 dataset",
+            "Diverse internet text",
+            "BooksCorpus +",
+            "Wikipedia",
+            "Parameter Count",
+            "11 billion (T5 base)",
+            "175 billion (GPT-3)",
+            "345 million (BERT",
+            "base)",
+            "Use Cases",
+            "Translation,",
+            "summarization",
+            "Text generation,",
+            "chatbots",
+            "Question answering,",
+            "classification",
+            "Strengths",
+            "Unified framework for",
+            "tasks",
+            "Coherent text",
+            "generation",
+            "Deep contextual",
+            "understanding",
+            "27"
+          ]
+        },
+        {
+          "title": "Panorama des modèles récents",
+          "content": [
+            "28"
+          ]
+        },
+        {
+          "title": "Panorama des modèles récents",
+          "content": []
+        },
+        {
+          "title": "Modèle",
+          "content": []
+        },
+        {
+          "title": "Organisation",
+          "content": []
+        },
+        {
+          "title": "Usage principal",
+          "content": []
+        },
+        {
+          "title": "Exemple en génie logiciel",
+          "content": [
+            "GPT",
+            "OpenAI",
+            "Génération de texte et",
+            "de code",
+            "Rédaction de documentation,",
+            "génération de tests unitaires,",
+            "suggestion de code",
+            "BERT",
+            "Google",
+            "Compréhension du",
+            "langage (analyse de",
+            "texte)",
+            "Détection d’anomalies dans des",
+            "rapports de bugs, classification",
+            "automatique des tickets Jira",
+            "T5",
+            "Google",
+            "Transformation texte",
+            "→ texte (traduction,",
+            "reformulation)",
+            "Traduction de documentation",
+            "technique, reformulation de",
+            "spécifications",
+            "Claude",
+            "Anthropic",
+            "Assistant",
+            "conversationnel",
+            "Dialogue naturel pour",
+            "brainstorming de solutions",
+            "logicielles, révision collaborative de",
+            "code",
+            "Gemini",
+            "Google",
+            "DeepMind",
+            "Multimodal (texte +",
+            "image + son)",
+            "Génération de diagrammes UML à",
+            "partir de descriptions textuelles,",
+            "analyse de code + schémas",
+            "combinés",
+            "29"
+          ]
+        },
+        {
+          "title": "Panorama des modèles récents",
+          "content": [
+            "30",
+            "Applications de l’IA en génie logiciel"
+          ]
+        },
+        {
+          "title": "Applications de l’IA en génie logiciel",
+          "content": []
+        },
+        {
+          "title": "L’intelligence artificielle transforme plusieurs aspects du développement logiciel, améliorant",
+          "content": []
+        },
+        {
+          "title": "productivité et qualité :",
+          "content": [
+            "Pipeline du cycle logiciel avec interventions de l’IA",
+            "31",
+            "Applications de l’IA en génie logiciel"
+          ]
+        },
+        {
+          "title": "Applications de l’IA en génie logiciel",
+          "content": []
+        },
+        {
+          "title": "L’intelligence artificielle transforme plusieurs aspects du développement logiciel, améliorant",
+          "content": []
+        },
+        {
+          "title": "productivité et la qualité :",
+          "content": [
+            "❑",
+            "Génération de code",
+            "✓",
+            "Outils comme"
+          ]
+        },
+        {
+          "title": "GitHub Copilot",
+          "content": [
+            "peuvent proposer des snippets de code ou compléter des fonctions entièr",
+            "✓",
+            "Réduction du temps de codage et aide à l’apprentissage de nouveaux frameworks ou langages.",
+            "32",
+            "Applications de l’IA en génie logiciel"
+          ]
+        },
+        {
+          "title": "Applications de l’IA en génie logiciel",
+          "content": [
+            "Exemple :",
+            "Vous écrivez une fonction pour calculer la factorielle en Python.",
+            "Le développeur gagne du temps et apprend la syntaxe recursive sans chercher en documentation.",
+            "Exemple:",
+            "Création d’une requête SQL à partir d’un commentaire en Python.",
+            "Copilot peut proposer automatiquement la requête complète en fonction du commentaire.",
+            "33",
+            "Applications de l’IA en génie logiciel"
+          ]
+        },
+        {
+          "title": "Applications de l’IA en génie logiciel",
+          "content": [
+            "❑",
+            "Testing",
+            "✓",
+            "détecter et corriger les erreurs avant la mise en production, afin d’améliorer la qualité, la fiabilité et la",
+            "maintenabilité du logiciel.",
+            "✓",
+            "L’IA transforme la phase de testing en automatisant la génération de cas de test, en améliorant la",
+            "couverture et en accélérant la détection d’erreurs, ce qui renforce la qualité et la fiabilité du logiciel.",
+            "✓",
+            "Impact de l’IA (GitHub Copilot & autres outils) dans le Testing:",
+            "Exemple :",
+            "Génération automatique de tests unitaires",
+            "Gain de temps pour écrire des cas de",
+            "de base.",
+            "34",
+            "Vérification automatique de la performance."
+          ]
+        },
+        {
+          "title": "Applications de l’IA en génie logiciel",
+          "content": [
+            "Exemple :",
+            "Tests de performance."
+          ]
+        },
+        {
+          "title": "Copilot peut proposer des snippets pour mesurer le temps d’exécution.",
+          "content": [
+            "35",
+            "Applications de l’IA en génie logiciel"
+          ]
+        },
+        {
+          "title": "Applications de l’IA en génie logiciel",
+          "content": [
+            "❑",
+            "Maintenance",
+            "✓",
+            "L’IA facilite la maintenance logicielle en détectant automatiquement les anomalies, en suggérant des",
+            "correctifs et en anticipant les problèmes potentiels pour prolonger la durée de vie et la stabilité du logiciel",
+            "Exemple :",
+            "Détection et correction rapide de bugs",
+            "Un développeur remarque une fonction qui plante avec certaines entrées. Copilot peut suggérer un correctif directement.",
+            "Réduit le temps de debugging et évite les erreurs en production.",
+            "36",
+            "Applications de l’IA en génie logiciel"
+          ]
+        },
+        {
+          "title": "Applications de l’IA en génie logiciel",
+          "content": [
+            "Exemple :",
+            "Migration vers de nouvelles versions / frameworks",
+            "✓",
+            "Si une API est dépréciée, Copilot peut suggérer une alternative compatible.",
+            "Facilite la compatibilité avec les nouvelles versions.",
+            "37"
+          ]
+        },
+        {
+          "title": "Prosit",
+          "content": []
+        },
+        {
+          "title": "Étudier un cas pratique (ChatGPT / Copilot).",
+          "content": []
+        },
+        {
+          "title": "Merci de votre attention",
+          "content": [
+            "38"
+          ]
+        }
+      ],
+      "raw": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "Exemple",
+        "10",
+        "Exemple",
+        "un modèle de prédiction de prix immobiliers.",
+        "11",
+        "12",
+        "13",
+        "14",
+        "➢",
+        "Machine Learning [1990-2015]:",
+        "✓",
+        "Peu de connaissance experte",
+        "✓",
+        "Extraction statistique",
+        "⇔",
+        "résiste aux données bruitées",
+        "≈ Système peu interprétable",
+        "− Précision faible",
+        "+ Meilleur rappel",
+        "15",
+        "16",
+        "Exemple",
+        "reconnaissance faciale, traduction neuronale.",
+        "17",
+        "•",
+        "On peut distinguer 3 principales",
+        ":",
+        "➢",
+        "Modèles basées sur des règles",
+        "➢",
+        "Modèles classiques de Machine Learning",
+        "➢",
+        "Modèles de Deep Learning.",
+        "18",
+        "19",
+        "20",
+        "Exemples de modèles:",
+        "Anthropic updates Claude AI",
+        "to write and run Javascript",
+        "code",
+        "21",
+        "Exemples de modèles:",
+        "22",
+        "- DALL·E (OpenAI)",
+        "- Stable Diffusion",
+        "- Midjourney (complément)",
+        "- Figma AI (complément)",
+        "• Diagrammes UML",
+        "• Mockups d’interface",
+        "• Prototypes visuels",
+        "23",
+        "Exemples de modèles:",
+        "24",
+        "✓",
+        "Leur capacité à apprendre à partir d’énormes volumes de données.",
+        "✓",
+        "Leur polyvalence (texte, code, images, etc.).",
+        "✓",
+        "Leur adaptation à différents usages (compréhension, génération, dialogue).",
+        "25",
+        "26",
+        "Architecture",
+        "Transformer-based",
+        "Autoregressive",
+        "transformer",
+        "Bidirectional",
+        "transformer",
+        "Training Data",
+        "C4 dataset",
+        "Diverse internet text",
+        "BooksCorpus +",
+        "Wikipedia",
+        "Parameter Count",
+        "11 billion (T5 base)",
+        "175 billion (GPT-3)",
+        "345 million (BERT",
+        "base)",
+        "Use Cases",
+        "Translation,",
+        "summarization",
+        "Text generation,",
+        "chatbots",
+        "Question answering,",
+        "classification",
+        "Strengths",
+        "Unified framework for",
+        "tasks",
+        "Coherent text",
+        "generation",
+        "Deep contextual",
+        "understanding",
+        "27",
+        "28",
+        "GPT",
+        "OpenAI",
+        "Génération de texte et",
+        "de code",
+        "Rédaction de documentation,",
+        "génération de tests unitaires,",
+        "suggestion de code",
+        "BERT",
+        "Google",
+        "Compréhension du",
+        "langage (analyse de",
+        "texte)",
+        "Détection d’anomalies dans des",
+        "rapports de bugs, classification",
+        "automatique des tickets Jira",
+        "T5",
+        "Google",
+        "Transformation texte",
+        "→ texte (traduction,",
+        "reformulation)",
+        "Traduction de documentation",
+        "technique, reformulation de",
+        "spécifications",
+        "Claude",
+        "Anthropic",
+        "Assistant",
+        "conversationnel",
+        "Dialogue naturel pour",
+        "brainstorming de solutions",
+        "logicielles, révision collaborative de",
+        "code",
+        "Gemini",
+        "Google",
+        "DeepMind",
+        "Multimodal (texte +",
+        "image + son)",
+        "Génération de diagrammes UML à",
+        "partir de descriptions textuelles,",
+        "analyse de code + schémas",
+        "combinés",
+        "29",
+        "30",
+        "Applications de l’IA en génie logiciel",
+        "Pipeline du cycle logiciel avec interventions de l’IA",
+        "31",
+        "Applications de l’IA en génie logiciel",
+        "❑",
+        "Génération de code",
+        "✓",
+        "Outils comme",
+        "peuvent proposer des snippets de code ou compléter des fonctions entièr",
+        "✓",
+        "Réduction du temps de codage et aide à l’apprentissage de nouveaux frameworks ou langages.",
+        "32",
+        "Applications de l’IA en génie logiciel",
+        "Exemple :",
+        "Vous écrivez une fonction pour calculer la factorielle en Python.",
+        "Le développeur gagne du temps et apprend la syntaxe recursive sans chercher en documentation.",
+        "Exemple:",
+        "Création d’une requête SQL à partir d’un commentaire en Python.",
+        "Copilot peut proposer automatiquement la requête complète en fonction du commentaire.",
+        "33",
+        "Applications de l’IA en génie logiciel",
+        "❑",
+        "Testing",
+        "✓",
+        "détecter et corriger les erreurs avant la mise en production, afin d’améliorer la qualité, la fiabilité et la",
+        "maintenabilité du logiciel.",
+        "✓",
+        "L’IA transforme la phase de testing en automatisant la génération de cas de test, en améliorant la",
+        "couverture et en accélérant la détection d’erreurs, ce qui renforce la qualité et la fiabilité du logiciel.",
+        "✓",
+        "Impact de l’IA (GitHub Copilot & autres outils) dans le Testing:",
+        "Exemple :",
+        "Génération automatique de tests unitaires",
+        "Gain de temps pour écrire des cas de",
+        "de base.",
+        "34",
+        "Vérification automatique de la performance.",
+        "Exemple :",
+        "Tests de performance.",
+        "35",
+        "Applications de l’IA en génie logiciel",
+        "❑",
+        "Maintenance",
+        "✓",
+        "L’IA facilite la maintenance logicielle en détectant automatiquement les anomalies, en suggérant des",
+        "correctifs et en anticipant les problèmes potentiels pour prolonger la durée de vie et la stabilité du logiciel",
+        "Exemple :",
+        "Détection et correction rapide de bugs",
+        "Un développeur remarque une fonction qui plante avec certaines entrées. Copilot peut suggérer un correctif directement.",
+        "Réduit le temps de debugging et évite les erreurs en production.",
+        "36",
+        "Applications de l’IA en génie logiciel",
+        "Exemple :",
+        "Migration vers de nouvelles versions / frameworks",
+        "✓",
+        "Si une API est dépréciée, Copilot peut suggérer une alternative compatible.",
+        "Facilite la compatibilité avec les nouvelles versions.",
+        "37",
+        "38"
+      ]
+    }
+  ]
+}

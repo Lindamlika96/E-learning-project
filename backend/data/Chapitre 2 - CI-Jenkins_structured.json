@@ -1,0 +1,1116 @@
+{
+  "course_title": "Chapitre 2 - CI-Jenkins",
+  "chapters": [
+    {
+      "chapter": "Module DevOps",
+      "page_start": 1,
+      "definitions": [],
+      "sections": [],
+      "raw": []
+    },
+    {
+      "chapter": "Chapitre 2: Intégration Continue (CI)",
+      "page_start": 1,
+      "definitions": [],
+      "sections": [
+        {
+          "title": "Jenkins",
+          "content": [
+            "ESPRIT – UP ASI (Architecture des Systèmes d’Information)",
+            "Bureau E204",
+            "© 2024-2025",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Plan du cours",
+          "content": []
+        },
+        {
+          "title": "•",
+          "content": []
+        },
+        {
+          "title": "Intégration Continue (Continuous Integration :",
+          "content": []
+        },
+        {
+          "title": "CI",
+          "content": []
+        },
+        {
+          "title": ")",
+          "content": []
+        },
+        {
+          "title": "•",
+          "content": []
+        },
+        {
+          "title": "Définition de Jenkins",
+          "content": []
+        },
+        {
+          "title": "Atelier 1 : Installation et configuration de Jenkins",
+          "content": []
+        },
+        {
+          "title": "•",
+          "content": []
+        },
+        {
+          "title": "Gestion de construction de projets (builds) avec Jenkins",
+          "content": []
+        },
+        {
+          "title": "Atelier 2 : Construction et configuartion de projets/jobs Jenkins",
+          "content": []
+        },
+        {
+          "title": "•",
+          "content": []
+        },
+        {
+          "title": "Travail à faire !",
+          "content": [
+            "2",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Qu'est-ce que l'intégration continue ?",
+          "content": [
+            "•",
+            "Les développeurs soumettent régulièrement leur"
+          ]
+        },
+        {
+          "title": "code à un référentiel partagé.",
+          "content": [
+            "•",
+            "Le système de contrôle de version est surveillé."
+          ]
+        },
+        {
+          "title": "•",
+          "content": []
+        },
+        {
+          "title": "Lorsqu'une soumission est détectée, une",
+          "content": [
+            "construction sera déclenchée automatiquement."
+          ]
+        },
+        {
+          "title": "•",
+          "content": []
+        },
+        {
+          "title": "Si la construction échoue, les développeurs",
+          "content": [
+            "seront immédiatement notifiés.",
+            "3",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Besoin de l'intégration continue ?",
+          "content": [
+            "•",
+            "Détecter les problèmes ou les bugs le plus tôt possible dans le cycle de",
+            "développement.",
+            "•",
+            "Intégrer l'ensemble de la base de code, la construire et la tester en permanence"
+          ]
+        },
+        {
+          "title": "pour attraper les erreurs potentielles plus tôt dans le cycle de vie, ce qui résulte",
+          "content": [
+            "en un logiciel de meilleure qualité."
+          ]
+        },
+        {
+          "title": "→",
+          "content": []
+        },
+        {
+          "title": "Ensemble de pratiques vérifiant de manière automatique et régulière que chaque",
+          "content": [
+            "modification de code n’engendre pas de régression."
+          ]
+        },
+        {
+          "title": "•",
+          "content": []
+        },
+        {
+          "title": "Les outils leaders :",
+          "content": []
+        },
+        {
+          "title": "Jenkins",
+          "content": []
+        },
+        {
+          "title": ", Travis-CI, Gitlab-CI, ...",
+          "content": [
+            "4",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Jenkins - Définition",
+          "content": [
+            "•",
+            "Jenkins : Un serveur open source écrit en Java qui automatise l'intégration continue.",
+            "•",
+            "Interface Web : Utilise un serveur web (comme Apache-Tomcat ou Jetty) pour fournir",
+            "une interface web conviviale."
+          ]
+        },
+        {
+          "title": "•",
+          "content": []
+        },
+        {
+          "title": "Intégration avec les Gestionnaires de Version : S'interface avec des systèmes de",
+          "content": [
+            "gestion de versions (CVS, Git, Subversion SVN) et exécute des scripts (Groovy, Yaml,",
+            "etc.).",
+            "5",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Jenkins - Définition",
+          "content": [
+            "•",
+            "Automatisation de la Construction, des Tests et du Déploiement : Automatise",
+            "les étapes de construction, de tests et de déploiement, facilitant ainsi",
+            "l'intégration continue et la livraison continue."
+          ]
+        },
+        {
+          "title": "•",
+          "content": []
+        },
+        {
+          "title": "Amélioration Continue : Permet aux développeurs d'intégrer rapidement des",
+          "content": [
+            "modifications au projet, accélérant ainsi l'amélioration continue du produit.",
+            "6",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Jenkins - Pipeline",
+          "content": []
+        },
+        {
+          "title": "•",
+          "content": []
+        },
+        {
+          "title": "Un Pipeline est une combinaison de plugins qui permettent de soutenir l'intégration",
+          "content": [
+            "et la mise en place de pipelines de livraison continue en utilisant Jenkins.",
+            "7",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Jenkins - Installation et configuration",
+          "content": []
+        },
+        {
+          "title": "•",
+          "content": []
+        },
+        {
+          "title": "Installation des outils pour le build d’un projet Maven",
+          "content": []
+        },
+        {
+          "title": "•",
+          "content": []
+        },
+        {
+          "title": "Installation et configuration de Jenkins",
+          "content": [
+            "(différents types d’installation: .war, distribution linux, conteneurs, ...)",
+            "•",
+            "Installation de Plugins + Configuration d’outils dans Jenkins",
+            "8",
+            "JENKINS",
+            "JDK, MAVEN et GIT",
+            "PLUGINS",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Jenkins - Plugins",
+          "content": [
+            "Une variété de plugins en tout genre :",
+            "•",
+            "Plugins de constructions (Maven Integration, Pipeline Integration),",
+            "•",
+            "Plugins d’analyse de code (Sonargraph Integration, SonarQube Scanner),",
+            "•",
+            "Plugins de gestion de sources (Git plugin),",
+            "•",
+            "Plugins de gestion de configurations (Prometheus metrics), de VM, de",
+            "conteneurs (Docker Pipeline),"
+          ]
+        },
+        {
+          "title": "•",
+          "content": []
+        },
+        {
+          "title": "...",
+          "content": [
+            "Base de plugins très importante (>1500 plugins)",
+            "9",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Installation et",
+          "content": []
+        },
+        {
+          "title": "configuration de",
+          "content": []
+        },
+        {
+          "title": "Jenkins",
+          "content": []
+        },
+        {
+          "title": "Atelier -1-",
+          "content": [
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Création d’un projet - Job Jenkins",
+          "content": [
+            "•",
+            "La construction (build) d’un projet est assurée par un"
+          ]
+        },
+        {
+          "title": "Job",
+          "content": [
+            "dans Jenkins.",
+            "•",
+            "Un projet dans Jenkins est symbolisé par un \"job\" qui englobe plusieurs étapes du",
+            "processus de build.",
+            "•",
+            "Tous les projets dans Jenkins suivent ces trois étapes :",
+            "1. Création du job."
+          ]
+        },
+        {
+          "title": "2. Configuration",
+          "content": []
+        },
+        {
+          "title": "du job, notamment la configuration des étapes du build.",
+          "content": [
+            "3. Lancement du build."
+          ]
+        },
+        {
+          "title": "•",
+          "content": []
+        },
+        {
+          "title": "Toutes les étapes du build dans les jobs sont gérées directement grâce à des",
+          "content": [
+            "plugins.",
+            "11",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Création d’un projet - Job Jenkins",
+          "content": [
+            "•",
+            "Il existe plusieurs types de job :",
+            "▪",
+            "Free-style"
+          ]
+        },
+        {
+          "title": "▪",
+          "content": []
+        },
+        {
+          "title": "Projet Maven",
+          "content": [
+            "▪"
+          ]
+        },
+        {
+          "title": "Pipeline et multibranche pipeline",
+          "content": []
+        },
+        {
+          "title": "(les plus utilisés pour des projets",
+          "content": []
+        },
+        {
+          "title": "Git)",
+          "content": []
+        },
+        {
+          "title": "▪",
+          "content": []
+        },
+        {
+          "title": "…",
+          "content": [
+            "12",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Configuration d’un projet - Job Jenkins",
+          "content": [
+            "•",
+            "La configuration du Job détermine comment le projet sera construit.",
+            "•",
+            "Les étapes de construction d’un projet sont les suivantes :",
+            "1.",
+            "Récupération du projet.",
+            "2.",
+            "Compilation."
+          ]
+        },
+        {
+          "title": "3.",
+          "content": []
+        },
+        {
+          "title": "Exécution des tests unitaires automatiques (JUnit).",
+          "content": [
+            "4.",
+            "Exécution des tests de qualité (Sonar).",
+            "5.",
+            "Préparation de la version à distribuer.",
+            "6.",
+            "Distribution de la version (Nexus).",
+            "13",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Configuration d’un projet - Job Jenkins",
+          "content": [
+            "•",
+            "Il y a deux façons de configurer la compilation d'un projet :"
+          ]
+        },
+        {
+          "title": "▪",
+          "content": []
+        },
+        {
+          "title": "Méthode formulaire (",
+          "content": []
+        },
+        {
+          "title": "freestyle",
+          "content": []
+        },
+        {
+          "title": "): Vous pouvez configurer le projet en utilisant un",
+          "content": [
+            "formulaire à remplir."
+          ]
+        },
+        {
+          "title": "▪",
+          "content": []
+        },
+        {
+          "title": "Méthode pipeline : L'alternative est d'utiliser un",
+          "content": []
+        },
+        {
+          "title": "pipeline",
+          "content": []
+        },
+        {
+          "title": ", qui configure le projet",
+          "content": [
+            "à l'aide de scripts (en utilisant Groovy). Cette approche permet également de",
+            "paralléliser les étapes du projet et offre une interface plus conviviale pour lire les",
+            "logs.",
+            "14",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Configuration d’un projet - Freestyle",
+          "content": []
+        },
+        {
+          "title": "•",
+          "content": []
+        },
+        {
+          "title": "La configuration du Job Jenkins comporte les éléments suivants :",
+          "content": [
+            "15",
+            "Gestion de code",
+            "source",
+            "Déclencheurs du",
+            "build",
+            "Environnement du",
+            "build",
+            "Actions pré-build",
+            "Étapes du build",
+            "Quel dépôt Git ?",
+            "•",
+            "Public",
+            "•",
+            "Privé",
+            "•",
+            "Manuellement",
+            "•",
+            "Périodiquement",
+            "•",
+            "Build distant",
+            "•",
+            "Webhooks (hook github, gitlab)",
+            "•",
+            "...",
+            "•",
+            "Variables",
+            "d’environnement",
+            "•",
+            "Configuration Sonar",
+            "•",
+            "Règles de nettoyage",
+            "du workspace",
+            "•",
+            "…",
+            "•",
+            "Scripts Maven, gradle, ant",
+            "•",
+            "Scripts shell",
+            "•",
+            "Fichier de construction",
+            "pom.xml",
+            "•",
+            "Publication des rapports",
+            "•",
+            "Envoi de notifications",
+            "(Email..)",
+            "•",
+            "Publication de la javadoc",
+            "•",
+            "…",
+            "Actions post-build",
+            "•",
+            "Étapes  de",
+            "construction Maven",
+            "(si vous choisissez",
+            "de construire un"
+          ]
+        },
+        {
+          "title": "projet maven",
+          "content": [
+            ")",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Configuration d’un projet - Freestyle",
+          "content": []
+        },
+        {
+          "title": "•",
+          "content": []
+        },
+        {
+          "title": "Gestion de code source : permet de configurer l’accès au dépôt Git contenant le",
+          "content": [
+            "code source du projet.",
+            "16",
+            "URL dépôt Git",
+            "Si le dépôt Git",
+            "est privé,",
+            "configurer des",
+            "identifiants",
+            "(Credentials)",
+            "La branche spécifique",
+            "sur laquelle Jenkins va",
+            "se pointer",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Configuration d’un projet - Freestyle",
+          "content": []
+        },
+        {
+          "title": "•",
+          "content": []
+        },
+        {
+          "title": "Déclencheurs du build : cette section permet de configurer l’élément déclencheur",
+          "content": [
+            "de construction.",
+            "17",
+            "Un build est",
+            "programmé",
+            "toutes les 5",
+            "minutes",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Configuration d’un projet - Freestyle",
+          "content": [
+            "•",
+            "Environnement du build : permet de configurer l’environnement du build."
+          ]
+        },
+        {
+          "title": "•",
+          "content": []
+        },
+        {
+          "title": "Actions pré-build : permet de configurer les étapes de construction Maven.",
+          "content": [
+            "18",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Configuration d’un projet - Freestyle",
+          "content": [
+            "•",
+            "Étapes du build : permet de gérer nombreux outils de build pour plusieurs langages,",
+            "Java (Maven, Gradle), .net (MSBuild), scripts Shell, batch Windows, ..",
+            "19",
+            "Indiquer le nom",
+            "du fichier",
+            "de construction",
+            "Exécuter un",
+            "script shell",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Configuration d’un projet - Freestyle",
+          "content": []
+        },
+        {
+          "title": "•",
+          "content": []
+        },
+        {
+          "title": "Actions post-build :  configurer les actions à la suite du build.",
+          "content": [
+            "- Nombreux mécanismes de notification (Slack, SMS, Email),",
+            "- Nombreux types de rapports générés.",
+            "20",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Configuration d’un projet - Pipeline",
+          "content": [
+            "•",
+            "Le"
+          ]
+        },
+        {
+          "title": "pipeline",
+          "content": [
+            "Jenkins est un code qui permet à plusieurs utilisateurs de modifier et",
+            "d'exécuter un processus de manière collaborative.",
+            "•",
+            "Il résout ce problème en introduisant un nouveau langage basé sur Groovy pour",
+            "configurer les tâches.",
+            "•",
+            "Vous pouvez enregistrer le pipeline dans un fichier (pour la gestion de version) et il"
+          ]
+        },
+        {
+          "title": "peut gérer divers scénarios.",
+          "content": [
+            "https://www.jenkins.io/doc/book/pipeline/getting-started/",
+            "21",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Configuration d’un projet - Pipeline",
+          "content": [
+            "•",
+            "La configuration d’un projet Pipeline comporte les éléments suivants :",
+            "22",
+            "Définir script",
+            "pipeline",
+            "•",
+            "Script interne (déclaratif, impératif)",
+            "•",
+            "Jenkinsfile",
+            "Déclencheurs du",
+            "build",
+            "Configurer un SCM",
+            "pipeline",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Configuration d’un projet - Pipeline",
+          "content": []
+        },
+        {
+          "title": "•",
+          "content": []
+        },
+        {
+          "title": "La configuration d’un projet pipeline sur Jenkins :",
+          "content": [
+            "1.",
+            "Créer un \"pipeline\" en tant que type de projet;",
+            "2.",
+            "Définir le script du pipeline;",
+            "3.",
+            "Sauvegarder la configuration, puis lancer le build.",
+            "23",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Configuration d’un projet - Pipeline",
+          "content": [
+            "•",
+            "Pour suivre les meilleures pratiques, il est recommandé d'utiliser un fichier appelé",
+            "\"Jenkinsfile\" stocké dans le référentiel de code (Git) pour définir le pipeline.",
+            "24",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Configuration d’un projet - Pipeline",
+          "content": [
+            "•",
+            "La configuration d’un projet pipeline sur Jenkins à partir du ficher"
+          ]
+        },
+        {
+          "title": "Jenkinsfile :",
+          "content": [
+            "1.",
+            "Pointer vers le fichier Jenkinsfile;",
+            "2.",
+            "Préciser l’URL, la branche, le nom du fichier et les credentials si le dépôt Git est privé;",
+            "3.",
+            "Sauvegarder la configuration, puis lancer le build.",
+            "25",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Résultat du build - Job Jenkins",
+          "content": [
+            "Job réussi",
+            "Historique",
+            "des builds",
+            "Accès",
+            "Configuration /",
+            "Modification d’un",
+            "build",
+            "26",
+            "Lancer un build",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Résultat du build - Job Jenkins",
+          "content": [
+            "27",
+            "•",
+            "En cas d'échec de build, l’icône d'avertissement        apparaît à côté du",
+            "nom du projet sur le tableau de bord.",
+            "•",
+            "Si la construction est réussie, l'icône      s'affiche.",
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Construction et",
+          "content": []
+        },
+        {
+          "title": "configuration de",
+          "content": []
+        },
+        {
+          "title": "Jobs Jenkins",
+          "content": []
+        },
+        {
+          "title": "Atelier -2-",
+          "content": [
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "Travail à faire !",
+          "content": [
+            "29"
+          ]
+        },
+        {
+          "title": "Activité 1",
+          "content": []
+        },
+        {
+          "title": ": Intégration",
+          "content": []
+        },
+        {
+          "title": "continue appliquée à un",
+          "content": []
+        },
+        {
+          "title": "projet MAVEN.",
+          "content": []
+        },
+        {
+          "title": "Activité 2",
+          "content": []
+        },
+        {
+          "title": ": Construction",
+          "content": []
+        },
+        {
+          "title": "d’un projet Pipeline à partir",
+          "content": []
+        },
+        {
+          "title": "d’un fichier Jenkinsfile.",
+          "content": [
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "La suite …",
+          "content": [
+            "30"
+          ]
+        },
+        {
+          "title": "Jobs/builds distribués !",
+          "content": [
+            "© 2024-2025"
+          ]
+        },
+        {
+          "title": "\"Apprendre par le projet, c'est découvrir",
+          "content": []
+        },
+        {
+          "title": "par l'action, créer par la compréhension, et",
+          "content": []
+        },
+        {
+          "title": "réussir par la persévérance.\"",
+          "content": [
+            "31",
+            "nous supportons les objectifs de développement durable"
+          ]
+        }
+      ],
+      "raw": [
+        "ESPRIT – UP ASI (Architecture des Systèmes d’Information)",
+        "Bureau E204",
+        "© 2024-2025",
+        "© 2024-2025",
+        "2",
+        "© 2024-2025",
+        "•",
+        "Les développeurs soumettent régulièrement leur",
+        "•",
+        "Le système de contrôle de version est surveillé.",
+        "construction sera déclenchée automatiquement.",
+        "seront immédiatement notifiés.",
+        "3",
+        "© 2024-2025",
+        "•",
+        "Détecter les problèmes ou les bugs le plus tôt possible dans le cycle de",
+        "développement.",
+        "•",
+        "Intégrer l'ensemble de la base de code, la construire et la tester en permanence",
+        "en un logiciel de meilleure qualité.",
+        "modification de code n’engendre pas de régression.",
+        "4",
+        "© 2024-2025",
+        "•",
+        "Jenkins : Un serveur open source écrit en Java qui automatise l'intégration continue.",
+        "•",
+        "Interface Web : Utilise un serveur web (comme Apache-Tomcat ou Jetty) pour fournir",
+        "une interface web conviviale.",
+        "gestion de versions (CVS, Git, Subversion SVN) et exécute des scripts (Groovy, Yaml,",
+        "etc.).",
+        "5",
+        "© 2024-2025",
+        "•",
+        "Automatisation de la Construction, des Tests et du Déploiement : Automatise",
+        "les étapes de construction, de tests et de déploiement, facilitant ainsi",
+        "l'intégration continue et la livraison continue.",
+        "modifications au projet, accélérant ainsi l'amélioration continue du produit.",
+        "6",
+        "© 2024-2025",
+        "et la mise en place de pipelines de livraison continue en utilisant Jenkins.",
+        "7",
+        "© 2024-2025",
+        "(différents types d’installation: .war, distribution linux, conteneurs, ...)",
+        "•",
+        "Installation de Plugins + Configuration d’outils dans Jenkins",
+        "8",
+        "JENKINS",
+        "JDK, MAVEN et GIT",
+        "PLUGINS",
+        "© 2024-2025",
+        "Une variété de plugins en tout genre :",
+        "•",
+        "Plugins de constructions (Maven Integration, Pipeline Integration),",
+        "•",
+        "Plugins d’analyse de code (Sonargraph Integration, SonarQube Scanner),",
+        "•",
+        "Plugins de gestion de sources (Git plugin),",
+        "•",
+        "Plugins de gestion de configurations (Prometheus metrics), de VM, de",
+        "conteneurs (Docker Pipeline),",
+        "Base de plugins très importante (>1500 plugins)",
+        "9",
+        "© 2024-2025",
+        "© 2024-2025",
+        "•",
+        "La construction (build) d’un projet est assurée par un",
+        "dans Jenkins.",
+        "•",
+        "Un projet dans Jenkins est symbolisé par un \"job\" qui englobe plusieurs étapes du",
+        "processus de build.",
+        "•",
+        "Tous les projets dans Jenkins suivent ces trois étapes :",
+        "1. Création du job.",
+        "3. Lancement du build.",
+        "plugins.",
+        "11",
+        "© 2024-2025",
+        "•",
+        "Il existe plusieurs types de job :",
+        "▪",
+        "Free-style",
+        "▪",
+        "12",
+        "© 2024-2025",
+        "•",
+        "La configuration du Job détermine comment le projet sera construit.",
+        "•",
+        "Les étapes de construction d’un projet sont les suivantes :",
+        "1.",
+        "Récupération du projet.",
+        "2.",
+        "Compilation.",
+        "4.",
+        "Exécution des tests de qualité (Sonar).",
+        "5.",
+        "Préparation de la version à distribuer.",
+        "6.",
+        "Distribution de la version (Nexus).",
+        "13",
+        "© 2024-2025",
+        "•",
+        "Il y a deux façons de configurer la compilation d'un projet :",
+        "formulaire à remplir.",
+        "à l'aide de scripts (en utilisant Groovy). Cette approche permet également de",
+        "paralléliser les étapes du projet et offre une interface plus conviviale pour lire les",
+        "logs.",
+        "14",
+        "© 2024-2025",
+        "15",
+        "Gestion de code",
+        "source",
+        "Déclencheurs du",
+        "build",
+        "Environnement du",
+        "build",
+        "Actions pré-build",
+        "Étapes du build",
+        "Quel dépôt Git ?",
+        "•",
+        "Public",
+        "•",
+        "Privé",
+        "•",
+        "Manuellement",
+        "•",
+        "Périodiquement",
+        "•",
+        "Build distant",
+        "•",
+        "Webhooks (hook github, gitlab)",
+        "•",
+        "...",
+        "•",
+        "Variables",
+        "d’environnement",
+        "•",
+        "Configuration Sonar",
+        "•",
+        "Règles de nettoyage",
+        "du workspace",
+        "•",
+        "…",
+        "•",
+        "Scripts Maven, gradle, ant",
+        "•",
+        "Scripts shell",
+        "•",
+        "Fichier de construction",
+        "pom.xml",
+        "•",
+        "Publication des rapports",
+        "•",
+        "Envoi de notifications",
+        "(Email..)",
+        "•",
+        "Publication de la javadoc",
+        "•",
+        "…",
+        "Actions post-build",
+        "•",
+        "Étapes  de",
+        "construction Maven",
+        "(si vous choisissez",
+        "de construire un",
+        ")",
+        "© 2024-2025",
+        "code source du projet.",
+        "16",
+        "URL dépôt Git",
+        "Si le dépôt Git",
+        "est privé,",
+        "configurer des",
+        "identifiants",
+        "(Credentials)",
+        "La branche spécifique",
+        "sur laquelle Jenkins va",
+        "se pointer",
+        "© 2024-2025",
+        "de construction.",
+        "17",
+        "Un build est",
+        "programmé",
+        "toutes les 5",
+        "minutes",
+        "© 2024-2025",
+        "•",
+        "Environnement du build : permet de configurer l’environnement du build.",
+        "18",
+        "© 2024-2025",
+        "•",
+        "Étapes du build : permet de gérer nombreux outils de build pour plusieurs langages,",
+        "Java (Maven, Gradle), .net (MSBuild), scripts Shell, batch Windows, ..",
+        "19",
+        "Indiquer le nom",
+        "du fichier",
+        "de construction",
+        "Exécuter un",
+        "script shell",
+        "© 2024-2025",
+        "- Nombreux mécanismes de notification (Slack, SMS, Email),",
+        "- Nombreux types de rapports générés.",
+        "20",
+        "© 2024-2025",
+        "•",
+        "Le",
+        "Jenkins est un code qui permet à plusieurs utilisateurs de modifier et",
+        "d'exécuter un processus de manière collaborative.",
+        "•",
+        "Il résout ce problème en introduisant un nouveau langage basé sur Groovy pour",
+        "configurer les tâches.",
+        "•",
+        "Vous pouvez enregistrer le pipeline dans un fichier (pour la gestion de version) et il",
+        "https://www.jenkins.io/doc/book/pipeline/getting-started/",
+        "21",
+        "© 2024-2025",
+        "•",
+        "La configuration d’un projet Pipeline comporte les éléments suivants :",
+        "22",
+        "Définir script",
+        "pipeline",
+        "•",
+        "Script interne (déclaratif, impératif)",
+        "•",
+        "Jenkinsfile",
+        "Déclencheurs du",
+        "build",
+        "Configurer un SCM",
+        "pipeline",
+        "© 2024-2025",
+        "1.",
+        "Créer un \"pipeline\" en tant que type de projet;",
+        "2.",
+        "Définir le script du pipeline;",
+        "3.",
+        "Sauvegarder la configuration, puis lancer le build.",
+        "23",
+        "© 2024-2025",
+        "•",
+        "Pour suivre les meilleures pratiques, il est recommandé d'utiliser un fichier appelé",
+        "\"Jenkinsfile\" stocké dans le référentiel de code (Git) pour définir le pipeline.",
+        "24",
+        "© 2024-2025",
+        "•",
+        "La configuration d’un projet pipeline sur Jenkins à partir du ficher",
+        "1.",
+        "Pointer vers le fichier Jenkinsfile;",
+        "2.",
+        "Préciser l’URL, la branche, le nom du fichier et les credentials si le dépôt Git est privé;",
+        "3.",
+        "Sauvegarder la configuration, puis lancer le build.",
+        "25",
+        "© 2024-2025",
+        "Job réussi",
+        "Historique",
+        "des builds",
+        "Accès",
+        "Configuration /",
+        "Modification d’un",
+        "build",
+        "26",
+        "Lancer un build",
+        "© 2024-2025",
+        "27",
+        "•",
+        "En cas d'échec de build, l’icône d'avertissement        apparaît à côté du",
+        "nom du projet sur le tableau de bord.",
+        "•",
+        "Si la construction est réussie, l'icône      s'affiche.",
+        "© 2024-2025",
+        "© 2024-2025",
+        "29",
+        "© 2024-2025",
+        "30",
+        "© 2024-2025",
+        "31",
+        "nous supportons les objectifs de développement durable"
+      ]
+    }
+  ]
+}
