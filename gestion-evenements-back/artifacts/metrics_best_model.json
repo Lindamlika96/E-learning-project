@@ -1,0 +1,14 @@
+{
+  "best_model": "LogisticRegression",
+  "accuracy_test": 0.741375,
+  "roc_auc_test": 0.5798569461755912,
+  "pr_auc_test": 0.7926229815484305,
+  "features": [
+    "localisation",
+    "duree_jours",
+    "nombre_places",
+    "niveau_importance",
+    "niveau_exigeance",
+    "formateur"
+  ]
+}
