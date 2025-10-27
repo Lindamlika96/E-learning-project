@@ -69,6 +69,7 @@ POST /ml/predict
   "niveau_exigeance": "Moyen",
   "formateur": "Professeur Université"
 }
+```
 #### ➤ Réponse
 
 ```json
@@ -84,6 +85,7 @@ POST /ml/predict
     "formateur"
   ]
 }
+```
 
 ### 🖥️ Détails techniques
 
@@ -124,7 +126,7 @@ python -m venv .venv
 .\.venv\Scripts\activate
 pip install -r requirements.txt
 uvicorn main:app --reload
-
+```
 ### 📍 Swagger UI
 [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
@@ -139,7 +141,7 @@ uvicorn main:app --reload
 cd ../gestion-evenements-front
 npm install
 npm start
-
+```
 ## 📍 Front accessible sur
 [http://localhost:3000](http://localhost:3000)
 
