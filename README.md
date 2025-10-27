@@ -35,6 +35,8 @@ Projet IA/
    │  ├─ App.js ← Routes ("/evenement")
    │  └─ index.js
    └─ package.json
+
+```
 ## 🧠 Fonctionnalités principales
 
 ### 🎟️ Gestion des événements
