@@ -1,0 +1,56 @@
+# --- Environnements virtuels Python ---
+.venv/
+venv/
+
+# --- Fichiers Python compilés / caches ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# --- Données / artefacts produits par les scripts ---
+data/*.db
+data/*.joblib
+data/*.jsonl
+data/*.csv
+data/metrics.json
+demo_results/
+
+# --- IDE / éditeurs ---
+.vscode/
+.idea/
+
+# --- Fichiers d'environnement ---
+.env
+.env.*
+*.env
+
+# --- Node / React (frontend) ---
+frontend/node_modules/
+frontend/build/
+frontend/.cache/
+frontend/.parcel-cache/
+frontend/dist/
+frontend/coverage/
+frontend/.env
+frontend/.env.*
+frontend/npm-debug.log*
+frontend/yarn*.log*
+frontend/pnpm-lock.yaml
+frontend/package-lock.json
+
+# --- Logs globaux ---
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Divers ---
+.DS_Store
+Thumbs.db
